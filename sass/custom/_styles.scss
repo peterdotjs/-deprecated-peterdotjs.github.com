@@ -11,5 +11,6 @@
 
 	.profile-photo img {
 		width: 300px;
+                @include image-border($main-bg,$footer-bg);
 	}
 }
