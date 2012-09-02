@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: javascript | Peter J. Shin]]></title>
+  <link href="http://peterdotjs.github.com/blog/categories/javascript/atom.xml" rel="self"/>
+  <link href="http://peterdotjs.github.com/"/>
+  <updated>2012-09-02T09:37:12-07:00</updated>
+  <id>http://peterdotjs.github.com/</id>
+  <author>
+    <name><![CDATA[Peter Shin]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[testing post]]></title>
+    <link href="http://peterdotjs.github.com/blog/2012/09/01/testing-post/"/>
+    <updated>2012-09-01T18:27:00-07:00</updated>
+    <id>http://peterdotjs.github.com/blog/2012/09/01/testing-post</id>
+    <content type="html"><![CDATA[<p>tet test test</p>
+]]></content>
+  </entry>
+  
+</feed>

@@ -1,29 +1,22 @@
 ---
 layout: default
 ---
-
-<div class="blog-index">
-  {% assign index = true %}
-  {% for post in paginator.posts %}
-  {% assign content = post.content %}
-    <article>
-      {% include article.html %}
-    </article>
-  {% endfor %}
-  <div class="pagination">
-    {% if paginator.next_page %}
-      <a class="prev" href="{{paginator.next_page}}">&larr; Older</a>
-    {% endif %}
-    <a href="/blog/archives">Blog Archives</a>
-    {% if paginator.previous_page %}
-    <a class="next" href="{{paginator.previous_page}}">Newer &rarr;</a>
-    {% endif %}
-  </div>
+<div class="about-me-container">
+ <div class="about-me">
+   <div class="description">
+     Web enthusiast with a passion for technology and problem solving.
+   </div>
+   <div class="description">
+     Outdoor adventurer with an aversion towards heights.  
+   </div>
+   <div class="description">
+     Studied engineering at UCSD and UCLA.
+   </div>
+   <div class="description">
+     Front-end engineer at Cisco Webex Social.
+   </div>
+ </div>
+ <div class="profile-photo">
+   <img alt="Trek towards Half Dome, Yosemite." title="Treck towards Half Dome, Yosemite." src="images/profile2.png">
+ </div>
 </div>
-<aside class="sidebar">
-  {% if site.blog_index_asides.size %}
-    {% include_array blog_index_asides %}
-  {% else %}
-    {% include_array default_asides %}
-  {% endif %}
-</aside>
