@@ -4,7 +4,7 @@
   <title><![CDATA[PETER SHIN]]></title>
   <link href="http://peterdotjs.github.com/atom.xml" rel="self"/>
   <link href="http://peterdotjs.github.com/"/>
-  <updated>2012-09-03T03:08:25-07:00</updated>
+  <updated>2012-09-03T03:13:24-07:00</updated>
   <id>http://peterdotjs.github.com/</id>
   <author>
     <name><![CDATA[Peter Shin]]></name>
@@ -66,9 +66,8 @@ if (chrome.app.isInstalled) {
 
 <h2>Limitations</h2>
 
-<p>Recommend using Chrome 22 or 20 for Windows users. Undo Button has issues in release 21 which were fixed in 22.</p>
-
-<p>If you have multiple monitors, the extension will only work on one of the monitors. Likely not fixable in near future.</p>
+<p>Recommend using Chrome 22 or 20 for Windows users. Undo Button has issues in release 21 which were fixed in 22.
+If you have multiple monitors, the extension will only work on one of the monitors. Likely not fixable in near future.</p>
 
 <h2>Additional Notes</h2>
 
