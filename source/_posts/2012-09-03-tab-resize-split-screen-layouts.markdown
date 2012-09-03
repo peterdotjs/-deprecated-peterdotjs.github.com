@@ -35,13 +35,21 @@ Why
 
 Installation
 ------------
+<div class="install-wrapper">
+  <img onclick="chrome.webstore.install()" id="install-button"></img>
+  <h4 id="installed-message" style="display: none;">Already Installed. =)</h4>
+</div>
 <script>
 $('head').append('<link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/bkpenclhmiealbebdopglffmfdiilejc">');
+if (chrome.app.isInstalled) {
+  $('#install-button').hide();
+  $('#installed-message').show();
+}
 </script>
-<div onclick="chrome.webstore.install()" id="install-button">Add to Chrome</div>
 
 Limitations
 ----------------
+Recommend using Chrome 22 or 20 for Windows users. Undo Button has issues in release 21 which were fixed in 22.
 If you have multiple monitors, the extension will only work on one of the monitors. Likely not fixable in near future.
 
 Additional Notes
