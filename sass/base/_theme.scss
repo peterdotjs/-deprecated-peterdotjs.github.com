@@ -1,10 +1,12 @@
 $noise-bg: image-url('noise.png') top left !default;
 $img-border: inline-image('dotted-border.png');
+$body-bg-img: url('../images/shattered.png');
 
 // Main Link Colors
 $link-color: lighten(#165b94, 3) !default;
 $link-color-hover: adjust-color($link-color, $lightness: 10, $saturation: 25) !default;
-$link-color-visited: adjust-color($link-color, $hue: 80, $lightness: -4) !default;
+//$link-color-visited: adjust-color($link-color, $hue: 80, $lightness: -4) !default;
+$link-color-visited: grey;
 $link-color-active: adjust-color($link-color-hover, $lightness: -15) !default;
 
 // Main Section Colors
@@ -72,16 +74,34 @@ a {
 }
 
 html {
+ height: 100%;
 }
 body {
-  background: $page-bg;
+  background: $body-bg-img;
   position: relative;
   height: 100%;
-  > div {
-    background: $sidebar-bg $noise-bg;
-    border-bottom: 1px solid $page-border-bottom;
-    > div {
-      background: $main-bg $noise-bg;
+  /*Opera Fix*/
+  &:before {
+    content: "";
+    height: 100%;
+    float: left;
+    width: 0;
+    margin-top: -32767px;
+  }
+  #wrap {
+    min-height: 100%;
+    border-right: 1px solid grey;
+    border-left: 1px solid grey;
+    background: $main-bg;
+    max-width: 1100px;
+    min-width: 700px;
+    margin: 0 auto;
+    #main {
+      overflow: auto;
+      padding: 0 0 80px 0;
+      #content {
+	background: $main-bg $noise-bg;
+      }
     }
   }
 }

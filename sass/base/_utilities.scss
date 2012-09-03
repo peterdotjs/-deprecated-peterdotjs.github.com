@@ -26,3 +26,8 @@
   @return $text-color;
 }
 
+@mixin image-border($bg, $border-color){
+  padding: 1px;
+  border: 1px solid $border-color;
+  background-color: $bg;
+}

@@ -5,23 +5,36 @@ body > footer {
   text-shadow: lighten($footer-bg, 5) 0 1px;
   //background-color: $footer-bg;
   //@include background($footer-bg-front, $footer-bg-back);
-  background: $footer-bg;
-  border-top: 1px solid $footer-border-top;
-  position: absolute;
-  bottom: 0;
-  padding-top: 1em;
-  padding-bottom: 1em;
+  background: $body-bg-img;
+  //border-top: 1px solid $footer-border-top;
+  //padding-top: 1em;
+  //padding-bottom: 1em;
   //margin-bottom: 3em;
   //@include border-bottom-radius(.4em);
   padding-left: 0;
   padding-right: 0;
   width: 100%;
   z-index: 1;
+  clear: both;
+  position: relative;
+  margin-top: -47px;
+  height: 47px;
+  .footer-wrap {
+    padding: 10px 0;
+    background: $footer-bg;
+    margin: 0 auto;
+    max-width: 1100px;
+    min-width: 700px;
+  }
+  .credit {
+    float: right;
+    margin-right: 55px;
+  }
   a {
     @include link-colors($footer-link-color, $footer-link-color-hover);
   }
   p {
     padding-left: 55px;
+    margin: auto 0;
   }
-  p:last-child { margin-bottom: 0; }
 }
