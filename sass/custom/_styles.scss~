@@ -1,7 +1,6 @@
 // This File is imported last, and will override other styles in the cascade
 // Add styles here to make changes without digging in too much
 
-//about page
 .about-me-container {
 	text-align: center;
 	padding-top: 0 !important;
@@ -11,7 +10,7 @@
         margin: 0 auto;
         margin-top: 37px;
         float: none !important;
-	opacity: 0;
+	opacity: 0.1;
 	@include transition(opacity 2s ease-in-out);
 	.about-me {
 		display: inline-block;
@@ -43,40 +42,9 @@
 	}
 }
 
-//fade in transition
 body.loaded {
 
 	.about-me-container {
 		opacity: 1;
 	}
 }
-
-//project page
-#main #content .project-wrapper {
-  padding: 20px 0;
-  .project {
-    cursor: pointer;
-    padding: 20px;
-    border: 2px solid black;
-    margin: 25px 110px;
-    background: lightgreen;
-    .project-title {
-      margin-bottom: 2px;
-      a {
-        padding-bottom: 3px;
-        border-bottom: 2px solid black;
-      }
-    }
-    .project-description {
-      padding-top: 5px;
-    }
-  }
-}
-
-
-
-
-
-
-
-

@@ -1,23 +1,23 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
-        <loc>http://peterdotjs.github.com/blog/2012/09/01/testing-post/</loc>
-        <lastmod>2012-09-01T18:29:30-07:00</lastmod>
+        <loc>http://peterdotjs.github.com/blog/2012/09/03/tab-resize-split-screen-layouts/</loc>
+        <lastmod>2012-09-03T01:44:13-07:00</lastmod>
     </url>
     <url>
         <loc>http://peterdotjs.github.com/projects/</loc>
-        <lastmod>2012-09-01T21:37:35-07:00</lastmod>
+        <lastmod>2012-09-03T00:48:21-07:00</lastmod>
     </url>
     <url>
         <loc>http://peterdotjs.github.com/blog/archives/</loc>
-        <lastmod>2012-09-01T21:46:57-07:00</lastmod>
+        <lastmod>2012-09-03T01:44:13-07:00</lastmod>
     </url>
     <url>
         <loc>http://peterdotjs.github.com/blog/</loc>
-        <lastmod>2012-09-01T21:56:17-07:00</lastmod>
+        <lastmod>2012-09-03T01:44:13-07:00</lastmod>
     </url>
     <url>
         <loc>http://peterdotjs.github.com/</loc>
-        <lastmod>2012-09-02T00:44:44-07:00</lastmod>
+        <lastmod>2012-09-03T01:44:13-07:00</lastmod>
     </url>
 </urlset>

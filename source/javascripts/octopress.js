@@ -116,6 +116,25 @@ function renderDeliciousLinks(items) {
   $('#delicious').html(output);
 }
 
+function domLoaded() {
+  $('body').addClass('loaded');
+
+  $('.project').bind('click', function(evt){
+    var link = $(this).find('.project-title a');
+
+    if (evt.target === link[0]) {
+	return false;
+    }
+
+    link.trigger('click');
+    return false;
+
+trigger('click');
+    return false;
+  });
+}
+
+
 $.domReady(function() {
   testFeatures();
   wrapFlashVideos();
@@ -123,6 +142,7 @@ $.domReady(function() {
   addCodeLineNumbers();
   getNav();
   addSidebarToggler();
+  domLoaded();
 });
 
 // iOS scaling bug fix

@@ -31,3 +31,12 @@
   border: 1px solid $border-color;
   background-color: $bg;
 }
+
+@mixin animation($content) {
+    -webkit-animation: $content;  
+    -moz-animation: $content;  
+    -ms-animation: $content;  
+    animation: $content;  
+}
+
+
