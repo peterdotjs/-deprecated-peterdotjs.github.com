@@ -33,7 +33,7 @@ Why
 
 ✓Quickly resize single windows to desired size with a single click.
 
-Installation
+Installation - click icon to install
 ------------
 <div class="install-wrapper">
     <img onclick="chrome.webstore.install()" id="install-button"></img>
