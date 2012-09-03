@@ -73,8 +73,22 @@ body.loaded {
   }
 }
 
-
-
+//for tab resize 
+.install-wrapper {
+  margin: 25px;
+  text-align: center;
+  #install-button {
+    width: 146px;
+    height: 146px;
+    background: url('../images/icon128.png');
+    &:active {
+      @include scale(1.1);
+      position: relative;
+      left: 10px;
+      top: 10px;
+    }    
+  }
+}
 
 
 
