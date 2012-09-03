@@ -3,19 +3,22 @@ $img-border: inline-image('dotted-border.png');
 $body-bg-img: url('../images/shattered.png');
 
 // Main Link Colors
-$link-color: lighten(#165b94, 3) !default;
-$link-color-hover: adjust-color($link-color, $lightness: 10, $saturation: 25) !default;
-//$link-color-visited: adjust-color($link-color, $hue: 80, $lightness: -4) !default;
-$link-color-visited: grey;
+$link-color: black;
+$link-color-old: lighten(#002B4E, 3) !default;
+//$link-color-hover: adjust-color($link-color-old, $lightness: 10, $saturation: 25) !default;
+//$link-color-visited: adjust-color($link-color-old, $hue: 80, $lightness: -4) !default;
+$link-color-hover: #0181EB;
+$link-color-visited: black;
 $link-color-active: adjust-color($link-color-hover, $lightness: -15) !default;
 
 // Main Section Colors
-$main-bg: white !default;
+$main-color: #F8F8F8;
+$main-bg: $main-color $noise-bg;
 $page-bg: #f4f4f4 !default;
 $article-border: #eeeeee !default;
 
-$header-bg: white !default;
-$header-border: lighten($header-bg, 15) !default;
+$header-bg: $main-color $noise-bg;
+$header-border: lighten(#EDEFF4, 15) !default;
 $title-color: black !default;
 $subtitle-color: #8F8F8F !default;
 

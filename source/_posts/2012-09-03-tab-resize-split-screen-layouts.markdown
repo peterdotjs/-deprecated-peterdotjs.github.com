@@ -15,7 +15,7 @@ What
 
 How it works
 -------------------
-✓The selected/highlighted tab along with all tabs to the right of it will be considered. Whether you have more or less tabs than are needed the extension will resize the only the available tabs. 
+✓The selected/highlighted tab along with all tabs to the right of it will be considered. Whether you have more or less tabs than are needed the extension will resize only the available tabs. 
 
 ✓Undo button will undo the previous layout resize. You can only perform undo once at any time.
 
@@ -36,8 +36,8 @@ Why
 Installation
 ------------
 <div class="install-wrapper">
-  <img onclick="chrome.webstore.install()" id="install-button"></img>
-  <h4 id="installed-message" style="display: none;">Already Installed. =)</h4>
+    <img onclick="chrome.webstore.install()" id="install-button"></img>
+    <h4 id="installed-message" style="display: none;">Already Installed. =)</h4>
 </div>
 <script>
 $('head').append('<link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/bkpenclhmiealbebdopglffmfdiilejc">');
@@ -54,4 +54,4 @@ If you have multiple monitors, the extension will only work on one of the monito
 
 Additional Notes
 ------------------------
-Only tab/window id info is being used; browsing history is not. Google unfortunately sets Tabs and browsing history access as bundled together.
+Only tab/window id info is being used; browsing history is not. Tabs and browsing history access as bundled together.

@@ -3,7 +3,7 @@
 # ----------------------- #
 
 url: http://peterdotjs.github.com
-title: PETER SHIN
+title: Peter Shin
 subtitle: '{ something witty }'
 author: Peter Shin
 #simple_search: http://google.com/search
@@ -96,7 +96,7 @@ disqus_short_name:
 disqus_show_comment_count: false
 
 # Google Analytics
-google_analytics_tracking_id:
+google_analytics_tracking_id: UA-34217520-1
 
 # Facebook Like
 facebook_like: false

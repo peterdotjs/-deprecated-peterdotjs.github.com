@@ -31,7 +31,14 @@ body > footer {
     margin-right: 55px;
   }
   a {
-    @include link-colors($footer-link-color, $footer-link-color-hover);
+    //@include link-colors($footer-link-color, $footer-link-color-hover);
+    color: darkgrey;
+    &:hover {
+      color: grey;
+    }
+    &:visited {
+      color: darkgrey;
+    }
   }
   p {
     padding-left: 55px;
