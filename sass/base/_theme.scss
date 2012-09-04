@@ -1,6 +1,6 @@
 $noise-bg: image-url('noise.png') top left !default;
 $img-border: inline-image('dotted-border.png');
-$body-bg-img: url('../images/shattered.png');
+$body-bg-img: url('../images/white_sand_small.png');
 
 // Main Link Colors
 $link-color: black;
@@ -85,10 +85,7 @@ a {
 html {
  height: 100%;
  overflow-y: scroll;
- background-color: $html-color;
- &.loaded {
-   background: $body-bg-img;
- }
+ background: $body-bg-img;
 }
 body {
   position: relative;
@@ -111,7 +108,7 @@ body {
     margin: 0 auto;
     #main {
       overflow: auto;
-      padding: 0 0 70px 0;
+      padding: 0 0 80px 0;
       #content {
 	background: $main-bg;
       }
