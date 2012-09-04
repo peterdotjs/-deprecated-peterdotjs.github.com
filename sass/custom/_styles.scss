@@ -51,6 +51,8 @@ body.loaded {
 	}
 }
 
+$project-link-hover-color: #0181EB;
+
 //project page
 #main #content .project-wrapper {
   padding: 20px 0;
@@ -63,22 +65,30 @@ body.loaded {
     &:hover {
       border-color: grey;
       @include box-shadow(0 0 10px grey);
+      a {
+        color: $project-link-hover-color;
+        text-decoration: none;
+      }
     }
     &:active {
-     @include box-shadow(inset 0 0 15px grey);
+      @include box-shadow(inset 0 0 15px grey);
+      a {
+        color: $project-link-hover-color;
+        text-decoration: none;
+      }
     }
     .project-title {
-      margin-bottom: 2px;
+      margin-bottom: 7px;
       a {
         padding-bottom: 3px;
         border-bottom: 2px solid black;
       }
     }
     .project-description {
-      padding-top: 5px;
+      padding: 5px;
       background: rgba(0,0,0,0.1);
       position:relative;
-      top: 5px;
+      top: 10px;
     }
   }
 }
