@@ -114,4 +114,51 @@ a {
 }
 
 
+header {
 
+  hgroup {
+    display: inline-block;
+
+    h1 {
+      @include text-shadow(1px 1px 1px white);
+    }
+  }
+
+  .icon-link-wrapper {
+    display: inline-block;
+    float: right;
+    .icon-link {
+      height: 48px;
+      width: 48px;
+      display: inline-block;
+      cursor: pointer;
+      &.linkedin {
+	background: url('../images/linkedin.png');
+	&:hover {
+	  background: url('../images/linkedin_hover.png');
+	}
+      }
+  
+      &.github {
+	background: url('../images/github.png');
+        &:hover {
+          background: url('../images/github_hover.png');
+        }
+      }
+
+      &.resume {
+	background: url('../images/resume.png');
+	&:hover {
+	  background: url('../images/resume_hover.png');
+	}
+      }
+
+      &.contact {
+        background: url('../images/contact.png');
+        &:hover {
+	  background: url('../images/contact_hover.png');
+	}
+      }
+    }
+  }
+}

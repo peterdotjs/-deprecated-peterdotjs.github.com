@@ -39,4 +39,19 @@
     animation: $content;  
 }
 
+@mixin gradient($from, $to, $start:'top') {
+  /* fallback/image non-cover color */
+  background-color: $from;
 
+  /* Firefox 3.6+ */
+  background-image: -moz-linear-gradient($start, $from, $to);
+
+  /* Safari 4+, Chrome 1+ */
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100, from($from), to($to));
+
+  /* Safari 5.1+, Chrome 10+ */
+  background-image: -webkit-linear-gradient($start, $from, $to);
+
+  /* Opera 11.10+ */
+  background-image: -o-linear-gradient($start, $from, $to);
+}

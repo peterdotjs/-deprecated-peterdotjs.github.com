@@ -19,8 +19,13 @@ $article-border: #eeeeee !default;
 
 $header-bg: $main-color $noise-bg;
 $header-border: lighten(#EDEFF4, 15) !default;
-$title-color: black !default;
+$title-color: white !default;
 $subtitle-color: #8F8F8F !default;
+
+$header-gradient-from: black;
+$header-gradient-to: #2B2B2B;
+$footer-gradient-from: $header-gradient-from;
+$footer-gradient-to: $header-gradient-to;
 
 $text-color: #222 !default;
 $text-color-light: #aaa !default;
