@@ -44,11 +44,12 @@
 }
 
 //fade in transition
-body.loaded {
+html.loaded {
 
 	.about-me-container {
 		opacity: 1;
 	}
+
 }
 
 $project-link-hover-color: #0181EB;

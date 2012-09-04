@@ -117,7 +117,7 @@ function renderDeliciousLinks(items) {
 }
 
 function domLoaded() {
-  $('body').addClass('loaded');
+  $('html').addClass('loaded');
 
   $('.project').bind('click', function(evt){
     var link = $(this).find('.project-title a');
@@ -127,9 +127,6 @@ function domLoaded() {
     }
 
     link.trigger('click');
-    return false;
-
-trigger('click');
     return false;
   });
 }

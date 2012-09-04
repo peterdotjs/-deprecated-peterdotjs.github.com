@@ -12,6 +12,7 @@ $link-color-visited: black;
 $link-color-active: adjust-color($link-color-hover, $lightness: -15) !default;
 
 // Main Section Colors
+$html-color: #D7D9D9;
 $main-color: #F8F8F8;
 $main-bg: $main-color $noise-bg;
 $page-bg: #f4f4f4 !default;
@@ -83,7 +84,11 @@ a {
 
 html {
  height: 100%;
- background: $body-bg-img;
+ overflow-y: scroll;
+ background-color: $html-color;
+ &.loaded {
+   background: $body-bg-img;
+ }
 }
 body {
   position: relative;
