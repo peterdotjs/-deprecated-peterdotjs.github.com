@@ -124,6 +124,12 @@ a {
   }
 }
 
+$icon-link-url:url('../images/icon_sprite.png') no-repeat;
+
+@mixin icon-url($x, $y){
+  background: $icon-link-url $x $y;
+}
+
 
 header {
 
@@ -143,32 +149,32 @@ header {
       width: 48px;
       display: inline-block;
       cursor: pointer;
-      @include transition(background 0.3s ease-in-out);
+      //@include transition(background 0.3s ease-in-out);
       &.linkedin {
-	background: url('../images/linkedin.png');
+	@include icon-url(-48px,0);
 	&:hover {
-	  background: url('../images/linkedin_hover.png');
+	  @include icon-url(-48px, -48px);
 	}
       }
   
       &.github {
-	background: url('../images/github.png');
-        &:hover {
-          background: url('../images/github_hover.png');
-        }
+        @include icon-url(0,0);
+	&:hover {
+          @include icon-url(0,-48px);
+	}
       }
 
       &.resume {
-	background: url('../images/resume.png');
+	@include icon-url(-96px,0);
 	&:hover {
-	  background: url('../images/resume_hover.png');
+	  @include icon-url(-96px, -48px);
 	}
       }
 
       &.contact {
-        background: url('../images/contact.png');
-        &:hover {
-	  background: url('../images/contact_hover.png');
+        @include icon-url(-144px,0);
+	&:hover {
+	  @include icon-url(-144px, -48px);
 	}
       }
     }
