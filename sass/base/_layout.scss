@@ -45,21 +45,13 @@ $header-padding-bottom: 1.5em !default;
 
 body {
   -webkit-text-size-adjust: none;
-  max-width: $max-width;
+  //max-width: $max-width;
   position: relative;
   margin: 0 auto;
   header, nav, footer, #content > article, #content > div > article, #content > div > section {
     @extend .group;
-    padding-left: $pad-min;
-    padding-right: $pad-min;
-    @media only screen and (min-width: 480px) {
-      padding-left: $pad-narrow;
-      padding-right: $pad-narrow;
-    }
-    @media only screen and (min-width: 768px) {
-      padding-left: $pad-medium;
-      padding-right: $pad-medium;
-    }
+    padding-left: $pad-medium;
+    padding-right: $pad-medium;
     @media only screen and (min-width: 992px) {
       padding-left: $pad-wide;
       padding-right: $pad-wide;
@@ -67,16 +59,8 @@ body {
   }
   div.pagination {
     @extend .group;
-    margin-left: $pad-min;
-    margin-right: $pad-min;
-    @media only screen and (min-width: 480px) {
-      margin-left: $pad-narrow;
-      margin-right: $pad-narrow;
-    }
-    @media only screen and (min-width: 768px) {
-      margin-left: $pad-medium;
-      margin-right: $pad-medium;
-    }
+    margin-left: $pad-medium;
+    margin-right: $pad-medium;
     @media only screen and (min-width: 992px) {
       margin-left: $pad-wide;
       margin-right: $pad-wide;
@@ -84,8 +68,8 @@ body {
   }
   header {
     font-size: $header-font-size;
-    padding-top: $header-padding-top;
-    padding-bottom: $header-padding-bottom;
+    //padding-top: $header-padding-top;
+    //padding-bottom: $header-padding-bottom;
   }
 }
 
@@ -120,17 +104,13 @@ body.sidebar-footer {
   #content { margin-right: 0px; }
   .toggle-sidebar { display: none; }
 }
-
-@media only screen and (min-width: 550px) {
-  body header { font-size: $header-font-size; }
-}
 @media only screen and (min-width: 750px) {
   aside.sidebar { @include collapse-sidebar; }
 }
 #main, #content, .sidebar {
   @extend .group;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 0px) {
   body { -webkit-text-size-adjust: auto; }
   body header { font-size: $header-font-size * 1.2; }
   #main {

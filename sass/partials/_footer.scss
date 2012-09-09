@@ -11,10 +11,10 @@ body > footer {
   position: relative;
   margin-top: -47px;
   height: 47px;
+  background: $footer-bg;
+  @include gradient($footer-gradient-from,$footer-gradient-to,bottom);
   .footer-wrap {
     padding: 10px 0;
-    background: $footer-bg;
-    @include gradient($footer-gradient-from,$footer-gradient-to,bottom);
     margin: 0 auto;
     max-width: 1100px;
     min-width: 700px;
