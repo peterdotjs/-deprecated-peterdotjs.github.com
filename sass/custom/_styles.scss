@@ -269,11 +269,11 @@ nav{
 	color: dimgrey;
 	@include transition(padding 0.5s, color 0s);
 	&.projects {
-	  margin-left: 63px;
+	  margin-left: 62px;
 	}
 
 	&.blog {
-	  margin-left: 149px;
+	  margin-left: 148px;
 	}
 
 	&.selected {
@@ -286,6 +286,10 @@ nav{
 	  &:hover, &:focus, &:active {
 	    padding-top: 25px;
 	    color: white;
+	  }
+
+	  &:active {
+	    @include box-shadow(inset 0px 0px 10px black);
 	  }
 	}
 
