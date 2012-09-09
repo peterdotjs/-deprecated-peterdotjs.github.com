@@ -250,7 +250,7 @@ header {
 
 nav{
   .navigation-wrap {
-    max-width: 250px;
+    max-width: 226px;
     overflow: hidden;
     margin: 0 auto;
 
@@ -360,7 +360,9 @@ $red-theme: salmon;
     header hgroup {
        width: 224px;
     }
-    nav .navigation-wrap .main-navigation {
+    nav .navigation-wrap {
+      max-width: 240px; 
+      .main-navigation {
        height: 40px;
        a {
          &.projects {
@@ -371,6 +373,7 @@ $red-theme: salmon;
            margin-left: 157px;
          }
        }
-    }
+      }
+    } 
 }
 
