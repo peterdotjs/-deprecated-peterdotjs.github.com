@@ -216,6 +216,10 @@ header {
 	@include box-shadow(0px 1.5px 10px white);
       }
 
+      &:active {
+        @include box-shadow(inset 0px 1.5px 10px white);
+      }
+
       &.linkedin {
 	@include icon-url(-48px,0);
 	&:hover, &:focus {
