@@ -294,13 +294,13 @@ nav{
 	&.selected {
 	  background: grey;
 	  color: white;
-	  font-weight: bold;
 	}
 
 	&.unselected {
 	  &:hover, &:focus {
 	    padding-top: 25px;
 	    color: white;
+	    @include gradient(#D9D9D9, grey, bottom);
 	    @include box-shadow(0px 1px 10px black);
 	  }
 
