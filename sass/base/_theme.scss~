@@ -1,21 +1,32 @@
 $noise-bg: image-url('noise.png') top left !default;
 $img-border: inline-image('dotted-border.png');
+$body-bg-img: url('../images/white_sand_small.png');
 
 // Main Link Colors
-$link-color: lighten(#165b94, 3) !default;
-$link-color-hover: adjust-color($link-color, $lightness: 10, $saturation: 25) !default;
-$link-color-visited: adjust-color($link-color, $hue: 80, $lightness: -4) !default;
+$link-color: black;
+$link-color-old: lighten(#002B4E, 3) !default;
+//$link-color-hover: adjust-color($link-color-old, $lightness: 10, $saturation: 25) !default;
+//$link-color-visited: adjust-color($link-color-old, $hue: 80, $lightness: -4) !default;
+$link-color-hover: #0181EB;
+$link-color-visited: black;
 $link-color-active: adjust-color($link-color-hover, $lightness: -15) !default;
 
 // Main Section Colors
-$main-bg: #f8f8f8 !default;
-$page-bg: white !default;
+$html-color: #D7D9D9;
+$main-color: #F8F8F8;
+$main-bg: $main-color $noise-bg;
+$page-bg: #f4f4f4 !default;
 $article-border: #eeeeee !default;
 
-$header-bg: white !default;
-$header-border: lighten($header-bg, 15) !default;
-$title-color: #black !default;
+$header-bg: $main-color $noise-bg;
+$header-border: lighten(#EDEFF4, 15) !default;
+$title-color: white !default;
 $subtitle-color: #8F8F8F !default;
+
+$header-gradient-from: black;
+$header-gradient-to: #2B2B2B;
+$footer-gradient-from: $header-gradient-from;
+$footer-gradient-to: $header-gradient-to;
 
 $text-color: #222 !default;
 $text-color-light: #aaa !default;
@@ -46,8 +57,8 @@ $sidebar-link-color-subdued: lighten($sidebar-color, 20) !default;
 $sidebar-link-color-subdued-hover: $sidebar-link-color-hover !default;
 $twitter-status-link: lighten($sidebar-link-color-subdued, 15) !default;
 
-$footer-color: #888 !default;
-$footer-bg: #ccc !default;
+$footer-color: white !default;
+$footer-bg: black !default;
 $footer-bg-front: image-url('noise.png') !default;
 $footer-bg-back: linear-gradient(lighten($footer-bg, 8), $footer-bg, darken($footer-bg, 11)) !default;
 $footer-color: darken($footer-bg, 38) !default;
@@ -72,15 +83,40 @@ a {
 }
 
 html {
-  background: $page-bg;
+ height: 100%;
+ overflow-y: scroll;
+ background: $main-bg;
 }
 body {
-  > div {
-    background: $sidebar-bg $noise-bg;
-    border-bottom: 1px solid $page-border-bottom;
-    > div {
-      background: $main-bg $noise-bg;
-      border-right: 1px solid $sidebar-border;
+  position: relative;
+  height: 100%;
+  /*Opera Fix*/
+  &:before {
+    content: "";
+    height: 100%;
+    float: left;
+    width: 0;
+    margin-top: -32767px;
+  }
+  #wrap {
+    min-height: 100%;
+    border-right: 1px solid grey;
+    border-left: 1px solid grey;
+    //background: $main-bg;
+    //max-width: 1100px;
+    //min-width: 700px;
+    margin: 0 auto;
+    #header {
+      min-width: 775px;
+    }
+    #main {
+      min-width: 775px;
+      max-width: 1100px;
+      overflow: auto;
+      padding: 0 0 80px 0;
+      #content {
+	//background: $main-bg;
+      }
     }
   }
 }
