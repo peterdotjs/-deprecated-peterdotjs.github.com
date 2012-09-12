@@ -115,15 +115,15 @@ $install-border-color: #ccc;
   text-align: center;
   #install-button {
     cursor: pointer;
-    width: 140px;
-    height: 140px;
-    border-color: white;
+    width: 128px;
+    height: 128px;
+    border: none;
     background: url('../images/icon128.png') no-repeat;
     &:hover {
-      border-color: $install-border-color;
+      @include box-shadow(0 0 10px black);
     }
     &:active {
-      border-color: $install-border-color;
+      @include box-shadow(0 0 10px black);
       @include scale(1.1);
     }    
   }
@@ -137,7 +137,7 @@ a {
   }
 }
 
-$icon-link-url:url('../images/icon_sprite.png') no-repeat;
+$icon-link-url:url('../images/icon_sprite_small.png') no-repeat;
 
 @mixin icon-url($x, $y){
   background: $icon-link-url $x $y;
@@ -211,10 +211,10 @@ header {
   .icon-link-wrapper {
     display: inline-block;
     float: right;
-    margin: 15px 45px 15px 0;
+    margin: 22px 80px 22px 0;
     .icon-link {
-      height: 48px;
-      width: 48px;
+      height: 34px;
+      width: 34px;
       display: inline-block;
       cursor: pointer;
       @include transition(box-shadow 0.3s ease-in-out);
@@ -229,31 +229,31 @@ header {
       }
 
       &.linkedin {
-	@include icon-url(-48px,0);
+	@include icon-url(-34px,0);
 	&:hover, &:focus {
-	  @include icon-url(-48px, -48px);
+	  @include icon-url(-34px, -34px);
 	}
       }
   
       &.github {
         @include icon-url(0,0);
-	@include border-radius(24px);
+	@include border-radius(17px);
 	&:hover, &:focus {
-          @include icon-url(0,-48px);
+          @include icon-url(0,-34px);
 	}
       }
 
       &.resume {
-	@include icon-url(-96px,0);
+	@include icon-url(-68px,0);
 	&:hover, &:focus {
-	  @include icon-url(-96px, -48px);
+	  @include icon-url(-68px, -34px);
 	}
       }
 
       &.contact {
-        @include icon-url(-144px,0);
+        @include icon-url(-102px,0);
 	&:hover, &:focus {
-	  @include icon-url(-144px, -48px);
+	  @include icon-url(-102px, -34px);
 	}
       }
     }
@@ -269,7 +269,7 @@ nav{
 
     .main-navigation {
       position: absolute;
-      top: -59px;
+      top: -63px;
 
       a {
 	text-shadow: none;
@@ -301,6 +301,22 @@ nav{
       }
     }
   }
+}
+
+.blog-index {
+	margin: 40px;
+	@include box-shadow(0 0 10px black);
+	width: auto !important;
+	background: white;
+	@include border-radius(10px);
+}
+
+.hentry {
+	padding-top: 36px;
+	margin: 13px 40px;
+	@include box-shadow(0 0 10px black);
+	background: white;
+	@include border-radius(10px);	
 }
 
 $blue-theme: lightblue;

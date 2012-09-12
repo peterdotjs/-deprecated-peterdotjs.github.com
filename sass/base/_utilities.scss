@@ -10,8 +10,6 @@
   @include box-shadow($shadow);
   @include box-sizing(border-box);
   border: $border;
-  border-right-color: grey;
-  border-left-color: grey;
   border-width: 6px;
 }
 
