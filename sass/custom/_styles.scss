@@ -50,7 +50,7 @@ html.loaded {
 }
 
 //$project-link-hover-color: #0181EB;
-$project-link-hover-color: darkgreen;
+$project-link-hover-color: black;
 
 //project page
 #main #content .project-wrapper {
@@ -211,7 +211,7 @@ header {
   .icon-link-wrapper {
     display: inline-block;
     float: right;
-    margin: 22px 80px 22px 0;
+    margin: 22px 120px 22px 0;
     .icon-link {
       height: 34px;
       width: 34px;
@@ -383,3 +383,6 @@ $red-theme: salmon;
     } 
 }
 
+.hidden {
+	display: none !important;
+}
