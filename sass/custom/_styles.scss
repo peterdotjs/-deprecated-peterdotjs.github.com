@@ -35,7 +35,12 @@
 		img {
 			width: 300px;
 			@include border-radius(4px);
-			border: 2px solid darkgrey;
+			@include box-shadow(0px 0px 10px black);
+			@include rotate(3deg);
+			@include transition(transform 0.5s ease-in-out);
+			&:hover {
+				@include rotate(0deg);
+			}
 		}
 	}
 }
