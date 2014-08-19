@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: projects | Peter Shin]]></title>
-  <link href="http://peterdotjs.github.com/blog/categories/projects/atom.xml" rel="self"/>
+  <title><![CDATA[Category: tab-resize | Peter Shin]]></title>
+  <link href="http://peterdotjs.github.com/blog/categories/tab-resize/atom.xml" rel="self"/>
   <link href="http://peterdotjs.github.com/"/>
   <updated>2014-08-19T09:37:36-07:00</updated>
   <id>http://peterdotjs.github.com/</id>

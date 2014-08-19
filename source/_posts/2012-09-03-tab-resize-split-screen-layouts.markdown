@@ -3,7 +3,7 @@ layout: post
 title: "Tab Resize - split screen layouts"
 date: 2012-09-03 00:35
 comments: true
-categories: projects
+categories: projects tab-resize
 ---
 Demo
 ----
@@ -11,15 +11,15 @@ Demo
 
 What
 --------
-✓A simple extension designed to provide ease in resizing your tabs. A set of default layouts are provided but you can add and remove from the list of layouts to fit your needs. 
+✓A simple extension designed to provide ease in resizing your tabs. A set of default layouts are provided but you can add and remove from the list of layouts to fit your needs.
 
 How it works
 -------------------
-✓The selected/highlighted tab along with all tabs to the right of it will be considered. Whether you have more or less tabs than are needed the extension will resize only the available tabs. 
+✓The selected/highlighted tab along with all tabs to the right of it will be considered. Whether you have more or less tabs than are needed the extension will resize only the available tabs.
 
 ✓Undo button will undo the previous layout resize. You can only perform undo once at any time.
 
-✓In 'single tab' mode, only the selected/highlighted tab will considered. Only the current window/tab will change in size, all other tabs to the right will be ignored. 
+✓In 'single tab' mode, only the selected/highlighted tab will considered. Only the current window/tab will change in size, all other tabs to the right will be ignored.
 
 ✓You can create your own custom layouts within reason and reset to default configurations if desired. Layouts are sorted most recent used on left.
 
@@ -46,11 +46,6 @@ if (chrome.app.isInstalled) {
   $('#installed-message').show();
 }
 </script>
-
-Limitations
-----------------
-Recommend using Chrome 22 or 20 for Windows users. Undo Button has issues in release 21 which were fixed in 22.
-If you have multiple monitors, the extension will only work on one of the monitors. Likely not fixable in near future.
 
 Additional Notes
 ------------------------
