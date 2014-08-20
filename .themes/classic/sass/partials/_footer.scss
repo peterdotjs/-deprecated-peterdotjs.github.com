@@ -12,6 +12,7 @@ body > footer {
   margin-bottom: 3em;
   @include border-bottom-radius(.4em);
   z-index: 1;
+  min-width: 800px;
   a {
     @include link-colors($footer-link-color, $footer-link-color-hover, $visited: $footer-link-color);
   }

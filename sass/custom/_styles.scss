@@ -59,6 +59,7 @@ $project-link-hover-color: black;
 
 //project page
 #main #content .project-wrapper {
+  display: block;
   padding: 0;
   overflow: hidden;
   background: lightgreen;
@@ -322,7 +323,7 @@ nav{
 }
 
 .blog-index {
-	margin: 40px;
+	margin: 40px 20px;
 	@include box-shadow(0 0 10px black);
 	width: auto !important;
 	background: white;
