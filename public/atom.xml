@@ -4,7 +4,7 @@
   <title><![CDATA[Peter Shin]]></title>
   <link href="http://peterdotjs.github.com/atom.xml" rel="self"/>
   <link href="http://peterdotjs.github.com/"/>
-  <updated>2014-08-23T17:35:06-07:00</updated>
+  <updated>2014-08-24T06:33:13-07:00</updated>
   <id>http://peterdotjs.github.com/</id>
   <author>
     <name><![CDATA[Peter J. Shin]]></name>
@@ -78,7 +78,24 @@
 <br>
 
 
-<h3>Download:</h3>
+<h3>Installation <small> - click icon to install</small> :</h3>
+
+<div class="install-wrapper">
+    <img src="../images/quickFind/icon128.png" onclick="chrome.webstore.install('https://chrome.google.com/webstore/detail/dejblhmebonldngnmeidliaifgiagcjj')" id="install-button-quick-find" class="install-button"></img>
+    <h4 id="installed-message-quick-find" class="installed-message" style="display: none;">Already Installed. =)</h4>
+</div>
+
+
+<script>
+$('head').append('<link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/dejblhmebonldngnmeidliaifgiagcjj">');
+if (chrome.app.isInstalled) {
+  $('#install-button-quick-find').hide();
+  $('#installed-message-quick-find').show();
+}
+</script>
+
+
+
 
 <br>
 
@@ -142,16 +159,16 @@ Added support for multiple monitors, left and right alignment, and empty tab mod
 <h2>Installation <small> - click icon to install</small></h2>
 
 <div class="install-wrapper">
-    <img onclick="chrome.webstore.install()" id="install-button"></img>
-    <h4 id="installed-message" style="display: none;">Already Installed. =)</h4>
+    <img src="../images/icon128.png" onclick="chrome.webstore.install('https://chrome.google.com/webstore/detail/bkpenclhmiealbebdopglffmfdiilejc')" id="install-button-tab-resize-2" class="install-button"></img>
+    <h4 id="install-message-tab-resize-2" class="installed-message" style="display: none;">Already Installed. =)</h4>
 </div>
 
 
 <script>
 $('head').append('<link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/bkpenclhmiealbebdopglffmfdiilejc">');
 if (chrome.app.isInstalled) {
-  $('#install-button').hide();
-  $('#installed-message').show();
+  $('#install-button-tab-resize-2').hide();
+  $('#install-message-tab-resize-2').show();
 }
 </script>
 
@@ -200,19 +217,19 @@ if (chrome.app.isInstalled) {
 
 <p>✓Quickly resize single windows to desired size with a single click.</p>
 
-<h2>Installation - click icon to install</h2>
+<h2>Installation <small> - click icon to install</small></h2>
 
 <div class="install-wrapper">
-    <img onclick="chrome.webstore.install()" id="install-button"></img>
-    <h4 id="installed-message" style="display: none;">Already Installed. =)</h4>
+    <img src="../images/icon128.png" onclick="chrome.webstore.install('https://chrome.google.com/webstore/detail/bkpenclhmiealbebdopglffmfdiilejc')" id="install-button-tab-resize" class="install-button"></img>
+    <h4 id="installed-message-tab-resize" class="installed-message" style="display: none;">Already Installed. =)</h4>
 </div>
 
 
 <script>
 $('head').append('<link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/bkpenclhmiealbebdopglffmfdiilejc">');
 if (chrome.app.isInstalled) {
-  $('#install-button').hide();
-  $('#installed-message').show();
+  $('#install-button-tab-resize').hide();
+  $('installed-message-tab-resize').show();
 }
 </script>
 

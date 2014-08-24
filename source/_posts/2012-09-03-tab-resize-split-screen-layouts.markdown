@@ -33,17 +33,17 @@ Why
 
 ✓Quickly resize single windows to desired size with a single click.
 
-Installation - click icon to install
+Installation <small> - click icon to install</small>
 ------------
 <div class="install-wrapper">
-    <img onclick="chrome.webstore.install()" id="install-button"></img>
-    <h4 id="installed-message" style="display: none;">Already Installed. =)</h4>
+    <img src="../images/icon128.png" onclick="chrome.webstore.install('https://chrome.google.com/webstore/detail/bkpenclhmiealbebdopglffmfdiilejc')" id="install-button-tab-resize" class="install-button"></img>
+    <h4 id="installed-message-tab-resize" class="installed-message" style="display: none;">Already Installed. =)</h4>
 </div>
 <script>
 $('head').append('<link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/bkpenclhmiealbebdopglffmfdiilejc">');
 if (chrome.app.isInstalled) {
-  $('#install-button').hide();
-  $('#installed-message').show();
+  $('#install-button-tab-resize').hide();
+  $('installed-message-tab-resize').show();
 }
 </script>
 

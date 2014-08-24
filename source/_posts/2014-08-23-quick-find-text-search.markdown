@@ -49,7 +49,19 @@ Quick Find search box is prepopulated with any selected/highlighted text prior t
 Toggle occurs only when cursor focus is on the Quick Find menu.
 
 <br>
-###Download:
+###Installation <small> - click icon to install</small> :
+
+<div class="install-wrapper">
+    <img src="../images/quickFind/icon128.png" onclick="chrome.webstore.install('https://chrome.google.com/webstore/detail/dejblhmebonldngnmeidliaifgiagcjj')" id="install-button-quick-find" class="install-button"></img>
+    <h4 id="installed-message-quick-find" class="installed-message" style="display: none;">Already Installed. =)</h4>
+</div>
+<script>
+$('head').append('<link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/dejblhmebonldngnmeidliaifgiagcjj">');
+if (chrome.app.isInstalled) {
+  $('#install-button-quick-find').hide();
+  $('#installed-message-quick-find').show();
+}
+</script>
 
 
 <br>

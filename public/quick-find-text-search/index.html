@@ -167,7 +167,24 @@
 <br>
 
 
-<h3>Download:</h3>
+<h3>Installation <small> - click icon to install</small> :</h3>
+
+<div class="install-wrapper">
+    <img src="../images/quickFind/icon128.png" onclick="chrome.webstore.install('https://chrome.google.com/webstore/detail/dejblhmebonldngnmeidliaifgiagcjj')" id="install-button-quick-find" class="install-button"></img>
+    <h4 id="installed-message-quick-find" class="installed-message" style="display: none;">Already Installed. =)</h4>
+</div>
+
+
+<script>
+$('head').append('<link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/dejblhmebonldngnmeidliaifgiagcjj">');
+if (chrome.app.isInstalled) {
+  $('#install-button-quick-find').hide();
+  $('#installed-message-quick-find').show();
+}
+</script>
+
+
+
 
 <br>
 

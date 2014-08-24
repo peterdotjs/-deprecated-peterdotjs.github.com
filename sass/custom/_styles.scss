@@ -66,7 +66,7 @@ $project-link-hover-color: black;
   width: auto;
   float: none;
   margin: 0 auto;
-  margin-top: 37px;
+  margin-top: 20px;
   max-width: 840px;
   @include box-shadow(0px 0px 10px black);
   @include border-radius(10px);
@@ -132,12 +132,12 @@ $install-border-color: #ccc;
 .install-wrapper {
   margin: 25px;
   text-align: center;
-  #install-button {
+  .install-button {
     cursor: pointer;
     width: 128px;
     height: 128px;
     border: none;
-    background: url('../images/icon128.png') no-repeat;
+    //background: url('../images/icon128.png') no-repeat;
     &:hover {
       @include box-shadow(0 0 10px black);
     }
@@ -332,7 +332,7 @@ nav{
 
 .hentry {
 	padding-top: 36px;
-	margin: 13px 40px;
+	margin: 13px 20px;
 	@include box-shadow(0 0 10px black);
 	background: white;
 	@include border-radius(10px);
