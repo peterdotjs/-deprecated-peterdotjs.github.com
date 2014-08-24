@@ -4,7 +4,7 @@
   <title><![CDATA[Peter Shin]]></title>
   <link href="http://peterdotjs.github.com/atom.xml" rel="self"/>
   <link href="http://peterdotjs.github.com/"/>
-  <updated>2014-08-19T23:30:35-07:00</updated>
+  <updated>2014-08-23T17:35:06-07:00</updated>
   <id>http://peterdotjs.github.com/</id>
   <author>
     <name><![CDATA[Peter J. Shin]]></name>
@@ -12,6 +12,88 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Quick Find - Text Search]]></title>
+    <link href="http://peterdotjs.github.com/quick-find-text-search/"/>
+    <updated>2014-08-23T15:06:00-07:00</updated>
+    <id>http://peterdotjs.github.com/quick-find-text-search</id>
+    <content type="html"><![CDATA[<br>
+
+
+<h3>Motivation:</h3>
+
+<p>I&#8217;ve always wanted the ability to see all the search results in a text search rather than just seeing them highlighted and scattered accross the page and out of view. This was the start of the idea and it soon became mashed up with all the great Firefox quick find features that Chrome is missing.</p>
+
+<br>
+
+
+<h3>Description:</h3>
+
+<p>A new text search tool for your Chrome web page. Start a search and simply press enter/return on a highlighted link and you&#8217;ll instantly navigate to that page. A mashup of Firefox quick find features (case match, links only search, highlight all, search selected text) as well as awesome new ones (scroll/navigate through all search results with context) - brought to Chrome.</p>
+
+<br>
+
+
+<h3>Shortcut keys:</h3>
+
+<h4>Getting started:</h4>
+
+<p><kbd class="light">/</kbd>&nbsp; or  &nbsp;<kbd class="light">ctrl</kbd> + <kbd class="light">shift</kbd> + <kbd class="light">f</kbd>&nbsp;&nbsp;: forward slash or ctrl+shift+f will open Quick Find menu</p>
+
+<p><kbd class="light">'</kbd>&nbsp;&nbsp;: single quote key will open Quick Find menu in links mode (only links are searched)</p>
+
+<p><kbd class="light">esc</kbd>&nbsp;&nbsp;: escape key will close Quick Find menu</p>
+
+<br>
+
+
+<h4>Menu navigation:</h4>
+
+<p><kbd class="light">&#8593;</kbd>&nbsp; or &nbsp;<kbd class="light">&#8595;</kbd>
+&nbsp;&nbsp;: navigate results by using up or down arrow keys</p>
+
+<p><kbd class="light">enter</kbd>&nbsp; or &nbsp;<kbd class="light">return</kbd> : pressing enter on highlighted menu with link will navigate to the link</p>
+
+<br>
+
+
+<h4>Search Options:</h4>
+
+<p><kbd class="light">alt</kbd> + <kbd class="light">a</kbd>&nbsp;&nbsp;: toggle highlight all results mode</p>
+
+<p><kbd class="light">alt</kbd> + <kbd class="light">c</kbd>&nbsp;&nbsp;: toggle match case mode</p>
+
+<p><kbd class="light">alt</kbd> + <kbd class="light">l</kbd>&nbsp;&nbsp;: toggle links mode</p>
+
+<br>
+
+
+<h4>Tips:</h4>
+
+<p>Quick Find search box is prepopulated with any selected/highlighted text prior to opening the search menu.</p>
+
+<p>Toggle occurs only when cursor focus is on the Quick Find menu.</p>
+
+<br>
+
+
+<h3>Download:</h3>
+
+<br>
+
+
+<h3>Limitations:</h3>
+
+<p>Extension only works on sites that allow context scripts. The chrome webstore page itself for example doesn&#8217;t even allow context scripts to be run.</p>
+
+<p>Quick find does not search through iframes, script, or code html elements.</p>
+
+<p>When results show up in same html element, will be shown only as one result.</p>
+
+<p>Other website shortcuts or extensions may conflict with these shortcuts. A future enhancement can be to select your own shortcuts to open the menu.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Tab Resize 2.0 - split screen layouts]]></title>

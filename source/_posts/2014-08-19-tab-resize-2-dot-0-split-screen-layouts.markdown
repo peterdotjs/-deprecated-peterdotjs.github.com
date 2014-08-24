@@ -6,7 +6,7 @@ comments: true
 categories: projects tab-resize
 ---
 <br>
-<strong>Split Screen made easy. Resize the CURRENT tab and tabs to the RIGHT into layouts on separate Windows. w/ Multi Monitor Support.</strong>
+**Split Screen made easy. Resize the CURRENT tab and tabs to the RIGHT into layouts on separate Windows. w/ Multi Monitor Support.**
 
 *** Version 2.0 ***
 Added support for multiple monitors, left and right alignment, and empty tab mode
@@ -56,7 +56,7 @@ if (chrome.app.isInstalled) {
 }
 </script>
 
-<strong>Chrome Web Store:</strong> <a href="https://chrome.google.com/webstore/detail/tab-resize-split-screen-l/bkpenclhmiealbebdopglffmfdiilejc" target="_blank">Tab Resize - split screen layouts</a>
+**Chrome Web Store:** <a href="https://chrome.google.com/webstore/detail/tab-resize-split-screen-l/bkpenclhmiealbebdopglffmfdiilejc" target="_blank">Tab Resize - split screen layouts</a>
 
 Additional Notes
 ------------------------
