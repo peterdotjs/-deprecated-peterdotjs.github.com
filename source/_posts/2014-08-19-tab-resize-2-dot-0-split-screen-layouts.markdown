@@ -11,24 +11,20 @@ categories: projects tab-resize
 *** Version 2.0 ***
 Added support for multiple monitors, left and right alignment, and empty tab mode
 
-Demo
-----
+###Demo
 <iframe width="853" height="480" src="http://www.youtube.com/embed/GFHl98nAV04?" frameborder="0" allowfullscreen></iframe>
 
-What
---------
+###What
 ✓A simple chrome extension designed to provide ease in resizing your tabs. A set of default layouts are provided but you can add and remove from the list of layouts to fit your needs. With multiple monitor support you can move windows from one screen to the next with ease.
 
-Why
--------
+###Why
 ✓Manually resizing windows is no fun.
 
 ✓You have a very large monitors and have more pixels than you know what do with.
 
 ✓Quick side by side comparisons.
 
-How it works
--------------------
+###How it works
 ✓The selected/highlighted tab along with all tabs to the right of it will be considered. Whether you have more or less tabs than are needed the extension will resize only the available tabs.
 
 ✓Undo button will undo the previous layout resize. You can only perform undo once at any time.
@@ -41,8 +37,7 @@ How it works
 
 ✓You can create your own custom layouts within reason and reset to default configurations if desired. Layouts are sorted most recent used on right.
 
-Installation <small> - click icon to install</small>
-------------
+###Installation <small> - click icon to install</small>
 
 <div class="install-wrapper">
     <img src="../images/icon128.png" onclick="chrome.webstore.install('https://chrome.google.com/webstore/detail/bkpenclhmiealbebdopglffmfdiilejc')" id="install-button-tab-resize-2" class="install-button"></img>
@@ -58,8 +53,7 @@ if (chrome.app.isInstalled) {
 
 **Chrome Web Store:** <a href="https://chrome.google.com/webstore/detail/tab-resize-split-screen-l/bkpenclhmiealbebdopglffmfdiilejc" target="_blank">Tab Resize - split screen layouts</a>
 
-Additional Notes
-------------------------
+###Additional Notes
 Only tab/window id info is being used; browsing activity is not. Tabs and browsing activity access are bundled together.
 
 Anonymous usage tracking is used to improve the extension and user experience. You can opt out in the options menu.

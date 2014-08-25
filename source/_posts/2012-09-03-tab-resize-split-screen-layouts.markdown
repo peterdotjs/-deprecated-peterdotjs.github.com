@@ -5,16 +5,14 @@ date: 2012-09-03 00:35
 comments: true
 categories: projects tab-resize
 ---
-Demo
-----
+<br>
+###Demo
 <iframe width="853" height="480" src="http://www.youtube.com/embed/SD3hrdxn3QU" frameborder="0" allowfullscreen></iframe>
 
-What
---------
+###What
 ✓A simple extension designed to provide ease in resizing your tabs. A set of default layouts are provided but you can add and remove from the list of layouts to fit your needs.
 
-How it works
--------------------
+###How it works
 ✓The selected/highlighted tab along with all tabs to the right of it will be considered. Whether you have more or less tabs than are needed the extension will resize only the available tabs.
 
 ✓Undo button will undo the previous layout resize. You can only perform undo once at any time.
@@ -23,8 +21,7 @@ How it works
 
 ✓You can create your own custom layouts within reason and reset to default configurations if desired. Layouts are sorted most recent used on left.
 
-Why
--------
+###Why
 ✓Manually resizing windows is no fun.
 
 ✓You have a very large monitor and have more pixels than you know what do with.
@@ -33,8 +30,7 @@ Why
 
 ✓Quickly resize single windows to desired size with a single click.
 
-Installation <small> - click icon to install</small>
-------------
+###Installation <small> - click icon to install</small>
 <div class="install-wrapper">
     <img src="../images/icon128.png" onclick="chrome.webstore.install('https://chrome.google.com/webstore/detail/bkpenclhmiealbebdopglffmfdiilejc')" id="install-button-tab-resize" class="install-button"></img>
     <h4 id="installed-message-tab-resize" class="installed-message" style="display: none;">Already Installed. =)</h4>
@@ -47,6 +43,5 @@ if (chrome.app.isInstalled) {
 }
 </script>
 
-Additional Notes
-------------------------
+###Additional Notes
 Only tab/window id info is being used; browsing history is not. Tabs and browsing history access as bundled together.

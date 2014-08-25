@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Quick Find - Text Search"
+title: "Quick Find - next gen text search"
 date: 2014-08-23 15:06
 comments: true
 categories: projects
@@ -11,7 +11,11 @@ I've always wanted the ability to see all the search results in a text search ra
 
 <br>
 ###Description:
-A new text search tool for your Chrome web page. Start a search and simply press enter/return on a highlighted link and you'll instantly navigate to that page. A mashup of Firefox quick find features (case match, links only search, highlight all, search selected text) as well as awesome new ones (scroll/navigate through all search results with context) - brought to Chrome.
+A next gen text search tool for your Chrome web page. Start a search and simply press enter/return on a highlighted link and you'll instantly navigate to that page. A mashup of Firefox quick find features (case match, links only search, highlight all, search selected text) as well as awesome new ones (scroll/navigate through all search results with context) - brought to Chrome.
+
+<br>
+###Demo:
+<iframe width="853" height="480" src="http://www.youtube.com/embed/x2PEyTyJ6iM?" frameborder="0" allowfullscreen></iframe>
 
 <br>
 ###Shortcut keys:
@@ -63,13 +67,17 @@ if (chrome.app.isInstalled) {
 }
 </script>
 
+**Chrome Web Store:** <a href="https://chrome.google.com/webstore/detail/quick-find-next-gen-text/dejblhmebonldngnmeidliaifgiagcjj" target="_blank">Tab Resize - split screen layouts</a>
 
 <br>
 ###Limitations:
-Extension only works on sites that allow context scripts. The chrome webstore page itself for example doesn't even allow context scripts to be run.
+Extension only works on sites that allow content scripts. The chrome webstore page itself for example doesn't even allow content scripts to be run.
 
 Quick find does not search through iframes, script, or code html elements.
 
 When results show up in same html element, will be shown only as one result.
 
 Other website shortcuts or extensions may conflict with these shortcuts. A future enhancement can be to select your own shortcuts to open the menu.
+
+###Additional Notes
+Anonymous page view tracking is used to improve the extension and user experience. You can opt out in the options menu.
