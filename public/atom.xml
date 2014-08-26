@@ -4,7 +4,7 @@
   <title><![CDATA[Peter Shin]]></title>
   <link href="http://peterdotjs.github.com/atom.xml" rel="self"/>
   <link href="http://peterdotjs.github.com/"/>
-  <updated>2014-08-24T22:34:26-07:00</updated>
+  <updated>2014-08-24T23:25:22-07:00</updated>
   <id>http://peterdotjs.github.com/</id>
   <author>
     <name><![CDATA[Peter J. Shin]]></name>
@@ -105,7 +105,7 @@ if (chrome.app.isInstalled) {
 </script>
 
 
-<p><strong>Chrome Web Store:</strong> <a href="https://chrome.google.com/webstore/detail/quick-find-next-gen-text/dejblhmebonldngnmeidliaifgiagcjj" target="_blank">Tab Resize - split screen layouts</a></p>
+<p><strong>Chrome Web Store:</strong> <a href="https://chrome.google.com/webstore/detail/quick-find-next-gen-text/dejblhmebonldngnmeidliaifgiagcjj" target="_blank">Quick Find - next gen text search</a></p>
 
 <br>
 

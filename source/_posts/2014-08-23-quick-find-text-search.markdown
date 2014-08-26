@@ -67,7 +67,7 @@ if (chrome.app.isInstalled) {
 }
 </script>
 
-**Chrome Web Store:** <a href="https://chrome.google.com/webstore/detail/quick-find-next-gen-text/dejblhmebonldngnmeidliaifgiagcjj" target="_blank">Tab Resize - split screen layouts</a>
+**Chrome Web Store:** <a href="https://chrome.google.com/webstore/detail/quick-find-next-gen-text/dejblhmebonldngnmeidliaifgiagcjj" target="_blank">Quick Find - next gen text search</a>
 
 <br>
 ###Limitations:
