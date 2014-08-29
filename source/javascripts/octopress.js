@@ -119,17 +119,37 @@ function renderDeliciousLinks(items) {
 function domLoaded() {
   $('html').addClass('loaded');
 
-  $('body').on('click', '.project', function(evt){
-    var link = $(this).find('.project-title a');
-
-    if(link.length > 0){
-      link.trigger('click');
-      return false;
-    }
-
+  $('#mobile-menu').on('click', function(evt){
+    evt.stopPropagation();
+    $('#mobile-menu-list').toggleClass('open');
   });
+
+  $('body').on('click', function(evt){
+    $('#mobile-menu-list').removeClass('open');
+  });
+
+  handleViewport();
+
+  var resizeHandle = null;
+
+  window.onresize = function(){
+    if(resizeHandle){
+      clearTimeout(resizeHandle);
+    }
+    resizeHandle = setTimeout(handleViewport,100);
+  };
+
 }
 
+function handleViewport(){
+  debugger;
+  var mvp = document.getElementById('viewportMeta');
+  if (screen.width < 500) {
+    mvp.setAttribute('content','width=500');
+  } else {
+     mvp.setAttribute('content','width=device-width');
+  }
+}
 
 $.domReady(function() {
   testFeatures();

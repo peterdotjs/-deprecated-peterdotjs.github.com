@@ -10,7 +10,7 @@
         background: lightblue;
         max-width: 840px;
         margin: 0 auto;
-        margin-top: 37px;
+        margin-top: 20px;
         float: none !important;
 	opacity: 0;
 	@include transition(opacity 2s ease-in-out);
@@ -66,7 +66,7 @@ $project-link-hover-color: black;
   width: auto;
   float: none;
   margin: 0 auto;
-  margin-top: 20px;
+  margin-top: 40px;
   max-width: 840px;
   @include box-shadow(0px 0px 10px black);
   @include border-radius(10px);
@@ -78,6 +78,7 @@ $project-link-hover-color: black;
     margin: 20px;
     background: white;
     overflow: hidden;
+    position: relative;
     @include border-radius(4px);
     a:hover, a:focus {
 	color: $project-link-hover-color;
@@ -99,16 +100,14 @@ $project-link-hover-color: black;
       }
     }
     img.project-icon {
-      display: inline-block;
-      float: left;
-      margin-left: 10px;
+      position: absolute;
+      left: 25px;
+      top: 15px;
     }
     .project-info {
-      display: inline-block;
-      float: left;
-      max-width: 540px;
-      margin-left: 30px;
+      margin-left: 160px;
       margin-top: 10px;
+      margin-bottom: 20px;
       .project-title {
         margin-bottom: 7px;
         a {
@@ -117,7 +116,7 @@ $project-link-hover-color: black;
         }
       }
       .project-description {
-        padding: 5px;
+        padding: 5px 5px 5px 0px;
         position:relative;
         top: 10px;
       }
@@ -405,3 +404,90 @@ $red-theme: salmon;
 .hidden {
 	display: none !important;
 }
+
+ul {
+  list-style-type: none;
+}
+
+#mobile-menu {
+  position: absolute;
+  top: 27px;
+  right: 50px;
+  z-index: 10;
+  font-size: 75px;
+  cursor: pointer;
+  color: white;
+  visibility: hidden;
+}
+
+#mobile-menu-list {
+  display: none;
+  background: none repeat scroll 0 0 black;
+  border-top: 1px solid grey;
+  margin: 0;
+  position: absolute;
+  top: 83px;
+  right: 0px;
+  width: 80%;
+  z-index: 100;
+  border-left: 1px solid grey;
+
+  li {
+    a {
+      border-bottom: 1px solid grey;
+      padding: 40px 70px;
+      color: darkgrey;
+      font-size: 35px;
+      display: block;
+      &:visited {
+        color: darkgrey;
+      }
+      &.selected, &:hover, &:focus {
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .entry-title {
+    line-height: 40px;
+  }
+
+  #header {
+    position: relative;
+  }
+
+  .icon-link-wrapper, nav {
+    visibility: hidden;
+  }
+
+  #mobile-menu {
+    visibility: visible;
+  }
+
+  #mobile-menu-list {
+    display: block;
+    visibility: hidden;
+
+    &.open {
+       visibility: visible;
+    }
+  }
+
+  #main #content ul  {
+    margin-left: 0px;
+  }
+
+  header hgroup {
+    width: 222px;
+    padding: 15px;
+    left: 28px;
+
+    h1 a {
+      font-size: 48px;
+    }
+  }
+}
+
