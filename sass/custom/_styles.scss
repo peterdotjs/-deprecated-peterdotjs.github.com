@@ -367,8 +367,8 @@ ul {
 #mobile-menu-list {
   display: none;
   background: none repeat scroll 0 0 black;
-  border-top: 1px solid grey;
-  border-bottom: 1px solid grey;
+  border: 2px solid grey;
+  border-right: 0px;
   margin: 0;
   position: absolute;
   top: 79px;
@@ -376,13 +376,12 @@ ul {
   width: 0px;
   opacity: 0;
   z-index: 100;
-  border-left: 1px solid grey;
   @include transition(all 0.5s ease-in-out);
   @include border-radius(5px 0 0 5px);
 
   li {
     a {
-      border-bottom: 1px solid grey;
+      border-bottom: 2px solid grey;
       padding: 40px 70px;
       color: darkgrey;
       font-size: 35px;
