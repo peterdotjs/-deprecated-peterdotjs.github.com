@@ -160,9 +160,10 @@ function domLoaded() {
 function resizeCb(){
   handleViewport();
 
-  var amMarginTop = ($(window).height() + $(window).scrollTop() - $('#header').height() - $('footer').height() - $('.about-me-container').height())/3;
-
-  $('.about-me-container').css('margin-top', amMarginTop < 0 ? '0px' : amMarginTop + 'px');
+  if($('.about-me-container').length > 0){
+    var amMarginTop = ($(window).height() + $(window).scrollTop() - $('#header').height() - $('footer').height() - $('.about-me-container').height())/3;
+    $('.about-me-container').css('margin-top', amMarginTop < 0 ? '0px' : amMarginTop + 'px');
+  }
 }
 
 $.domReady(function() {
