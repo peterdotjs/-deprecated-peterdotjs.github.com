@@ -5,25 +5,21 @@
 .about-me-container {
 	text-align: center;
 	padding-top: 0 !important;
-	@include box-shadow(0px 0px 10px black);
-	@include border-radius(10px);
-        background: lightblue;
-        max-width: 840px;
-        margin: 0 auto;
-        margin-top: 20px;
-        float: none !important;
+  max-width: 840px;
+  margin: 0 auto;
+  margin-top: 20px;
+  float: none !important;
 	opacity: 0;
 	@include transition(opacity 2s ease-in-out);
 	.about-me {
 		display: inline-block;
-		color: white;
-		background: black;
-		border: 2px solid darkgray;
-		@include border-radius(4px);
+		color: black;
 		padding: 18px;
-		margin-top: 30px;
 		font-size: 20px;
-		line-height: 33px;
+		line-height: 40px;
+    vertical-align: top;
+    margin-left: 12px;
+    margin-top: 90px;
 
 		.description {
 			margin: 0px;
@@ -31,6 +27,7 @@
 	}
 
 	.profile-photo {
+    display: inline-block;
 		margin-top: 40px;
 		img {
 			width: 300px;
@@ -54,6 +51,13 @@ html.loaded {
 
 }
 
+html, body {
+  min-width: 500px;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  overflow-scrolling: touch;
+}
+
 //$project-link-hover-color: #0181EB;
 $project-link-hover-color: black;
 
@@ -62,51 +66,42 @@ $project-link-hover-color: black;
   display: block;
   padding: 0;
   overflow: hidden;
-  background: lightgreen;
   width: auto;
   float: none;
   margin: 0 auto;
   margin-top: 40px;
   max-width: 840px;
-  @include box-shadow(0px 0px 10px black);
-  @include border-radius(10px);
+  //@include border-radius(10px);
+
+  &:hover {
+    border-color: grey;
+    @include box-shadow(0 0 10px grey);
+    color: rgb(1, 129, 235);
+    text-decoration: none;
+  }
+  &:active {
+    @include box-shadow(inset 0 0 15px grey);
+    color: rgb(1, 129, 235);
+    text-decoration: none;
+  }
+
   .project {
     cursor: pointer;
     padding: 20px;
     padding-right: 0px;
-    border: 2px solid darkgrey;
-    margin: 20px;
-    background: white;
+    margin: 5px 5px 15px 5px;
     overflow: hidden;
     position: relative;
     @include border-radius(4px);
-    a:hover, a:focus {
-	color: $project-link-hover-color;
-    }
-
-    &:hover {
-      border-color: grey;
-      @include box-shadow(0 0 10px grey);
-      a {
-        color: $project-link-hover-color;
-        text-decoration: none;
-      }
-    }
-    &:active {
-      @include box-shadow(inset 0 0 15px grey);
-      a {
-        color: $project-link-hover-color;
-        text-decoration: none;
-      }
-    }
     img.project-icon {
+      @include border-radius(10px);
       position: absolute;
       left: 25px;
       top: 15px;
     }
     .project-info {
       margin-left: 160px;
-      margin-top: 10px;
+      margin-top: 0px;
       margin-bottom: 20px;
       .project-title {
         margin-bottom: 7px;
@@ -322,19 +317,13 @@ nav{
 }
 
 .blog-index {
-	margin: 40px 20px;
-	@include box-shadow(0 0 10px black);
+	margin: 0px;
 	width: auto !important;
-	background: white;
-	@include border-radius(10px);
 }
 
 .hentry {
-	padding-top: 36px;
-	margin: 13px 20px;
-	@include box-shadow(0 0 10px black);
-	background: white;
-	@include border-radius(10px);
+  padding-top: 0px;
+	margin: 0px;
 }
 
 $blue-theme: lightblue;
@@ -342,31 +331,24 @@ $green-theme: lightgreen;
 $red-theme: salmon;
 
 #wrap.blue {
-
-   nav ul.main-navigation {
-	a.about {
-
-	}
-   }
-
+  #main {
+    margin-bottom: 0px;
+  }
 }
 
 #wrap.green {
 
-   nav ul.main-navigation {
-        a.projects {
+  #main {
+    margin-bottom: 0px;
+  }
 
-        }
-   }
+  hgroup {
 
-
-    hgroup {
-
-      &:after {
-        background: $green-theme;
-        border: 6px solid $green-theme;
-      }
+    &:after {
+      background: $green-theme;
+      border: 6px solid $green-theme;
     }
+  }
 }
 
 #wrap.red {
@@ -411,26 +393,45 @@ ul {
 
 #mobile-menu {
   position: absolute;
-  top: 27px;
+  top: 12px;
   right: 50px;
   z-index: 10;
-  font-size: 75px;
   cursor: pointer;
   color: white;
   visibility: hidden;
+  @include border-radius(3px);
+  border: 2px solid transparent;
+
+  div {
+    height: 10px;
+    width: 60px;
+    margin: 5px;
+    border-top: 30px double white;
+    border-bottom: 10px solid white;
+    font-size: 0;
+  }
+
+  &:hover {
+     border-color: grey;
+  }
+
 }
 
 #mobile-menu-list {
   display: none;
   background: none repeat scroll 0 0 black;
   border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
   margin: 0;
   position: absolute;
-  top: 83px;
+  top: 79px;
   right: 0px;
-  width: 80%;
+  width: 0px;
+  opacity: 0;
   z-index: 100;
   border-left: 1px solid grey;
+  @include transition(all 0.5s ease-in-out);
+  @include border-radius(5px 0 0 5px);
 
   li {
     a {
@@ -439,6 +440,9 @@ ul {
       color: darkgrey;
       font-size: 35px;
       display: block;
+      &.contact {
+        border-bottom: 0px;
+      }
       &:visited {
         color: darkgrey;
       }
@@ -446,17 +450,55 @@ ul {
         color: white;
         text-decoration: none;
       }
+      &:hover, &:focus {
+        @include box-shadow(inset 0px 0px 3px 3px white);
+      }
     }
   }
 }
 
 @media only screen and (max-width: 800px) {
+
+  body.iOS {
+    #header {
+      #mobile-menu-list {
+        display: none;
+      }
+      &.open-mobile-menu {
+        #mobile-menu-list {
+          display: block;
+        }
+      }
+    }
+  }
+
   .entry-title {
     line-height: 40px;
   }
 
+  .about-me-container {
+    margin-top: 0px !important;
+    max-width: 780px;
+    .about-me {
+      margin-top: 0px;
+      padding: 18px 15px;
+      margin-left: 0px;
+    }
+  }
+
   #header {
     position: relative;
+    &.open-mobile-menu {
+      #mobile-menu-list {
+        right: 0px;
+        opacity: 1;
+        width: 400px;
+        visibility: visible;
+      }
+      #mobile-menu {
+        border-color: silver;
+      }
+    }
   }
 
   .icon-link-wrapper, nav {
@@ -470,10 +512,6 @@ ul {
   #mobile-menu-list {
     display: block;
     visibility: hidden;
-
-    &.open {
-       visibility: visible;
-    }
   }
 
   #main #content ul  {

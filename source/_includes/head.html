@@ -32,4 +32,16 @@
   <script src="{{ root_url }}/javascripts/ender.js"></script>
   {% include custom/head.html %}
   {% include google_analytics.html %}
+    <script>
+    function handleViewport(){
+      var mvp = document.getElementById('viewportMeta');
+      if (screen.width < 500) {
+        mvp.setAttribute('content','width=500');
+      } else {
+         mvp.setAttribute('content','width=device-width');
+      }
+    }
+    handleViewport();
+
+  </script>
 </head>

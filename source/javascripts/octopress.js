@@ -121,14 +121,20 @@ function domLoaded() {
 
   $('#mobile-menu').on('click', function(evt){
     evt.stopPropagation();
-    $('#mobile-menu-list').toggleClass('open');
+
+    if($('#header').hasClass('open-mobile-menu')){
+      $('#mobile-menu-list').attr('aria-expanded',false);
+    } else {
+      $('#mobile-menu-list').attr('aria-expanded',true);
+    }
+
+    $('#header').toggleClass('open-mobile-menu');
   });
 
   $('body').on('click', function(evt){
-    $('#mobile-menu-list').removeClass('open');
+    $('#header').removeClass('open-mobile-menu');
+    $('#mobile-menu-list').attr('aria-expanded',false);
   });
-
-  handleViewport();
 
   var resizeHandle = null;
 
@@ -136,19 +142,27 @@ function domLoaded() {
     if(resizeHandle){
       clearTimeout(resizeHandle);
     }
-    resizeHandle = setTimeout(handleViewport,100);
+    resizeHandle = setTimeout(resizeCb,100);
   };
 
+  var iOS = false,
+      p = navigator.platform;
+
+  if( p === 'iPad' || p === 'iPhone' || p === 'iPod' ){
+      iOS = true;
+  }
+
+  if(iOS){
+    $('body').addClass('iOS');
+  }
 }
 
-function handleViewport(){
-  debugger;
-  var mvp = document.getElementById('viewportMeta');
-  if (screen.width < 500) {
-    mvp.setAttribute('content','width=500');
-  } else {
-     mvp.setAttribute('content','width=device-width');
-  }
+function resizeCb(){
+  handleViewport();
+
+  var amMarginTop = ($(window).height() + $(window).scrollTop() - $('#header').height() - $('footer').height() - $('.about-me-container').height())/3;
+
+  $('.about-me-container').css('margin-top', amMarginTop < 0 ? '0px' : amMarginTop + 'px');
 }
 
 $.domReady(function() {
@@ -160,6 +174,7 @@ $.domReady(function() {
   addSidebarToggler();
   domLoaded();
 });
+
 
 // iOS scaling bug fix
 // Rewritten version

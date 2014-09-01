@@ -46,6 +46,18 @@ Aug 19 2014 posted in &hellip;">
 
   </script>
 
+    <script>
+    function handleViewport(){
+      var mvp = document.getElementById('viewportMeta');
+      if (screen.width < 500) {
+        mvp.setAttribute('content','width=500');
+      } else {
+         mvp.setAttribute('content','width=device-width');
+      }
+    }
+    handleViewport();
+
+  </script>
 </head>
 
 <body   class="no-sidebar"   class="collapse-sidebar sidebar-footer" >
@@ -78,14 +90,16 @@ Aug 19 2014 posted in &hellip;">
 </div>
 
 </nav>
-      <div id="mobile-menu">&#9776;</div>
-<ul id="mobile-menu-list">
-	<li><a  class=""  href="/">About</a></li>
-	<li><a  class=""  href="/projects">Projects</a></li>
-	<li><a  class=""  href="/blog">Blog</a></li>
-	<li><a href="https://github.com/peterdotjs">Github</a></li>
-	<li><a href="http://www.linkedin.com/in/peterjshin">Linkedin</a></li>
-	<li><a href="mailto:peter.j.shin@gmail.com">Contact</a></li>
+      <a role="button" aria-controls="mobile-menu-list" href="javascript:;" title="navigation-menu" id="mobile-menu">
+	<div></div>
+</a>
+<ul id="mobile-menu-list" role="menu" aria-expanded="false">
+	<li role="menuitem"><a  class=""  href="/">About</a></li>
+	<li role="menuitem"><a  class=""  href="/projects">Projects</a></li>
+	<li role="menuitem"><a  class=""  href="/blog">Blog</a></li>
+	<li role="menuitem"><a href="https://github.com/peterdotjs">Github</a></li>
+	<li role="menuitem"><a href="http://www.linkedin.com/in/peterjshin">Linkedin</a></li>
+	<li role="menuitem"><a class="contact" href="mailto:peter.j.shin@gmail.com">Contact</a></li>
 </ul>
 
     </div>
