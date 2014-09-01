@@ -34,9 +34,10 @@
 			@include border-radius(4px);
 			@include box-shadow(0px 0px 10px black);
 			@include rotate(3deg);
-			@include transition(transform 0.5s ease-in-out);
+			@include transition(all 0.5s ease-in-out);
 			&:hover {
 				@include rotate(0deg);
+        @include filter(grayscale(100%));
 			}
 		}
 	}
