@@ -17,7 +17,6 @@
   margin: 0 auto;
   margin-top: 20px;
   float: none !important;
-	opacity: 0;
 	@include transition(opacity 2s ease-in-out);
 	.about-me {
 		display: inline-block;
@@ -47,10 +46,6 @@
 
 //fade in transition
 html.loaded {
-
-	.about-me-container {
-		opacity: 1;
-	}
 
 }
 
@@ -490,7 +485,7 @@ ul {
   }
 
   .profile-photo {
-    &:hover {
+    &:hover, &.hover {
       a {
         &:before {
           background: transparent !important;
@@ -518,7 +513,7 @@ ul {
     background-size: 0, cover;
     @include transform-style(preserve-3d);
     @include rotate(3deg);
-    @include transition(all 0.5s);
+    @include transition(all 0.7s ease-in-out);
 
     &:after {
       content: '';
@@ -543,7 +538,7 @@ ul {
       height: 100%;
       background: white;
       @include box-shadow(0 0 100px 50px white);
-      @include transition(all 1s);
+      @include transition(all 1s ease-in-out);
       opacity: 0.15;
       @include transform(rotateX(95deg) translateZ(-80px) scale(0.75));
       @include transformOrigin(bottom);
@@ -564,7 +559,7 @@ ul {
     }
   }
 
-  &:hover {
+  &:hover, &.hover {
     a {
       @include transform(rotateX(70deg));
       @include transformOrigin(bottom);

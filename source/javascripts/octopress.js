@@ -94,15 +94,15 @@ function flashVideoFallback(){
 
 function wrapFlashVideos() {
   $('object').each(function(object) {
-    object = $(object);
+    object = $(this);
     if ( $('param[name=movie]', object).length ) {
-      var wrapper = object.before('<div class="flash-video"><div>').previous();
+      var wrapper = object.before('<div class="flash-video"><div>').prev();
       $(wrapper).children().append(object);
     }
   });
-  $('iframe[src*=vimeo],iframe[src*=youtube]').each(function(iframe) {
-    iframe = $(iframe);
-    var wrapper = iframe.before('<div class="flash-video"><div>').previous();
+  $('iframe[src*=vimeo],iframe[src*=youtube]').each(function() {
+    iframe = $(this);
+    var wrapper = iframe.before('<div class="flash-video"><div>').prev();
     $(wrapper).children().append(iframe);
   });
 }
@@ -136,6 +136,10 @@ function domLoaded() {
     $('#mobile-menu-list').attr('aria-expanded',false);
   });
 
+  $('.profile-photo').on('touchstart', function(evt){
+    $(this).toggleClass('hover');
+  });
+
   var resizeHandle = null;
 
   window.onresize = function(){
@@ -155,6 +159,8 @@ function domLoaded() {
   if(iOS){
     $('body').addClass('iOS');
   }
+
+  FastClick.attach(document.body);
 }
 
 function resizeCb(){
@@ -166,8 +172,7 @@ function resizeCb(){
   }
 }
 
-$.domReady(function() {
-  testFeatures();
+$(function() {
   wrapFlashVideos();
   flashVideoFallback();
   addCodeLineNumbers();
