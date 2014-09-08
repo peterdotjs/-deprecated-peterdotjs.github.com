@@ -14,6 +14,71 @@
 
   
   <entry>
+    <title type="html"><![CDATA[Creating a Chrome Extension: A developer's retrospective - Part 1 (Inception)]]></title>
+    <link href="http://peterdotjs.github.com/creating-a-chrome-extension-a-developers-retrospective-part-1-inception/"/>
+    <updated>2014-09-07T18:19:00-07:00</updated>
+    <id>http://peterdotjs.github.com/creating-a-chrome-extension-a-developers-retrospective-part-1-inception</id>
+    <content type="html"><![CDATA[<h2>The idea</h2>
+
+<p>You should definitely read Paul Graham&#8217;s article on <a href="http://www.paulgraham.com/startupideas.html" title="start up ideas">startup ideas</a> if you haven&#8217;t yet already. Most products come out of an  existing problem. This problem may be unoticed, compensated for or perhaps very difficult to solve. Workarounds exist everywhere in our daily lives and if you could find one to make more efficient then you likely have a product on your hands.</p>
+
+<p>Assuming you&#8217;ve brain stormed several ideas, now it&#8217;s time to face the music and search for similar solutions. Although it might be hearbreaking to find that someone else had come up with that same awesome idea that you had - it&#8217;s not at all the end of the world. In fact it might even help you. If you research your competitors you can find all their pain points, user feedback, and areas where you can improve upon. I&#8217;ve seen many extensions that were great ideas to begin with but simply weren&#8217;t executed well. Either it be the user experience, the design or bugs in the product, these are all areas where you could improve upon. However, if there are already several great and solid products out there you should probably consider contributing to one of them rather than creating your own. The world may not need another adblock tool or responsive web tester.</p>
+
+<h3>[Tab Resize]</h3>
+
+<p>I found myself manually resizing windows across my monitor and realized just how inefficient that workflow was. I compensated by doing it by hand but I figured that there had to be some kind of extension to do this for me. I did a search on the Chrome Web store and found several that were in the ballpark of what I was looking for (&#8220;Split Screen&#8221;, &#8220;Tab Scissors&#8221;, &#8220;Dualless&#8221;, etc.) These extensions each do something different but each had their own respective limitations. Once I realized that there was room in the market for a split screen layout extension, I knew it was worth building. At this point the idea of having users didn&#8217;t cross my mind.  I figured at the very least I&#8217;d be able to use it and make my own life a little easier.</p>
+
+<h2>Requirements and Design</h2>
+
+<p>In both school and in industry there is somone telling you what do to; a professor and program manager respectively that will describe in detail the requirements of the project that you are venturing on. In addition, the design (both technology and visual) are also determined for you (usually). With a project that is completely of your own, you may find youself overwhelmed with the amount of freedom and number of choice you now have. Requirements can be shaped by the problem you want to solve in addition to the areas that your competitors are lacking in. Choosing a visual design and color scheme is kind of like choosing a parking spot in a very sparse parking lot - you&#8217;ll have a lot of choices and it might take some time to decide which one to use.</p>
+
+<p>Try to pay as much attention to the user experience if not more than the actual features. Having amazing features that are difficult to use or discover will produce poor results. It goes without saying that the features the application is providing must be flawless or close to being bug free. However great the visual user experience is, it can never compensate for poor execution in function.</p>
+
+<h3>[Tab Resize]</h3>
+
+<h4>Requirements*:</h4>
+
+<ol>
+<li>Resize tabs into fixed layouts based on avaialble screen size</li>
+<li>Current tab and tabs to the right will be considered in the resize</li>
+<li>Custom layouts can be created, and existing layouts can be removed.</li>
+<li>Layouts can be reset to default layouts</li>
+<li>Ability to undo the previous resize</li>
+<li>User preference of layouts should be saved</li>
+<li>Single tab ability to only resize the current window</li>
+</ol>
+
+
+<h4>Design*:</h4>
+
+<p><img src="../images/oldtabresize.png" title="Tab Resize 1.0 version from late 2012" ></p>
+
+<p>Personally, I think choosing on the visual design itself took much longer than the actual app development. Visually I wanted a large action area where the user could easily choose the layout they wanted and easily discover the features (created, removing, and reseting layouts).  The most frequently used layout should be the easiest to get to - in this case right aligned and closest to the extension icon. Each of the features should be easy to get to. The options can be changed directly in the popup menu - not hidden in another view like an options page.</p>
+
+<p>*The above design and requirements are from the first version that was deployed.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Creating a Chrome Extension: A developer's retrospective]]></title>
+    <link href="http://peterdotjs.github.com/creating-a-chrome-extension-a-developers-retrospective/"/>
+    <updated>2014-09-07T16:49:00-07:00</updated>
+    <id>http://peterdotjs.github.com/creating-a-chrome-extension-a-developers-retrospective</id>
+    <content type="html"><![CDATA[<h4>There are plenty of guides on how to develop a Chrome extension - this won&#8217;t be another one of them. I&#8217;ll be going through my personal experience and lessons learned through each step of the process. These learnings can be applied to any type of application development - not just Chrome extensions.</h4>
+
+<h2><a href="http://peterdotjs.github.com/creating-a-chrome-extension-a-developers-retrospective-part-1-inception/" title="Part 1: Inception - the idea, requirements, design">Part 1: Inception - the idea, requirements, design</a></h2>
+
+<h2>Part 2: Development - apis, tracking</h2>
+
+<h2>Part 3: Testing - cross platform</h2>
+
+<h2>Part 4: Production - deployment, artwork, user feedback</h2>
+
+<h2>Part 5: Maintenance - enhancements, bug fixes, updates</h2>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Quick Find - next gen text search]]></title>
     <link href="http://peterdotjs.github.com/quick-find-text-search/"/>
     <updated>2014-08-23T15:06:00-07:00</updated>
