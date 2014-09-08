@@ -160,7 +160,7 @@ function domLoaded() {
     $('body').addClass('iOS');
   }
 
-  FastClick.attach(document.body);
+  resizeCb();
 }
 
 function resizeCb(){
