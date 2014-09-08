@@ -51,9 +51,14 @@ html.loaded {
 
 html, body {
   min-width: 500px;
-  overflow-x: hidden;
-  -webkit-overflow-scrolling: touch;
-  overflow-scrolling: touch;
+
+  @media only screen and (max-width-width: 1920px) {
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    overflow-scrolling: touch;
+  }
+
 }
 
 //$project-link-hover-color: #0181EB;
@@ -419,7 +424,7 @@ ul {
 
 .entry-title {
   line-height: 40px;
-  
+
   a {
     color: black;
   }
