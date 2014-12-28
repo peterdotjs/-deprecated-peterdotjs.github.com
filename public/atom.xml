@@ -4,7 +4,7 @@
   <title><![CDATA[Peter Shin]]></title>
   <link href="http://peterdotjs.github.com/atom.xml" rel="self"/>
   <link href="http://peterdotjs.github.com/"/>
-  <updated>2014-12-27T17:27:21-08:00</updated>
+  <updated>2014-12-27T18:02:51-08:00</updated>
   <id>http://peterdotjs.github.com/</id>
   <author>
     <name><![CDATA[Peter J. Shin]]></name>
@@ -22,7 +22,7 @@
 
 <p><img class="right" src="../images/extensionUpdate.png" width="400" height="400" title="Extension update" ></p>
 
-<p>Whether it be bug fixes or enhancements you&#8217;ll likely need to update your extension after the initial release. The deployment process itself is exactly the same. As stated before you&#8217;ll just need to update the version property in the manifest to a newer one. If you&#8217;re using source control make sure to tag your releases so if anything goes wrong with an update you can quickly revert back to a previous version. There will be plenty of enhancement requests that come your way once your user base grows but take all feedback with a grain of salt. If the feature enhancement doesn&#8217;t make sense for your product - don&#8217;t consider it. Users will ask for anything and everything but you&#8217;ll have the end decision on whether to push it or not. Tab Resize has had many many feature requests - some that made sense and some that didn&#8217;t The requests that did make sense have greatly improved it overall, which wouldn&#8217;t have been possible if not for users reaching out. When used correctly user feedback can take your app to the next level.</p>
+<p>Whether it be bug fixes or enhancements you&#8217;ll likely need to update your extension after the initial release. The deployment process itself is exactly the same. You&#8217;ll have an additional option to deploy to a percentage of users for smoke testing. As stated before you&#8217;ll just need to update the version property in the manifest to a newer one. If you&#8217;re using source control make sure to tag your releases so if anything goes wrong with an update you can quickly revert back to a previous version. There will be plenty of enhancement requests that come your way once your user base grows but take all feedback with a grain of salt. If the feature enhancement doesn&#8217;t make sense for your product - don&#8217;t consider it. Users will ask for anything and everything but you&#8217;ll have the end decision on whether to push it or not. Tab Resize has had many feature requests - some that made sense and some that didn&#8217;t. The requests that did make sense have greatly improved the extension overall and it wouldn&#8217;t have been possible if not for users reaching out. When used correctly, user feedback can take your app to the next level.</p>
 
 <p>Be sure to inform users of any updates or bug fixes that you deploy. An awesome new feature that isn&#8217;t discoverable is completely useless. I&#8217;d suggest adding a popup after the user opens up the updated extension so they&#8217;ll know exactly what has changed. You can use localstorage to store the current version decide accordingly what to do. Through the Chrome API you can also listen to install or update event and execute callbacks as required.</p>
 
@@ -30,7 +30,7 @@
 
 <p><img class="right" src="../images/buyMeCoffee.png" title="Donations" ></p>
 
-<p>After your user base grows you&#8217;ll probably be contacted by several monetization firms asking if you would like to partner with them. It&#8217;ll involve adding a snippet of JavaScript to your extension, where you&#8217;ll get a certain amount of money based on the number of active users per time period. I&#8217;m not against monetization but personally I found it a risk that I didn&#8217;t want to take. The monetization will sound very tempting but I didn&#8217;t want to take the chance of it affecting the user experience or Google&#8217;s terms and conditions. Google has strict policies on the way ads are injected so you&#8217;ll want to be careful. The firms that had reached out in the past has promised that the user experience wouldn&#8217;t be affected but I didn&#8217;t think it was worth the risk. You can also try adding a donate or buy me a coffee button but from what I&#8217;ve read those <a href="http://bloggerabroad.com/donate-button-blog" title="Why a Donate Button Will Hurt Your Blog">aren&#8217;t very successfull</a>. Personally, I didn&#8217;t want to build something that was &#8220;free&#8221; with strings attached. Unless you are trying to offset server or api costs, just think of it as paying it forward with your code.</p>
+<p>After your user base grows you&#8217;ll probably be contacted by several monetization firms asking if you would like to partner with them. It&#8217;ll involve adding a snippet of JavaScript to your extension where you&#8217;ll get a certain amount of money based on the number of active users per time period. I&#8217;m not against monetization but personally I found it a risk that I didn&#8217;t want to take. The monetization sounded very tempting but I didn&#8217;t want to take the chance of it affecting the user experience or Google&#8217;s terms and conditions. Google has strict policies on the way ads are injected so you&#8217;ll want to be careful. The firms that had reached out in the past has promised that the user experience wouldn&#8217;t be affected but I didn&#8217;t think it was worth the risk. You can also try adding a donate or buy me a coffee button but from what I&#8217;ve read those <a href="http://bloggerabroad.com/donate-button-blog" title="Why a Donate Button Will Hurt Your Blog">aren&#8217;t very successful</a>. Personally, I didn&#8217;t want to build something that was &#8220;free&#8221; with strings attached. Unless you are trying to offset server or API costs, just think of it as paying it forward with your code.</p>
 ]]></content>
   </entry>
   
@@ -41,17 +41,17 @@
     <id>http://peterdotjs.github.com/creating-a-chrome-extension-a-developers-retrospective-part-4-production</id>
     <content type="html"><![CDATA[<h2>Deployment</h2>
 
-<p>Google has provided very clear [documentation] on how to publish your app. Here are a couple tips on the process:</p>
+<p>Google has provided very clear <a href="https://developer.chrome.com/webstore/publish" title="documentation">documentation</a> on how to publish your app. Here are a couple tips on the process:</p>
 
 <ol>
 <li><strong>Upload</strong>: Whenever you update a package you&#8217;ll need to update the version number in the manifest - it&#8217;ll be blocked otherwise.</li>
-<li><strong>Description</strong>: Add search keywords/tags in your description. It will help your ranking when users search for those terms in the web store. This will be a good place to add your source control link so users can add issues or look at the source code. Here you can notify the users if you are sending any anonymous tracking information. Also would be good place to address any of the permissions that you have required and why you need then.</li>
+<li><strong>Description</strong>: Add search keywords/tags in your description. It&#8217;ll help your ranking when users search for those terms in the web store. This will be a good place to add your source control link so users can add issues or look at the source code. Here you can notify the users if you are sending any anonymous tracking information. Also this would be good place to address any of the permissions that you have required and why you need then.</li>
 <li><strong>Promotional Images</strong>: Make sure to fill out all the promotional images so you can maximize your impression count.</li>
-<li><strong>Websites</strong>: Add a website if you have one - adds credibility and confidence to the extension.</li>
-<li><strong>Category</strong>: When choosing a category, you may want to choose one they has fewer applications. Many extensions fall under productivity (as extensions by nature were designed to make us more productive) but it likely will get lost in the numerous other extensions out there already.
--Utilize all the 5 spots you have for screenshots. What you&#8217;ll find is that users will in all likelyhood never read your description. With the limited amount of time you have to describe what you app can/cant do I think having a video is the best and quickest way to deliver this information. If you don&#8217;t want to go to the trouble, make sure to have great screen shots that show what your app can do.</li>
-<li><strong>Language</strong>: For now choose the language you&#8217;ve build your extension in. After you get some more data from GA you may decide it would be worth supporting l10n of other languages.</li>
-<li><strong>Analytics</strong>: Create a Google Analytics account if you haven&#8217;t already fill out the GA ID.</li>
+<li><strong>Websites</strong>: Add a website if you have one. This adds credibility and confidence to the extension.</li>
+<li><strong>Category</strong>: When choosing a category, you may want to choose one they has fewer applications. Many extensions fall under productivity (as extensions by nature were designed to make us more productive) but it likely will get lost in the numerous other extensions out there already.</li>
+<li><strong>Screenshots</strong>: Utilize all the 5 spots you have for screenshots. What you&#8217;ll find is that users will likelihood never read your description. With the limited amount of time you have to describe what you app can/cant do I think having a video is the best and quickest way to deliver this information. If you don&#8217;t want to go to the trouble, make sure to have great screen shots that showcase your app.</li>
+<li><strong>Language</strong>: For now choose the language you&#8217;ve build your extension in. After you get some more data from Google Analytics you may decide it would be worth supporting l10n of other languages.</li>
+<li><strong>Analytics</strong>: Create a Google Analytics account if you haven&#8217;t already fill out the Google Analytics ID.</li>
 </ol>
 
 
@@ -59,14 +59,14 @@
 
 <p>The one grief I have with the Chrome web store is the current user feedback system. The current system is fairly one sided. If a user leaves a review the developer cannot address it directly. Only if a user leaves feedback in the &#8220;support&#8221; tab are you able to directly reply. But even then there is no notification system. You can reply to this specific feedback but there isn&#8217;t a way to confirm if the original poster even sees your reply. If you end up receiving some bad reviews it&#8217;s kind of like getting punched with your hands tied. You won&#8217;t be able to defend yourself and you can&#8217;t do much about it.</p>
 
-<p>With both good and bad reviews the overall feedback is invaluable. While some feedback may be repetive and not particularly helpful, it&#8217;s something that you must pay attention to if you want your extension to be successfull. The user feedback will give you hints to any underlying issues or bugs as well as features you are missing and can improve. If you&#8217;ve never gotten public feedback on an application you&#8217;ve built then you&#8217;re in for a treat. The public can be incredibly nice and generous, but they can be just as harsh and negative. It&#8217;s hard not to take it personally the first time but you&#8217;ll get used it it, kind of. I remember the first time I received a bad review on Tab Resize, I was totally crushed. And it is hard to to be. Most extensions are built by developers in their free time, it&#8217;s their passion; it&#8217;s very personal. But after a while you&#8217;ll get used to it, taking the bad with the good. For me, I look at the good reviews as fuel to get over the not so great reviews.</p>
+<p>With both good and bad reviews the overall feedback is invaluable. While some feedback may be repetitive and not particularly helpful, it&#8217;s something that you must pay attention to if you want your extension to be successful. The user feedback will give you hints to any underlying issues or bugs as well as features you are missing and can improve. If you&#8217;ve never gotten public feedback on an application you&#8217;ve built then you&#8217;re in for a treat. The public can be incredibly nice and generous, but they can be just as harsh and negative. It&#8217;s hard not to take it personally the first time but you&#8217;ll get used it it, kind of. I remember the first time I received a bad review on Tab Resize, I was totally crushed. And it is hard to to be. Most extensions are built by developers in their free time. It&#8217;s their passion and it&#8217;s very personal. But after a while you&#8217;ll get used to it, taking the bad with the good. For me, I look at the positive reviews as fuel to get over the not so great reviews.</p>
 
-<p>Lack of empathy I think is the cause of most of these bad reviews. Louis C.K. also shares my opinion.</p>
+<p>Lack of empathy I think is the cause of most of these bad reviews. Louis C.K. shares my opinion.</p>
 
 <iframe width="853" height="480" src="http://www.youtube.com/embed/5HbYScltf1c?" frameborder="0" allowfullscreen></iframe>
 
 
-<p> Many individuals are unable to see that there is someone behind the scenes. Someone who spent time building a free app for the everyone to use, only to get berrated for it. Developers would be hardpressed to give an extension a 1 star review as they know of the amount of effort that actually goes in.</p>
+<p> Many individuals are unable to see that there is someone behind the scenes. Someone who spent time building a free app for everyone to use, only to get berated for it. Developers would be hard-pressed to give an extension a 1 star review as they know of the amount of effort that actually goes in.</p>
 
 <p>Some Tab Resize verbatims from our 1 star reviewers who failed to understand the purpose of the extension:</p>
 
@@ -100,7 +100,7 @@
 
 <p><img src="../images/chromeStoreSessions.png" title="Chrome Store Sessions" ></p>
 
-<p>The peak in visits were a result of certain blog posts. More Visits -> More Installs -> More Users. But take note that more users means more ratings which may not be a good thing. I think during this period of time Tab Resize&#8217;s rating went from a high 4 to a low 3. Pay close attention to the feedback you get around this time as you might need or want to deploy features/fixes quickly.</p>
+<p>The peak in visits were a result of certain blog posts. More Visits -> More Installs -> More Users. But take note that more users means more ratings which may not be a good thing. I think during this period of time Tab Resize&#8217;s rating went down from a high 4 to a low 3. Pay close attention to the feedback you get around this time as you might need or want to deploy features/fixes quickly.</p>
 ]]></content>
   </entry>
   
@@ -109,15 +109,15 @@
     <link href="http://peterdotjs.github.com/creating-a-chrome-extension-a-developers-retrospective-part-3-testing/"/>
     <updated>2014-12-24T16:44:00-08:00</updated>
     <id>http://peterdotjs.github.com/creating-a-chrome-extension-a-developers-retrospective-part-3-testing</id>
-    <content type="html"><![CDATA[<p>The great part of building a browser specific extension is you&#8217;ll only need to test for that browser. With Chrome for the most part you&#8217;ll only need to support the latest browser depending on the apis that you are planning to use. If you are using a relatively new api you can either perform some feature checking in your code or you can add some version requirements to your manifest.</p>
+    <content type="html"><![CDATA[<h2>Cross Platform</h2>
 
-<h2>Cross Platform</h2>
+<p>The great part of building a browser specific extension is you&#8217;ll only need to test for that browser. With Chrome for the most part you&#8217;ll only need to support the latest browser depending on the APIs that you&#8217;re planning to use. If you are using a relatively new API you can either perform some feature checking in your code or you can add some version requirements to your manifest.</p>
 
-<p>Even though you&#8217;ll get by not testing other browsers, you should do some checks across different operating systems. Depending on your application it may attract more users of one OS versus another - Tab Resize had the following distrubtion in the past 5 months:</p>
+<p>Even though you&#8217;ll get by not testing other browsers, you should do some checks across different operating systems. Depending on your application it may attract more users of one OS versus another - Tab Resize had the following distribution  in the past 5 months:</p>
 
 <p><img src="../images/deviceDistr.png" title="Device Distribution" ></p>
 
-<p>Once you get some data you&#8217;ll be able to determine your tier 1 and 2 platforms to test on.</p>
+<p>Once you get some data you&#8217;ll be able to determine the tier 1 and 2 platforms to test on.</p>
 
 <p>Although all the APIs should behave the same way, I&#8217;ve actually found a couple that act different in certain platforms. Differently may mean it still works or it may mean the API itself is completely broken.</p>
 
@@ -132,11 +132,13 @@
     <link href="http://peterdotjs.github.com/creating-a-chrome-extension-a-developers-retrospective-part-2-development/"/>
     <updated>2014-12-24T00:25:00-08:00</updated>
     <id>http://peterdotjs.github.com/creating-a-chrome-extension-a-developers-retrospective-part-2-development</id>
-    <content type="html"><![CDATA[<p>As there are plenty of existing tutorials on how to get started on developing a Chrome extension, I will only cover a few topics and specific things to look out for.</p>
+    <content type="html"><![CDATA[<h2>Intro</h2>
+
+<p>As there are plenty of existing tutorials on how to get started on developing a Chrome extension, I will only cover a few topics and specific things to look out for.</p>
 
 <h2>APIs</h2>
 
-<p>Chrome provides really great documentation on their avaiable <a href="https://developer.chrome.com/extensions/api_index" title="JavaScript APIs">JavaScript APIs</a>. Depending on your use case some functionality may or may not be exposed to the user. There are stable, beta, dev, and experimental APIs to use. You&#8217;re choice of APIs will greatly depend on the type of extension you are trying to build as well as your audience. As an example the following Chrome APIs were used for Tab resize.</p>
+<p>Chrome provides really great documentation on their available  <a href="https://developer.chrome.com/extensions/api_index" title="JavaScript APIs">JavaScript APIs</a>. Depending on your use case some functionality may or may not be exposed to the user. There are stable, beta, dev, and experimental APIs to use. You&#8217;re choice of APIs will greatly depend on the type of extension you are trying to build as well as your audience. As an example the following Chrome APIs were used for Tab resize.</p>
 
 <ul>
 <li>chrome.browserAction - setting badge text/background</li>
@@ -161,19 +163,17 @@
 
 <p>If you care about improving your app and growing it, tracking is needed without question. User feedback can only go so far. Analytical tracking data will tell you what your users actually do and you can improve/change things accordingly.</p>
 
-<p>As an example I found that a user was actually creating a custom resize layout with of 99x99. When the user clicks on this custom created layout 9801 windows would have been created on their desktop, definitely crashing Chrome and probably their computer along the way. Benefiting from this info, I added some enforcement to limit the input size. Sometimes you need to protect the users from themselves, especially if they aren&#8217;t using the application as was intended.</p>
+<p>As an example I found that a user was actually creating a custom resize layout with of 99x99. When the user clicks on this custom created layout 9801 windows would have been created on their desktop, definitely crashing Chrome and probably their computer along the way. Benefiting from this info, I added some enforcement to limit the input size. Sometimes you need to protect the users from themselves, especially if they aren&#8217;t using the application as intended.</p>
 
 <p>When you setup the extension in the web store, make sure to put a Google Analytics id number - this will track the users that hit the Chrome web store page of your extension. It&#8217;ll be really usefully to see the trend of your views as well as where the referrals are coming from.</p>
 
 <p>I used Google Analytics for tracking but obviously you aren&#8217;t limited to it. Regarding Google Analytics - the <a href="https://developer.chrome.com/extensions/tut_analytics" title="tracking documentation">tracking documentation</a> as of this writing for Chrome extensions is out of date. If you choose to use Google Analytics you should start using the <a href="https://developers.google.com/analytics/devguides/collection/analyticsjs/" title="universal analytics">universal analytics</a> framework instead.</p>
 
-<p>Personally, I&#8217;ve found it really interesting to see how Tab Resize grew over time and how it was being used in countries I&#8217;ve never even heard of.</p>
-
-<p>If you do decide to use tracking be sure to add in an option for users to opt out of participating. This is a better user experience and also required by Google&#8217;s terms and agreement.</p>
+<p>Personally, I&#8217;ve found it really interesting to see how Tab Resize grew over time and how it was being used in countries I&#8217;ve never even heard of. If you do decide to use tracking <strong>be sure to add in an option for users to opt out of participating</strong>. This is a better user experience and also required by Google&#8217;s terms and agreement.</p>
 
 <h2>Usability</h2>
 
-<p>Using the results of your tracking you&#8217;ll be able to see if users are actually using your product as you intended. The data will tell you a story of how people are using it - either it be in a way you intended or in a way you never even thought of. Armed with this information you&#8217;ll be able to iterate on and improve your app. Features that aren&#8217;t being used as frequently can be shown more prominently and features that aren&#8217;t being used can be considered for the chopping block. None of this should be news to you but I hope you can push your users to use the product as you imagined rather than just the other way around.</p>
+<p>Using the results of your tracking you&#8217;ll be able to see if users are actually using the app as you intended. The data will tell you a story of how people are using it, either it be in a way you intended or in a way you never even thought of. Armed with this information you&#8217;ll be able to iterate on and improve your app. Features that aren&#8217;t being used as frequently can be shown more prominently and features that aren&#8217;t being used at all should be considered for the chopping block. None of this should be news to you but I hope you can push your users to use the product as you imagined rather than just the other way around.</p>
 
 <h2>Artwork</h2>
 
@@ -246,7 +246,7 @@
 
 <h2><a href="http://peterdotjs.github.com/creating-a-chrome-extension-a-developers-retrospective-part-4-production/" title="Part 4: Production - deployment, user feedback, press">Part 4: Production - deployment, artwork, user feedback</a></h2>
 
-<h2><a href="http://peterdotjs.github.com/creating-a-chrome-extension-a-developers-retrospective-part-5-maintenance/" title="Part 5: Maintenance and Beyond - bug fixes, updates, monetization">Part 5: Maintenance - enhancements, bug fixes, updates</a></h2>
+<h2><a href="http://peterdotjs.github.com/creating-a-chrome-extension-a-developers-retrospective-part-5-maintenance-bug-fixes/" title="Part 5: Maintenance and Beyond - bug fixes, updates, monetization">Part 5: Maintenance - enhancements, bug fixes, updates</a></h2>
 ]]></content>
   </entry>
   

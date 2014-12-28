@@ -18,4 +18,4 @@ categories: guides
 [2]: /creating-a-chrome-extension-a-developers-retrospective-part-2-development/ "Part 2: Development - apis, manifest, tracking, usability, artwork"
 [3]: /creating-a-chrome-extension-a-developers-retrospective-part-3-testing/ "Part 3: Testing - cross platform"
 [4]: /creating-a-chrome-extension-a-developers-retrospective-part-4-production/ "Part 4: Production - deployment, user feedback, press"
-[5]: /creating-a-chrome-extension-a-developers-retrospective-part-5-maintenance/ "Part 5: Maintenance and Beyond - bug fixes, updates, monetization"
+[5]: /creating-a-chrome-extension-a-developers-retrospective-part-5-maintenance-bug-fixes/ "Part 5: Maintenance and Beyond - bug fixes, updates, monetization"

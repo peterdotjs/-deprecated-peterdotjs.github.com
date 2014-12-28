@@ -9,7 +9,7 @@
   <meta name="author" content="Peter J. Shin">
 
   
-  <meta name="description" content="Peter Shin's website and blog. As there are plenty of existing tutorials on how to get started on developing a Chrome extension, I will only cover a few topics and specific things &hellip;">
+  <meta name="description" content="Peter Shin's website and blog. Intro As there are plenty of existing tutorials on how to get started on developing a Chrome extension, I will only cover a few topics and specific &hellip;">
   <!--
   -->
   <!-- http://t.co/dKP3o1e -->
@@ -130,11 +130,13 @@
   </header>
 
 
-<div class="entry-content"><p>As there are plenty of existing tutorials on how to get started on developing a Chrome extension, I will only cover a few topics and specific things to look out for.</p>
+<div class="entry-content"><h2>Intro</h2>
+
+<p>As there are plenty of existing tutorials on how to get started on developing a Chrome extension, I will only cover a few topics and specific things to look out for.</p>
 
 <h2>APIs</h2>
 
-<p>Chrome provides really great documentation on their avaiable <a href="https://developer.chrome.com/extensions/api_index" title="JavaScript APIs">JavaScript APIs</a>. Depending on your use case some functionality may or may not be exposed to the user. There are stable, beta, dev, and experimental APIs to use. You&#8217;re choice of APIs will greatly depend on the type of extension you are trying to build as well as your audience. As an example the following Chrome APIs were used for Tab resize.</p>
+<p>Chrome provides really great documentation on their available  <a href="https://developer.chrome.com/extensions/api_index" title="JavaScript APIs">JavaScript APIs</a>. Depending on your use case some functionality may or may not be exposed to the user. There are stable, beta, dev, and experimental APIs to use. You&#8217;re choice of APIs will greatly depend on the type of extension you are trying to build as well as your audience. As an example the following Chrome APIs were used for Tab resize.</p>
 
 <ul>
 <li>chrome.browserAction - setting badge text/background</li>
@@ -159,19 +161,17 @@
 
 <p>If you care about improving your app and growing it, tracking is needed without question. User feedback can only go so far. Analytical tracking data will tell you what your users actually do and you can improve/change things accordingly.</p>
 
-<p>As an example I found that a user was actually creating a custom resize layout with of 99x99. When the user clicks on this custom created layout 9801 windows would have been created on their desktop, definitely crashing Chrome and probably their computer along the way. Benefiting from this info, I added some enforcement to limit the input size. Sometimes you need to protect the users from themselves, especially if they aren&#8217;t using the application as was intended.</p>
+<p>As an example I found that a user was actually creating a custom resize layout with of 99x99. When the user clicks on this custom created layout 9801 windows would have been created on their desktop, definitely crashing Chrome and probably their computer along the way. Benefiting from this info, I added some enforcement to limit the input size. Sometimes you need to protect the users from themselves, especially if they aren&#8217;t using the application as intended.</p>
 
 <p>When you setup the extension in the web store, make sure to put a Google Analytics id number - this will track the users that hit the Chrome web store page of your extension. It&#8217;ll be really usefully to see the trend of your views as well as where the referrals are coming from.</p>
 
 <p>I used Google Analytics for tracking but obviously you aren&#8217;t limited to it. Regarding Google Analytics - the <a href="https://developer.chrome.com/extensions/tut_analytics" title="tracking documentation">tracking documentation</a> as of this writing for Chrome extensions is out of date. If you choose to use Google Analytics you should start using the <a href="https://developers.google.com/analytics/devguides/collection/analyticsjs/" title="universal analytics">universal analytics</a> framework instead.</p>
 
-<p>Personally, I&#8217;ve found it really interesting to see how Tab Resize grew over time and how it was being used in countries I&#8217;ve never even heard of.</p>
-
-<p>If you do decide to use tracking be sure to add in an option for users to opt out of participating. This is a better user experience and also required by Google&#8217;s terms and agreement.</p>
+<p>Personally, I&#8217;ve found it really interesting to see how Tab Resize grew over time and how it was being used in countries I&#8217;ve never even heard of. If you do decide to use tracking <strong>be sure to add in an option for users to opt out of participating</strong>. This is a better user experience and also required by Google&#8217;s terms and agreement.</p>
 
 <h2>Usability</h2>
 
-<p>Using the results of your tracking you&#8217;ll be able to see if users are actually using your product as you intended. The data will tell you a story of how people are using it - either it be in a way you intended or in a way you never even thought of. Armed with this information you&#8217;ll be able to iterate on and improve your app. Features that aren&#8217;t being used as frequently can be shown more prominently and features that aren&#8217;t being used can be considered for the chopping block. None of this should be news to you but I hope you can push your users to use the product as you imagined rather than just the other way around.</p>
+<p>Using the results of your tracking you&#8217;ll be able to see if users are actually using the app as you intended. The data will tell you a story of how people are using it, either it be in a way you intended or in a way you never even thought of. Armed with this information you&#8217;ll be able to iterate on and improve your app. Features that aren&#8217;t being used as frequently can be shown more prominently and features that aren&#8217;t being used at all should be considered for the chopping block. None of this should be news to you but I hope you can push your users to use the product as you imagined rather than just the other way around.</p>
 
 <h2>Artwork</h2>
 
