@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Category: guides - Peter Shin</title>
+  <title>Creating a Chrome Extension: A developer's retrospective - Part 5 (Maintenance and Beyond) - Peter Shin</title>
   <meta name="author" content="Peter J. Shin">
 
   
-  <meta name="description" content="Peter Shin's website and blog. Category: guides">
+  <meta name="description" content="Peter Shin's website and blog. Updates Whether it be bug fixes or enhancements you&#8217;ll likely need to update your extension after the initial release. The deployment process &hellip;">
   <!--
   -->
   <!-- http://t.co/dKP3o1e -->
@@ -22,7 +22,7 @@
   <meta name="googlebot" content="noarchive">
 
   
-  <link rel="canonical" href="http://peterdotjs.github.comblog/categories/guides/">
+  <link rel="canonical" href="http://peterdotjs.github.com/creating-a-chrome-extension-a-developers-retrospective-part-5-maintenance-bug-fixes/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
@@ -58,7 +58,7 @@
 </head>
 
 <body    class="collapse-sidebar sidebar-footer" >
-  <div id="wrap" >
+  <div id="wrap"  class="red" >
     <div id="header">
       <header role="banner"><div class="header-wrap">
 <div class="hgroup-wrap">
@@ -82,7 +82,7 @@
 <ul class="main-navigation">
   <li><a  class="about unselected"  href="/">About</a></li>
   <li><a  class="projects unselected"  href="/projects">Projects</a></li>
-  <li><a  class="blog unselected"  href="/blog">Blog</a></li>
+  <li><a  class="blog selected"  href="/blog">Blog</a></li>
 </ul>
 </div>
 
@@ -93,7 +93,7 @@
 <ul id="mobile-menu-list" role="menu" aria-expanded="false">
 	<li role="menuitem"><a  class=""  href="/">About</a></li>
 	<li role="menuitem"><a  class=""  href="/projects">Projects</a></li>
-	<li role="menuitem"><a  class=""  href="/blog">Blog</a></li>
+	<li role="menuitem"><a  class="selected"  href="/blog">Blog</a></li>
 	<li role="menuitem"><a href="https://github.com/peterdotjs">Github</a></li>
 	<li role="menuitem"><a href="http://www.linkedin.com/in/peterjshin">Linkedin</a></li>
 	<li role="menuitem"><a class="contact" href="mailto:peter.j.shin@gmail.com">Contact</a></li>
@@ -103,105 +103,94 @@
     <div id="main">
       <div id="content">
 	<div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">Category: Guides</h1>
+    
+      <h2 class="entry-title">Creating a Chrome Extension: A Developer's Retrospective - Part 5 (Maintenance and Beyond)</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-12-27T10:49:00-08:00" pubdate data-updated="true">December 27<span>th</span>, 2014</time>
+        
+      </p>
     
   </header>
-  
-  <div id="blog-archives" class="category">
 
 
+<div class="entry-content"><h2>Updates</h2>
 
-  
-  <h2>2014</h2>
+<p><img class="right" src="../images/extensionUpdate.png" width="400" height="400" title="Extension update" ></p>
 
-<article>
-  
-<h1><a href="/creating-a-chrome-extension-a-developers-retrospective-part-5-maintenance-bug-fixes/">Creating a Chrome Extension: A developer's retrospective - Part 5 (Maintenance and Beyond)</a></h1>
-<time datetime="2014-12-27T10:49:00-08:00" pubdate><span class='month'>Dec</span> <span class='day'>27</span> <span class='year'>2014</span></time>
+<p>Whether it be bug fixes or enhancements you&#8217;ll likely need to update your extension after the initial release. The deployment process itself is exactly the same. As stated before you&#8217;ll just need to update the version property in the manifest to a newer one. If you&#8217;re using source control make sure to tag your releases so if anything goes wrong with an update you can quickly revert back to a previous version. There will be plenty of enhancement requests that come your way once your user base grows but take all feedback with a grain of salt. If the feature enhancement doesn&#8217;t make sense for your product - don&#8217;t consider it. Users will ask for anything and everything but you&#8217;ll have the end decision on whether to push it or not. Tab Resize has had many many feature requests - some that made sense and some that didn&#8217;t The requests that did make sense have greatly improved it overall, which wouldn&#8217;t have been possible if not for users reaching out. When used correctly user feedback can take your app to the next level.</p>
 
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/guides/'>guides</a></span>
-</footer>
+<p>Be sure to inform users of any updates or bug fixes that you deploy. An awesome new feature that isn&#8217;t discoverable is completely useless. I&#8217;d suggest adding a popup after the user opens up the updated extension so they&#8217;ll know exactly what has changed. You can use localstorage to store the current version decide accordingly what to do. Through the Chrome API you can also listen to install or update event and execute callbacks as required.</p>
 
+<h2>Monetization</h2>
 
-</article>
+<p><img class="right" src="../images/buyMeCoffee.png" title="Donations" ></p>
 
-
-
-<article>
-  
-<h1><a href="/creating-a-chrome-extension-a-developers-retrospective-part-4-production/">Creating a Chrome Extension: A developer's retrospective - Part 4 (Production)</a></h1>
-<time datetime="2014-12-25T17:27:00-08:00" pubdate><span class='month'>Dec</span> <span class='day'>25</span> <span class='year'>2014</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/guides/'>guides</a></span>
-</footer>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/creating-a-chrome-extension-a-developers-retrospective-part-3-testing/">Creating a Chrome Extension: A developer's retrospective - Part 3 (Testing)</a></h1>
-<time datetime="2014-12-24T16:44:00-08:00" pubdate><span class='month'>Dec</span> <span class='day'>24</span> <span class='year'>2014</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/guides/'>guides</a></span>
-</footer>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/creating-a-chrome-extension-a-developers-retrospective-part-2-development/">Creating a Chrome Extension: A developer's retrospective - Part 2 (Development)</a></h1>
-<time datetime="2014-12-24T00:25:00-08:00" pubdate><span class='month'>Dec</span> <span class='day'>24</span> <span class='year'>2014</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/guides/'>guides</a></span>
-</footer>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/creating-a-chrome-extension-a-developers-retrospective-part-1-inception/">Creating a Chrome Extension: A developer's retrospective - Part 1 (Inception)</a></h1>
-<time datetime="2014-09-07T18:19:00-07:00" pubdate><span class='month'>Sep</span> <span class='day'>07</span> <span class='year'>2014</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/guides/'>guides</a></span>
-</footer>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/creating-a-chrome-extension-a-developers-retrospective/">Creating a Chrome Extension: A developer's retrospective</a></h1>
-<time datetime="2014-09-07T16:49:00-07:00" pubdate><span class='month'>Sep</span> <span class='day'>07</span> <span class='year'>2014</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/guides/'>guides</a></span>
-</footer>
-
-
-</article>
-
+<p>After your user base grows you&#8217;ll probably be contacted by several monetization firms asking if you would like to partner with them. It&#8217;ll involve adding a snippet of JavaScript to your extension, where you&#8217;ll get a certain amount of money based on the number of active users per time period. I&#8217;m not against monetization but personally I found it a risk that I didn&#8217;t want to take. The monetization will sound very tempting but I didn&#8217;t want to take the chance of it affecting the user experience or Google&#8217;s terms and conditions. Google has strict policies on the way ads are injected so you&#8217;ll want to be careful. The firms that had reached out in the past has promised that the user experience wouldn&#8217;t be affected but I didn&#8217;t think it was worth the risk. You can also try adding a donate or buy me a coffee button but from what I&#8217;ve read those <a href="http://bloggerabroad.com/donate-button-blog" title="Why a Donate Button Will Hurt Your Blog">aren&#8217;t very successfull</a>. Personally, I didn&#8217;t want to build something that was &#8220;free&#8221; with strings attached. Unless you are trying to offset server or api costs, just think of it as paying it forward with your code.</p>
 </div>
 
+
+  <footer>
+    <p class="meta">
+      
   
+
+<span class="byline author vcard">Posted by <span class="fn">Peter J. Shin</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-12-27T10:49:00-08:00" pubdate data-updated="true">December 27<span>th</span>, 2014</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/guides/'>guides</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/creating-a-chrome-extension-a-developers-retrospective-part-4-production/" title="Previous Post: Creating a Chrome Extension: A developer's retrospective - Part 4 (Production)">&laquo; Creating a Chrome Extension: A developer's retrospective - Part 4 (Production)</a>
+      
+      
+    </p>
+  </footer>
 </article>
 
 </div>
