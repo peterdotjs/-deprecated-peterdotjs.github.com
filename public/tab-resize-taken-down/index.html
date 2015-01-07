@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Creating a Chrome Extension: A developer's retrospective - Part 5 (Maintenance and Beyond) - Peter Shin</title>
+  <title>Tab Resize - Taken Down! :( - Peter Shin</title>
   <meta name="author" content="Peter J. Shin">
 
   
-  <meta name="description" content="Peter Shin's website and blog. Updates Whether it be bug fixes or enhancements you&#8217;ll likely need to update your extension after the initial release. The deployment process &hellip;">
+  <meta name="description" content="Peter Shin's website and blog. After 3+ years of living happily in the Chrome Store, Tab Resize was taken down - with absolutely no warning. I understand that the terms and &hellip;">
   <!--
   -->
   <!-- http://t.co/dKP3o1e -->
@@ -22,7 +22,7 @@
   <meta name="googlebot" content="noarchive">
 
   
-  <link rel="canonical" href="http://peterdotjs.github.com/creating-a-chrome-extension-a-developers-retrospective-part-5-maintenance-bug-fixes/">
+  <link rel="canonical" href="http://peterdotjs.github.com/tab-resize-taken-down/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
@@ -107,7 +107,7 @@
   
   <header>
     
-      <h2 class="entry-title">Creating a Chrome Extension: A Developer's Retrospective - Part 5 (Maintenance and Beyond)</h1>
+      <h2 class="entry-title">Tab Resize - Taken Down! :(</h1>
     
     
       <p class="meta">
@@ -123,26 +123,38 @@
   
 
 
-<time datetime="2014-12-27T10:49:00-08:00" pubdate data-updated="true">December 27<span>th</span>, 2014</time>
+<time datetime="2015-01-06T23:09:00-08:00" pubdate data-updated="true">January 6<span>th</span>, 2015</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><h2>Updates</h2>
+<div class="entry-content"><p>After 3+ years of living happily in the Chrome Store, Tab Resize was taken down - with absolutely no warning.</p>
 
-<p><img class="right" src="../images/extensionUpdate.png" width="400" height="400" title="Extension update" ></p>
+<p>I understand that the terms and agreements need to be followed but some notice, any notice would be nice. Even without notice, the exact offending text was not specified, just the part of the &#8216;terms and agreement&#8217; that was violated. It would be nice if devs were given this information up front so we&#8217;d avoid any future bannings.</p>
 
-<p>Whether it be bug fixes or enhancements you&#8217;ll likely need to update your extension after the initial release. The deployment process itself is exactly the same. You&#8217;ll have an additional option to deploy to a percentage of users for smoke testing. As stated before you&#8217;ll just need to update the version property in the manifest to a newer one. If you&#8217;re using source control make sure to tag your releases so if anything goes wrong with an update you can quickly revert back to a previous version. There will be plenty of enhancement requests that come your way once your user base grows but take all feedback with a grain of salt. If the feature enhancement doesn&#8217;t make sense for your product - don&#8217;t consider it. Users will ask for anything and everything but you&#8217;ll have the end decision on whether to push it or not. Tab Resize has had many feature requests - some that made sense and some that didn&#8217;t. The requests that did make sense have greatly improved the extension overall and it wouldn&#8217;t have been possible if not for users reaching out. When used correctly, user feedback can take your app to the next level.</p>
+<p>Even after requesting to republish the extension, it needs to be manually validated. Hopefully it won&#8217;t take too long to get back up and running again.</p>
 
-<p>Be sure to inform users of any updates or bug fixes that you deploy. An awesome new feature that isn&#8217;t discoverable is completely useless. I&#8217;d suggest adding a popup after the user opens up the updated extension so they&#8217;ll know exactly what has changed. You can use localstorage to store the current version decide accordingly what to do. Through the Chrome API you can also listen to install or update event and execute callbacks as required.</p>
+<p>Notification from the Chrome Dev Team:</p>
 
-<h2>Monetization</h2>
+<blockquote><p>Dear Developer,</p>
 
-<p><img class="right" src="../images/buyMeCoffee.png" title="Donations" ></p>
+<p>Your Google Chrome item, &#8220;Tab Resize - split screen layouts,&#8221; with ID: bkpenclhmiealbebdopglffmfdiilejc did not comply with our policies and was removed from the Google Chrome Web Store.</p>
 
-<p>After your user base grows you&#8217;ll probably be contacted by several monetization firms asking if you would like to partner with them. It&#8217;ll involve adding a snippet of JavaScript to your extension where you&#8217;ll get a certain amount of money based on the number of active users per time period. I&#8217;m not against monetization but personally I found it a risk that I didn&#8217;t want to take. The monetization sounded very tempting but I didn&#8217;t want to take the chance of it affecting the user experience or Google&#8217;s terms and conditions. Google has strict policies on the way ads are injected so you&#8217;ll want to be careful. The firms that had reached out in the past has promised that the user experience wouldn&#8217;t be affected but I didn&#8217;t think it was worth the risk. You can also try adding a donate or buy me a coffee button but from what I&#8217;ve read those <a href="http://bloggerabroad.com/donate-button-blog" title="Why a Donate Button Will Hurt Your Blog">aren&#8217;t very successful</a>. Personally, I didn&#8217;t want to build something that was &#8220;free&#8221; with strings attached. Unless you are trying to offset server or API costs, just think of it as paying it forward with your code.</p>
+<p>Your item did not comply with the following section of our policy:</p>
+
+<p>Do not use irrelevant, misleading, or excessive keywords in app descriptions, titles, or metadata.</p>
+
+<p>If you&#8217;d like to re-submit your item, please make the appropriate changes to the item so that it complies with our policies, then re-publish it in your developer dashboard. Please reply to this email for issues regarding this item removal.</p>
+
+<p>*Please keep in mind that your re-submitted item will not be immediately published live in the store. All re-submitted items undergo a strict compliance review and will be re-published if the item passes review.</p>
+
+<p>*Important Note
+Repeated or egregious violations in the store may result in your developer account being banned from the store. This may also result in the suspension of related Google services associated with your Google account. All re-submitted items will continue to be subject to Chrome Web Store policies and terms of service.</p>
+
+<p>Thank you for your cooperation,
+Google Chrome Web Store team</p></blockquote>
 </div>
 
 
@@ -165,12 +177,12 @@
   
 
 
-<time datetime="2014-12-27T10:49:00-08:00" pubdate data-updated="true">December 27<span>th</span>, 2014</time>
+<time datetime="2015-01-06T23:09:00-08:00" pubdate data-updated="true">January 6<span>th</span>, 2015</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/guides/'>guides</a>
+    <a class='category' href='/blog/categories/random/'>random</a>
   
 </span>
 
@@ -186,10 +198,8 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/creating-a-chrome-extension-a-developers-retrospective-part-4-production/" title="Previous Post: Creating a Chrome Extension: A developer's retrospective - Part 4 (Production)">&laquo; Creating a Chrome Extension: A developer's retrospective - Part 4 (Production)</a>
+        <a class="basic-alignment left" href="/creating-a-chrome-extension-a-developers-retrospective-part-5-maintenance-bug-fixes/" title="Previous Post: Creating a Chrome Extension: A developer's retrospective - Part 5 (Maintenance and Beyond)">&laquo; Creating a Chrome Extension: A developer's retrospective - Part 5 (Maintenance and Beyond)</a>
       
-      
-        <a class="basic-alignment right" href="/tab-resize-taken-down/" title="Next Post: Tab Resize - Taken Down! :(">Tab Resize - Taken Down! :( &raquo;</a>
       
     </p>
   </footer>

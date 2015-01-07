@@ -4,7 +4,7 @@
   <title><![CDATA[Peter Shin]]></title>
   <link href="http://peterdotjs.github.com/atom.xml" rel="self"/>
   <link href="http://peterdotjs.github.com/"/>
-  <updated>2014-12-27T18:02:51-08:00</updated>
+  <updated>2015-01-06T23:25:22-08:00</updated>
   <id>http://peterdotjs.github.com/</id>
   <author>
     <name><![CDATA[Peter J. Shin]]></name>
@@ -12,6 +12,39 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Tab Resize - Taken Down! :(]]></title>
+    <link href="http://peterdotjs.github.com/tab-resize-taken-down/"/>
+    <updated>2015-01-06T23:09:00-08:00</updated>
+    <id>http://peterdotjs.github.com/tab-resize-taken-down</id>
+    <content type="html"><![CDATA[<p>After 3+ years of living happily in the Chrome Store, Tab Resize was taken down - with absolutely no warning.</p>
+
+<p>I understand that the terms and agreements need to be followed but some notice, any notice would be nice. Even without notice, the exact offending text was not specified, just the part of the &#8216;terms and agreement&#8217; that was violated. It would be nice if devs were given this information up front so we&#8217;d avoid any future bannings.</p>
+
+<p>Even after requesting to republish the extension, it needs to be manually validated. Hopefully it won&#8217;t take too long to get back up and running again.</p>
+
+<p>Notification from the Chrome Dev Team:</p>
+
+<blockquote><p>Dear Developer,</p>
+
+<p>Your Google Chrome item, &#8220;Tab Resize - split screen layouts,&#8221; with ID: bkpenclhmiealbebdopglffmfdiilejc did not comply with our policies and was removed from the Google Chrome Web Store.</p>
+
+<p>Your item did not comply with the following section of our policy:</p>
+
+<p>Do not use irrelevant, misleading, or excessive keywords in app descriptions, titles, or metadata.</p>
+
+<p>If you&#8217;d like to re-submit your item, please make the appropriate changes to the item so that it complies with our policies, then re-publish it in your developer dashboard. Please reply to this email for issues regarding this item removal.</p>
+
+<p>*Please keep in mind that your re-submitted item will not be immediately published live in the store. All re-submitted items undergo a strict compliance review and will be re-published if the item passes review.</p>
+
+<p>*Important Note
+Repeated or egregious violations in the store may result in your developer account being banned from the store. This may also result in the suspension of related Google services associated with your Google account. All re-submitted items will continue to be subject to Chrome Web Store policies and terms of service.</p>
+
+<p>Thank you for your cooperation,
+Google Chrome Web Store team</p></blockquote>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Creating a Chrome Extension: A developer's retrospective - Part 5 (Maintenance and Beyond)]]></title>
