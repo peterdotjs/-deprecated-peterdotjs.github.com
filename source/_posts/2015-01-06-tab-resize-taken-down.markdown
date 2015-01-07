@@ -8,9 +8,9 @@ categories: random
 
 After 3+ years of living happily in the Chrome Store, Tab Resize was taken down - with absolutely no warning.
 
-I understand that the terms and agreements need to be followed but some notice, any notice would be nice. Even without notice, the exact offending text was not specified, just the part of the 'terms and agreement' that was violated. It would be nice if devs were given this information up front so we'd avoid any future bannings.
+I understand that the terms and agreements need to be followed but some notice, any notice would be nice. The exact offending text was not specified. Only the part of the 'terms and agreement' that was violated was mentioned in the email. It would be nice if devs were given this information up front so we'd avoid any future bannings.
 
-Unfortunately after requesting to republish the extension it needs to be manually validated. Hopefully it won't take long to get back up and running again. And a Happy New Year to you too Chrome Store -___-.
+Unfortunately after requesting to republish the extension it needs to be manually validated. Hopefully it won't take long to get back up and running again. And a Happy New Year to you too Chrome Store -___-
 
 Notification from the Chrome Dev Team:
 
