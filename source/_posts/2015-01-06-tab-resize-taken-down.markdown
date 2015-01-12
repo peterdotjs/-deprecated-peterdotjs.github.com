@@ -1,16 +1,23 @@
 ---
 layout: post
-title: "Tab Resize - Taken Down! :("
+title: "Tab Resize - Taken Down!"
 date: 2015-01-06 23:09
 comments: true
 categories: random
 ---
 
+Update 1/7:
+
+After about 10 hrs of being taken down Tab Resize was put back up in the store. A notification did not specify the exact offending text. It really isn't a big deal when it happens with a relatively small extension like Tab Resize. But it this were to happen to one of the most popular ones without warning like Adblock and such - the effects would definitely be felt.
+
+-----------------------
+<br></br>
+
 After 3+ years of living happily in the Chrome Store, Tab Resize was taken down - with absolutely no warning.
 
 I understand that the terms and agreements need to be followed but some notice, any notice would be nice. The exact offending text was not specified. Only the part of the 'terms and agreement' that was violated was mentioned in the email. It would be nice if devs were given this information up front so we'd avoid any future bannings.
 
-Unfortunately after requesting to republish the extension it needs to be manually validated. Hopefully it won't take long to get back up and running again. And a Happy New Year to you too Chrome Store -___-
+Unfortunately after requesting to republish the extension it needs to be manually validated. Hopefully it won't take long to get back up and running again. And a Happy New Year to you too Chrome Store.
 
 Notification from the Chrome Dev Team:
 

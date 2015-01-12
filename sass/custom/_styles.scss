@@ -64,6 +64,9 @@ html, body {
 //$project-link-hover-color: #0181EB;
 $project-link-hover-color: black;
 
+body #wrap #main {
+  overflow: hidden;
+}
 //project page
 #main #content .project-wrapper {
   display: block;

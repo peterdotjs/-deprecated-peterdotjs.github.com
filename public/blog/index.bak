@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Category: random - Peter Shin</title>
+  <title>Blog - Peter Shin</title>
   <meta name="author" content="Peter J. Shin">
 
   
-  <meta name="description" content="Peter Shin's website and blog. Category: random">
+  <meta name="description" content="Peter Shin's website and blog.  Blog Archives ">
   <!--
   -->
   <!-- http://t.co/dKP3o1e -->
@@ -22,7 +22,7 @@
   <meta name="googlebot" content="noarchive">
 
   
-  <link rel="canonical" href="http://peterdotjs.github.comblog/categories/random/">
+  <link rel="canonical" href="http://peterdotjs.github.com/blog/index.bak">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
@@ -58,7 +58,7 @@
 </head>
 
 <body    class="collapse-sidebar sidebar-footer" >
-  <div id="wrap" >
+  <div id="wrap"  class="red" >
     <div id="header">
       <header role="banner"><div class="header-wrap">
 <div class="hgroup-wrap">
@@ -82,7 +82,7 @@
 <ul class="main-navigation">
   <li><a  class="about unselected"  href="/">About</a></li>
   <li><a  class="projects unselected"  href="/projects">Projects</a></li>
-  <li><a  class="blog unselected"  href="/blog">Blog</a></li>
+  <li><a  class="blog selected"  href="/blog">Blog</a></li>
 </ul>
 </div>
 
@@ -93,7 +93,7 @@
 <ul id="mobile-menu-list" role="menu" aria-expanded="false">
 	<li role="menuitem"><a  class=""  href="/">About</a></li>
 	<li role="menuitem"><a  class=""  href="/projects">Projects</a></li>
-	<li role="menuitem"><a  class=""  href="/blog">Blog</a></li>
+	<li role="menuitem"><a  class="selected"  href="/blog">Blog</a></li>
 	<li role="menuitem"><a href="https://github.com/peterdotjs">Github</a></li>
 	<li role="menuitem"><a href="http://www.linkedin.com/in/peterjshin">Linkedin</a></li>
 	<li role="menuitem"><a class="contact" href="mailto:peter.j.shin@gmail.com">Contact</a></li>
@@ -102,76 +102,15 @@
     </div>
     <div id="main">
       <div id="content">
-	<div>
-<article role="article">
+	<div class="blog-index">
   
-  <header>
-    <h1 class="entry-title">Category: Random</h1>
+  
+  <div class="pagination">
     
-  </header>
-  
-  <div id="blog-archives" class="category">
-
-
-
-  
-  <h2>2015</h2>
-
-<article>
-  
-<h1><a href="/tab-resize-taken-down/">Tab Resize - Taken Down!</a></h1>
-<time datetime="2015-01-06T23:09:00-08:00" pubdate><span class='month'>Jan</span> <span class='day'>06</span> <span class='year'>2015</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/random/'>random</a></span>
-</footer>
-
-
-</article>
-
+    <a href="/blog/archives">Blog Archives</a>
+    
+  </div>
 </div>
-
-  
-</article>
-
-</div>
-
-<aside class="sidebar">
-  
-    <section>
-  <h1>Recent Posts</h1>
-  <ul id="recent_posts">
-    
-      <li class="post">
-        <a href="/tab-resize-taken-down/">Tab Resize - Taken Down!</a>
-      </li>
-    
-      <li class="post">
-        <a href="/creating-a-chrome-extension-a-developers-retrospective-part-5-maintenance-bug-fixes/">Creating a Chrome Extension: A developer's retrospective - Part 5 (Maintenance and Beyond)</a>
-      </li>
-    
-      <li class="post">
-        <a href="/creating-a-chrome-extension-a-developers-retrospective-part-4-production/">Creating a Chrome Extension: A developer's retrospective - Part 4 (Production)</a>
-      </li>
-    
-      <li class="post">
-        <a href="/creating-a-chrome-extension-a-developers-retrospective-part-3-testing/">Creating a Chrome Extension: A developer's retrospective - Part 3 (Testing)</a>
-      </li>
-    
-      <li class="post">
-        <a href="/creating-a-chrome-extension-a-developers-retrospective-part-2-development/">Creating a Chrome Extension: A developer's retrospective - Part 2 (Development)</a>
-      </li>
-    
-  </ul>
-</section>
-
-
-
-
-
-
-  
-</aside>
 
 
       </div>

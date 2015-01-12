@@ -4,7 +4,7 @@
   <title><![CDATA[Category: random | Peter Shin]]></title>
   <link href="http://peterdotjs.github.com/blog/categories/random/atom.xml" rel="self"/>
   <link href="http://peterdotjs.github.com/"/>
-  <updated>2015-01-06T23:34:03-08:00</updated>
+  <updated>2015-01-12T08:27:01-08:00</updated>
   <id>http://peterdotjs.github.com/</id>
   <author>
     <name><![CDATA[Peter J. Shin]]></name>
@@ -14,15 +14,24 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Tab Resize - Taken Down! :(]]></title>
+    <title type="html"><![CDATA[Tab Resize - Taken Down!]]></title>
     <link href="http://peterdotjs.github.com/tab-resize-taken-down/"/>
     <updated>2015-01-06T23:09:00-08:00</updated>
     <id>http://peterdotjs.github.com/tab-resize-taken-down</id>
-    <content type="html"><![CDATA[<p>After 3+ years of living happily in the Chrome Store, Tab Resize was taken down - with absolutely no warning.</p>
+    <content type="html"><![CDATA[<p>Update 1/7:</p>
+
+<p>After about 10 hrs of being taken down Tab Resize was put back up in the store. A notification did not specify the exact offending text. It really isn't a big deal when it happens with a relatively small extension like Tab Resize. But it this were to happen to one of the most popular ones without warning like Adblock and such - the effects would definitely be felt.</p>
+
+<hr />
+
+<br></br>
+
+
+<p>After 3+ years of living happily in the Chrome Store, Tab Resize was taken down - with absolutely no warning.</p>
 
 <p>I understand that the terms and agreements need to be followed but some notice, any notice would be nice. The exact offending text was not specified. Only the part of the 'terms and agreement' that was violated was mentioned in the email. It would be nice if devs were given this information up front so we'd avoid any future bannings.</p>
 
-<p>Unfortunately after requesting to republish the extension it needs to be manually validated. Hopefully it won't take long to get back up and running again. And a Happy New Year to you too Chrome Store -___-</p>
+<p>Unfortunately after requesting to republish the extension it needs to be manually validated. Hopefully it won't take long to get back up and running again. And a Happy New Year to you too Chrome Store.</p>
 
 <p>Notification from the Chrome Dev Team:</p>
 
