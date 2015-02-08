@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Creating a Chrome Extension: A developer's retrospective - Part 5 (Maintenance and Beyond)"
+title: "Creating a Chrome Extension: Maintenance and Beyond"
 date: 2014-12-27 10:49
 comments: true
 categories: guides

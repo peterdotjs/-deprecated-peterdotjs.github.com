@@ -4,7 +4,7 @@
   <title><![CDATA[Category: guides | Peter Shin]]></title>
   <link href="http://peterdotjs.github.com/blog/categories/guides/atom.xml" rel="self"/>
   <link href="http://peterdotjs.github.com/"/>
-  <updated>2015-01-12T08:27:01-08:00</updated>
+  <updated>2015-02-08T10:35:21-08:00</updated>
   <id>http://peterdotjs.github.com/</id>
   <author>
     <name><![CDATA[Peter J. Shin]]></name>
@@ -14,13 +14,13 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Creating a Chrome Extension: A developer's retrospective - Part 5 (Maintenance and Beyond)]]></title>
+    <title type="html"><![CDATA[Creating a Chrome Extension: Maintenance and Beyond]]></title>
     <link href="http://peterdotjs.github.com/creating-a-chrome-extension-a-developers-retrospective-part-5-maintenance-bug-fixes/"/>
     <updated>2014-12-27T10:49:00-08:00</updated>
     <id>http://peterdotjs.github.com/creating-a-chrome-extension-a-developers-retrospective-part-5-maintenance-bug-fixes</id>
     <content type="html"><![CDATA[<h2>Updates</h2>
 
-<p>{% img right ../images/extensionUpdate.png 400 400 Extension update%}</p>
+<p><img class="right" src="../images/extensionUpdate.png" width="400" height="400" title="Extension update" ></p>
 
 <p>Whether it be bug fixes or enhancements you'll likely need to update your extension after the initial release. The deployment process itself is exactly the same. You'll have an additional option to deploy to a percentage of users for smoke testing. As stated before you'll just need to update the version property in the manifest to a newer one. If you're using source control make sure to tag your releases so if anything goes wrong with an update you can quickly revert back to a previous version. There will be plenty of enhancement requests that come your way once your user base grows but take all feedback with a grain of salt. If the feature enhancement doesn't make sense for your product - don't consider it. Users will ask for anything and everything but you'll have the end decision on whether to push it or not. Tab Resize has had many feature requests - some that made sense and some that didn't. The requests that did make sense have greatly improved the extension overall and it wouldn't have been possible if not for users reaching out. When used correctly, user feedback can take your app to the next level.</p>
 
@@ -28,14 +28,14 @@
 
 <h2>Monetization</h2>
 
-<p>{% img right ../images/buyMeCoffee.png Donations%}</p>
+<p><img class="right" src="../images/buyMeCoffee.png" title="Donations" ></p>
 
 <p>After your user base grows you'll probably be contacted by several monetization firms asking if you would like to partner with them. It'll involve adding a snippet of JavaScript to your extension where you'll get a certain amount of money based on the number of active users per time period. I'm not against monetization but personally I found it a risk that I didn't want to take. The monetization sounded very tempting but I didn't want to take the chance of it affecting the user experience or Google's terms and conditions. Google has strict policies on the way ads are injected so you'll want to be careful. The firms that had reached out in the past has promised that the user experience wouldn't be affected but I didn't think it was worth the risk. You can also try adding a donate or buy me a coffee button but from what I've read those <a href="http://bloggerabroad.com/donate-button-blog" title="Why a Donate Button Will Hurt Your Blog">aren't very successful</a>. Personally, I didn't want to build something that was "free" with strings attached. Unless you are trying to offset server or API costs, just think of it as paying it forward with your code.</p>
 ]]></content>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Creating a Chrome Extension: A developer's retrospective - Part 4 (Production)]]></title>
+    <title type="html"><![CDATA[Creating a Chrome Extension: Production]]></title>
     <link href="http://peterdotjs.github.com/creating-a-chrome-extension-a-developers-retrospective-part-4-production/"/>
     <updated>2014-12-25T17:27:00-08:00</updated>
     <id>http://peterdotjs.github.com/creating-a-chrome-extension-a-developers-retrospective-part-4-production</id>
@@ -98,14 +98,14 @@
 
 <p>By informing tech blogs of your extension you'll have the best chance of getting the word out immediately. While this may increase the exposure and the number of visits it may have some consequences. If the features aren't yet mature and rich enough it may get panned and end up greatly hurting your average rating. On the other hand if it takes off you can try to ride that viral wave for as long as possible. When I released Tab Resize more than 2 years ago, I never even thought about this. I had just deployed it and shared it with some friends. It grew organically and slowly at a steady rate until a year later the right person blogged about it and some more well known blogs took notice, specifically <a href="http://www.cnet.com/how-to/split-chrome-tabs-into-multiwindow-preset-layouts-with-tab-resize" title="CNET - tab resize">CNET</a> and <a href="http://lifehacker.com/tab-resize-automatically-organizes-tabs-into-preset-lay-1306865451" title="Lifehacker - tab resize">Lifehacker</a>.</p>
 
-<p>{% img ../images/chromeStoreSessions.png Chrome Store Sessions%}</p>
+<p><img src="../images/chromeStoreSessions.png" title="Chrome Store Sessions" ></p>
 
 <p>The peak in visits were a result of certain blog posts. More Visits -> More Installs -> More Users. But take note that more users means more ratings which may not be a good thing. I think during this period of time Tab Resize's rating went down from a high 4 to a low 3. Pay close attention to the feedback you get around this time as you might need or want to deploy features/fixes quickly.</p>
 ]]></content>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Creating a Chrome Extension: A developer's retrospective - Part 3 (Testing)]]></title>
+    <title type="html"><![CDATA[Creating a Chrome Extension: Testing]]></title>
     <link href="http://peterdotjs.github.com/creating-a-chrome-extension-a-developers-retrospective-part-3-testing/"/>
     <updated>2014-12-24T16:44:00-08:00</updated>
     <id>http://peterdotjs.github.com/creating-a-chrome-extension-a-developers-retrospective-part-3-testing</id>
@@ -115,7 +115,7 @@
 
 <p>Even though you'll get by not testing other browsers, you should do some checks across different operating systems. Depending on your application it may attract more users of one OS versus another - Tab Resize had the following distribution  in the past 5 months:</p>
 
-<p>{% img ../images/deviceDistr.png Device Distribution%}</p>
+<p><img src="../images/deviceDistr.png" title="Device Distribution" ></p>
 
 <p>Once you get some data you'll be able to determine the tier 1 and 2 platforms to test on.</p>
 
@@ -128,7 +128,7 @@
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Creating a Chrome Extension: A developer's retrospective - Part 2 (Development)]]></title>
+    <title type="html"><![CDATA[Creating a Chrome Extension: Development]]></title>
     <link href="http://peterdotjs.github.com/creating-a-chrome-extension-a-developers-retrospective-part-2-development/"/>
     <updated>2014-12-24T00:25:00-08:00</updated>
     <id>http://peterdotjs.github.com/creating-a-chrome-extension-a-developers-retrospective-part-2-development</id>
@@ -179,14 +179,14 @@
 
 <p>Artwork will influence both usability and impression rate. You'll need artwork for icons, sprites, as well as logo designs. They have some <a href="https://developer.chrome.com/webstore/images" title="images">requirements</a> for these images. You'll definitely want to look them over otherwise your extension may be rejected. You want to at least to have a 440x280 promotional image. Without this size, your extension will be pushed to the bottom of the list when extensions are surfaced in the store.</p>
 
-<p>{% img right ../images/440x280v3.png My attempt at promo design%}</p>
+<p><img class="right" src="../images/440x280v3.png" title="My attempt at promo design" ></p>
 
 <p>While many developers may easily look over visual design, it's a really important piece that you simply cannot ignore, especially in this day and age. Users have grown accustomed to smooth and sleek designs and expect nothing less. If you had two apps with similar functionality, the one with a better user interface will definitely win out. If you don't have experience with a graphics editor and don't have an interest in learning there are still other options. From <a href="http://99designs.com" title="99designs">99designs</a> to <a href="https://www.fiverr.com" title="fiverr">fieverr</a> there are many ways for you get great artwork without being an artist yourself. There really isn't any excuse for having a bad design.</p>
 ]]></content>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Creating a Chrome Extension: A developer's retrospective - Part 1 (Inception)]]></title>
+    <title type="html"><![CDATA[Creating a Chrome Extension: Inception]]></title>
     <link href="http://peterdotjs.github.com/creating-a-chrome-extension-a-developers-retrospective-part-1-inception/"/>
     <updated>2014-09-07T18:19:00-07:00</updated>
     <id>http://peterdotjs.github.com/creating-a-chrome-extension-a-developers-retrospective-part-1-inception</id>
@@ -223,7 +223,7 @@
 
 <h4>Design*:</h4>
 
-<p>{% img ../images/oldtabresize.png Tab Resize 1.0 version from late 2012%}</p>
+<p><img src="../images/oldtabresize.png" title="Tab Resize 1.0 version from late 2012" ></p>
 
 <p>Personally, I think choosing on the visual design itself took much longer than the actual app development. Visually I wanted a large action area where the user could easily choose the layout they wanted and easily discover the features (created, removing, and reseting layouts).  The most frequently used layout should be the easiest to get to - in this case right aligned and closest to the extension icon. Each of the features should be easy to get to. The options can be changed directly in the popup menu - not hidden in another view like an options page.</p>
 

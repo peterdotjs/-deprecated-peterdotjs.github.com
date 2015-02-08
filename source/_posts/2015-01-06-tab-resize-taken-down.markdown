@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Tab Resize - Taken Down!"
+title: "Tab Resize - Taken Down"
 date: 2015-01-06 23:09
 comments: true
 categories: random

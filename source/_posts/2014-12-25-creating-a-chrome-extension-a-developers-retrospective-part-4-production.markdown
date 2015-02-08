@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Creating a Chrome Extension: A developer's retrospective - Part 4 (Production)"
+title: "Creating a Chrome Extension: Production"
 date: 2014-12-25 17:27
 comments: true
 categories: guides

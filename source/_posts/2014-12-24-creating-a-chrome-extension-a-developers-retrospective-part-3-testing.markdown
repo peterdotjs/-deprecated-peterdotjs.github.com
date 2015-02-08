@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Creating a Chrome Extension: A developer's retrospective - Part 3 (Testing)"
+title: "Creating a Chrome Extension: Testing"
 date: 2014-12-24 16:44
 comments: true
 categories: guides

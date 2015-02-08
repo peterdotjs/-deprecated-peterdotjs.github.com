@@ -4,7 +4,7 @@
   <title><![CDATA[Peter Shin]]></title>
   <link href="http://peterdotjs.github.com/atom.xml" rel="self"/>
   <link href="http://peterdotjs.github.com/"/>
-  <updated>2015-01-12T08:27:00-08:00</updated>
+  <updated>2015-02-08T10:35:21-08:00</updated>
   <id>http://peterdotjs.github.com/</id>
   <author>
     <name><![CDATA[Peter J. Shin]]></name>
@@ -14,7 +14,25 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Tab Resize - Taken Down!]]></title>
+    <title type="html"><![CDATA[React Native]]></title>
+    <link href="http://peterdotjs.github.com/react-native/"/>
+    <updated>2015-02-08T10:14:00-08:00</updated>
+    <id>http://peterdotjs.github.com/react-native</id>
+    <content type="html"><![CDATA[<p>Facebook showcased their ability to use React in native apps a couple weeks ago in their first React conference.</p>
+
+<iframe width="853" height="480" src="https://www.youtube.com/embed/7rDsRXj9-cU?start=425" frameborder="0" allowfullscreen></iframe>
+
+
+<p>The reaction of developers all over the world (mine included) was something like this:</p>
+
+<p><img class="center" src="../images/mind-blown.gif" title="Web developers all over the world" ></p>
+
+<p>Needless to say I can&#8217;t wait until they do open source React Native. In the meantime we&#8217;ll have to make do and <a href="http://www.reddit.com/r/programming/comments/2v0bag/first_impressions_using_react_native/" title="First impressions using react native">live vicariously</a> through the conf attendees that were lucky enough to get early access.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Tab Resize - Taken Down]]></title>
     <link href="http://peterdotjs.github.com/tab-resize-taken-down/"/>
     <updated>2015-01-06T23:09:00-08:00</updated>
     <id>http://peterdotjs.github.com/tab-resize-taken-down</id>
@@ -56,7 +74,7 @@ Google Chrome Web Store team</p></blockquote>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Creating a Chrome Extension: A developer's retrospective - Part 5 (Maintenance and Beyond)]]></title>
+    <title type="html"><![CDATA[Creating a Chrome Extension: Maintenance and Beyond]]></title>
     <link href="http://peterdotjs.github.com/creating-a-chrome-extension-a-developers-retrospective-part-5-maintenance-bug-fixes/"/>
     <updated>2014-12-27T10:49:00-08:00</updated>
     <id>http://peterdotjs.github.com/creating-a-chrome-extension-a-developers-retrospective-part-5-maintenance-bug-fixes</id>
@@ -77,7 +95,7 @@ Google Chrome Web Store team</p></blockquote>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Creating a Chrome Extension: A developer's retrospective - Part 4 (Production)]]></title>
+    <title type="html"><![CDATA[Creating a Chrome Extension: Production]]></title>
     <link href="http://peterdotjs.github.com/creating-a-chrome-extension-a-developers-retrospective-part-4-production/"/>
     <updated>2014-12-25T17:27:00-08:00</updated>
     <id>http://peterdotjs.github.com/creating-a-chrome-extension-a-developers-retrospective-part-4-production</id>
@@ -147,7 +165,7 @@ Google Chrome Web Store team</p></blockquote>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Creating a Chrome Extension: A developer's retrospective - Part 3 (Testing)]]></title>
+    <title type="html"><![CDATA[Creating a Chrome Extension: Testing]]></title>
     <link href="http://peterdotjs.github.com/creating-a-chrome-extension-a-developers-retrospective-part-3-testing/"/>
     <updated>2014-12-24T16:44:00-08:00</updated>
     <id>http://peterdotjs.github.com/creating-a-chrome-extension-a-developers-retrospective-part-3-testing</id>
@@ -170,7 +188,7 @@ Google Chrome Web Store team</p></blockquote>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Creating a Chrome Extension: A developer's retrospective - Part 2 (Development)]]></title>
+    <title type="html"><![CDATA[Creating a Chrome Extension: Development]]></title>
     <link href="http://peterdotjs.github.com/creating-a-chrome-extension-a-developers-retrospective-part-2-development/"/>
     <updated>2014-12-24T00:25:00-08:00</updated>
     <id>http://peterdotjs.github.com/creating-a-chrome-extension-a-developers-retrospective-part-2-development</id>
@@ -228,7 +246,7 @@ Google Chrome Web Store team</p></blockquote>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Creating a Chrome Extension: A developer's retrospective - Part 1 (Inception)]]></title>
+    <title type="html"><![CDATA[Creating a Chrome Extension: Inception]]></title>
     <link href="http://peterdotjs.github.com/creating-a-chrome-extension-a-developers-retrospective-part-1-inception/"/>
     <updated>2014-09-07T18:19:00-07:00</updated>
     <id>http://peterdotjs.github.com/creating-a-chrome-extension-a-developers-retrospective-part-1-inception</id>
