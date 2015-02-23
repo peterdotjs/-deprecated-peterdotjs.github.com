@@ -6,7 +6,7 @@ comments: true
 categories:
 ---
 
-Facebook showcased their ability to use React in native apps a couple weeks ago in their first React conference.
+Facebook showcased their ability to use React in native apps a week ago in their first React conference.
 
 <iframe width="853" height="480" src="https://www.youtube.com/embed/7rDsRXj9-cU?start=425" frameborder="0" allowfullscreen></iframe>
 

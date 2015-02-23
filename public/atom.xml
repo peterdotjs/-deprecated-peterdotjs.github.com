@@ -4,7 +4,7 @@
   <title><![CDATA[Peter Shin]]></title>
   <link href="http://peterdotjs.github.com/atom.xml" rel="self"/>
   <link href="http://peterdotjs.github.com/"/>
-  <updated>2015-02-08T10:35:21-08:00</updated>
+  <updated>2015-02-22T18:44:13-08:00</updated>
   <id>http://peterdotjs.github.com/</id>
   <author>
     <name><![CDATA[Peter J. Shin]]></name>
@@ -14,11 +14,47 @@
 
   
   <entry>
+    <title type="html"><![CDATA[Synced Sidebar Atom Package]]></title>
+    <link href="http://peterdotjs.github.com/synced-sidebar-atom-package/"/>
+    <updated>2015-02-22T18:33:00-08:00</updated>
+    <id>http://peterdotjs.github.com/synced-sidebar-atom-package</id>
+    <content type="html"><![CDATA[<p>Simple Sidebar Sync: active tab &amp; sidebar are synced - sidebar entry automatically scrolls into view
+(Atom equivalent of <a href="https://github.com/sobstel/SyncedSideBar">Sublime SyncedSideBar </a>plugin)</p>
+
+<p>Atom Package: <a href="https://atom.io/packages/synced-sidebar">https://atom.io/packages/synced-sidebar</a></p>
+
+<h2>Demo</h2>
+
+<iframe width="853" height="480" src="http://www.youtube.com/embed/fwYiFJ-9A6Y?" frameborder="0" allowfullscreen></iframe>
+
+
+<h2>Installation</h2>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>apm install synced-sidebar
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Or Settings/Preferences ➔ Packages ➔ Search for <code>synced-sidebar</code></p>
+
+<h2>Use</h2>
+
+<p>By default the sidebar (tree view) is not in sync with the active tab. With synced-sidebar installed the tab is revealed in the sidebar anytime a tab is active. If the active file in the sidebar is not currently in view (below or above the current viewport), the sidebar will automatically scroll the active file into view.</p>
+
+<p>If the sidebar (tree view) is collapsed, synced-sidebar doesn&#8217;t do anything. The sidebar remains collapsed as is.</p>
+
+<h2>Configuration</h2>
+
+<p>Currently there aren&#8217;t configurations since there&#8217;s only one thing the package does. You can either have the package enabled or disabled. Let me know you think there&#8217;s a use case for configs.</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[React Native]]></title>
     <link href="http://peterdotjs.github.com/react-native/"/>
     <updated>2015-02-08T10:14:00-08:00</updated>
     <id>http://peterdotjs.github.com/react-native</id>
-    <content type="html"><![CDATA[<p>Facebook showcased their ability to use React in native apps a couple weeks ago in their first React conference.</p>
+    <content type="html"><![CDATA[<p>Facebook showcased their ability to use React in native apps a week ago in their first React conference.</p>
 
 <iframe width="853" height="480" src="https://www.youtube.com/embed/7rDsRXj9-cU?start=425" frameborder="0" allowfullscreen></iframe>
 

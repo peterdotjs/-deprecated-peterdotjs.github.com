@@ -5,11 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Category: guides - Peter Shin</title>
+  <title>Synced Sidebar Atom Package - Peter Shin</title>
   <meta name="author" content="Peter J. Shin">
 
   
-  <meta name="description" content="Peter Shin's website and blog. Category: guides">
+  <meta name="description" content="Peter Shin's website and blog. Simple Sidebar Sync: active tab &amp; sidebar are synced - sidebar entry automatically scrolls into view
+(Atom equivalent of Sublime SyncedSideBar &hellip;">
   <!--
   -->
   <!-- http://t.co/dKP3o1e -->
@@ -22,7 +23,7 @@
   <meta name="googlebot" content="noarchive">
 
   
-  <link rel="canonical" href="http://peterdotjs.github.comblog/categories/guides/">
+  <link rel="canonical" href="http://peterdotjs.github.com/synced-sidebar-atom-package/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
@@ -58,7 +59,7 @@
 </head>
 
 <body    class="collapse-sidebar sidebar-footer" >
-  <div id="wrap" >
+  <div id="wrap"  class="red" >
     <div id="header">
       <header role="banner"><div class="header-wrap">
 <div class="hgroup-wrap">
@@ -82,7 +83,7 @@
 <ul class="main-navigation">
   <li><a  class="about unselected"  href="/">About</a></li>
   <li><a  class="projects unselected"  href="/projects">Projects</a></li>
-  <li><a  class="blog unselected"  href="/blog">Blog</a></li>
+  <li><a  class="blog selected"  href="/blog">Blog</a></li>
 </ul>
 </div>
 
@@ -93,7 +94,7 @@
 <ul id="mobile-menu-list" role="menu" aria-expanded="false">
 	<li role="menuitem"><a  class=""  href="/">About</a></li>
 	<li role="menuitem"><a  class=""  href="/projects">Projects</a></li>
-	<li role="menuitem"><a  class=""  href="/blog">Blog</a></li>
+	<li role="menuitem"><a  class="selected"  href="/blog">Blog</a></li>
 	<li role="menuitem"><a href="https://github.com/peterdotjs">Github</a></li>
 	<li role="menuitem"><a href="http://www.linkedin.com/in/peterjshin">Linkedin</a></li>
 	<li role="menuitem"><a class="contact" href="mailto:peter.j.shin@gmail.com">Contact</a></li>
@@ -103,105 +104,103 @@
     <div id="main">
       <div id="content">
 	<div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">Category: Guides</h1>
+    
+      <h2 class="entry-title">Synced Sidebar Atom Package</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-02-22T18:33:00-08:00" pubdate data-updated="true">February 22<span>nd</span>, 2015</time>
+        
+      </p>
     
   </header>
-  
-  <div id="blog-archives" class="category">
 
 
+<div class="entry-content"><p>Simple Sidebar Sync: active tab &amp; sidebar are synced - sidebar entry automatically scrolls into view
+(Atom equivalent of <a href="https://github.com/sobstel/SyncedSideBar">Sublime SyncedSideBar </a>plugin)</p>
 
-  
-  <h2>2014</h2>
+<p>Atom Package: <a href="https://atom.io/packages/synced-sidebar">https://atom.io/packages/synced-sidebar</a></p>
 
-<article>
-  
-<h1><a href="/creating-a-chrome-extension-a-developers-retrospective-part-5-maintenance-bug-fixes/">Creating a Chrome Extension: Maintenance and Beyond</a></h1>
-<time datetime="2014-12-27T10:49:00-08:00" pubdate><span class='month'>Dec</span> <span class='day'>27</span> <span class='year'>2014</span></time>
+<h2>Demo</h2>
 
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/guides/'>guides</a></span>
-</footer>
+<iframe width="853" height="480" src="http://www.youtube.com/embed/fwYiFJ-9A6Y?" frameborder="0" allowfullscreen></iframe>
 
 
-</article>
+<h2>Installation</h2>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>apm install synced-sidebar
+</span></code></pre></td></tr></table></div></figure>
 
 
+<p>Or Settings/Preferences ➔ Packages ➔ Search for <code>synced-sidebar</code></p>
 
-<article>
-  
-<h1><a href="/creating-a-chrome-extension-a-developers-retrospective-part-4-production/">Creating a Chrome Extension: Production</a></h1>
-<time datetime="2014-12-25T17:27:00-08:00" pubdate><span class='month'>Dec</span> <span class='day'>25</span> <span class='year'>2014</span></time>
+<h2>Use</h2>
 
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/guides/'>guides</a></span>
-</footer>
+<p>By default the sidebar (tree view) is not in sync with the active tab. With synced-sidebar installed the tab is revealed in the sidebar anytime a tab is active. If the active file in the sidebar is not currently in view (below or above the current viewport), the sidebar will automatically scroll the active file into view.</p>
 
+<p>If the sidebar (tree view) is collapsed, synced-sidebar doesn&#8217;t do anything. The sidebar remains collapsed as is.</p>
 
-</article>
+<h2>Configuration</h2>
 
-
-
-<article>
-  
-<h1><a href="/creating-a-chrome-extension-a-developers-retrospective-part-3-testing/">Creating a Chrome Extension: Testing</a></h1>
-<time datetime="2014-12-24T16:44:00-08:00" pubdate><span class='month'>Dec</span> <span class='day'>24</span> <span class='year'>2014</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/guides/'>guides</a></span>
-</footer>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/creating-a-chrome-extension-a-developers-retrospective-part-2-development/">Creating a Chrome Extension: Development</a></h1>
-<time datetime="2014-12-24T00:25:00-08:00" pubdate><span class='month'>Dec</span> <span class='day'>24</span> <span class='year'>2014</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/guides/'>guides</a></span>
-</footer>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/creating-a-chrome-extension-a-developers-retrospective-part-1-inception/">Creating a Chrome Extension: Inception</a></h1>
-<time datetime="2014-09-07T18:19:00-07:00" pubdate><span class='month'>Sep</span> <span class='day'>07</span> <span class='year'>2014</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/guides/'>guides</a></span>
-</footer>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/creating-a-chrome-extension-a-developers-retrospective/">Creating a Chrome Extension: A developer's retrospective</a></h1>
-<time datetime="2014-09-07T16:49:00-07:00" pubdate><span class='month'>Sep</span> <span class='day'>07</span> <span class='year'>2014</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/guides/'>guides</a></span>
-</footer>
-
-
-</article>
-
+<p>Currently there aren&#8217;t configurations since there&#8217;s only one thing the package does. You can either have the package enabled or disabled. Let me know you think there&#8217;s a use case for configs.</p>
 </div>
 
+
+  <footer>
+    <p class="meta">
+      
   
+
+<span class="byline author vcard">Posted by <span class="fn">Peter J. Shin</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-02-22T18:33:00-08:00" pubdate data-updated="true">February 22<span>nd</span>, 2015</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/react-native/" title="Previous Post: React Native">&laquo; React Native</a>
+      
+      
+    </p>
+  </footer>
 </article>
 
 </div>

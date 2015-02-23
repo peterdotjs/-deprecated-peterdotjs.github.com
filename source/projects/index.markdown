@@ -30,4 +30,17 @@ title: "Projects"
 			</div>
 		</div>
 	</li>
+	<li>
+		<div class="project-wrapper">
+			<div class="project">
+				<a title="Synced Sidebar Atom Package" href="../synced-sidebar-atom-package/">
+					<img class="project-icon" src="../images/atom-io.png" width-"128" height="128"></img>
+				</a>
+				<div class="project-info">
+					<h3 class="project-title"><span>Synced Sidebar Atom Package</span></h3>
+					<div class="project-description">Simple Sidebar Sync: active tab & sidebar are synced - sidebar entry automatically scrolls into view (Atom equivalent of Sublime SyncedSideBar plugin).</div>
+				</div>
+			</div>
+		</div>
+	</li>
 </ul>
