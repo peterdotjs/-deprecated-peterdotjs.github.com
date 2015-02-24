@@ -4,7 +4,7 @@
   <title><![CDATA[Peter Shin]]></title>
   <link href="http://peterdotjs.github.com/atom.xml" rel="self"/>
   <link href="http://peterdotjs.github.com/"/>
-  <updated>2015-02-22T18:48:54-08:00</updated>
+  <updated>2015-02-23T17:51:11-08:00</updated>
   <id>http://peterdotjs.github.com/</id>
   <author>
     <name><![CDATA[Peter J. Shin]]></name>
@@ -18,8 +18,7 @@
     <link href="http://peterdotjs.github.com/synced-sidebar-atom-package/"/>
     <updated>2015-02-22T18:33:00-08:00</updated>
     <id>http://peterdotjs.github.com/synced-sidebar-atom-package</id>
-    <content type="html"><![CDATA[<p>Simple Sidebar Sync: active tab &amp; sidebar are synced - sidebar entry automatically scrolls into view
-(Atom equivalent of <a href="https://github.com/sobstel/SyncedSideBar">Sublime SyncedSideBar </a>plugin)</p>
+    <content type="html"><![CDATA[<p>Based on Sublime Text <a href="https://github.com/sobstel/SyncedSideBar">SyncedSideBar</a> plugin. Active tab &amp; sidebar are synced - sidebar entry automatically scrolls into view.</p>
 
 <p>Atom Package: <a href="https://atom.io/packages/synced-sidebar">https://atom.io/packages/synced-sidebar</a></p>
 

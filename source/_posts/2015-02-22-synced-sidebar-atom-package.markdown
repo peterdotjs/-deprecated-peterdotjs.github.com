@@ -6,8 +6,7 @@ comments: true
 categories:
 ---
 
-Simple Sidebar Sync: active tab & sidebar are synced - sidebar entry automatically scrolls into view
-(Atom equivalent of [Sublime SyncedSideBar ](https://github.com/sobstel/SyncedSideBar)plugin)
+Based on Sublime Text [SyncedSideBar](https://github.com/sobstel/SyncedSideBar) plugin. Active tab & sidebar are synced - sidebar entry automatically scrolls into view.
 
 Atom Package: [https://atom.io/packages/synced-sidebar](https://atom.io/packages/synced-sidebar)
 
