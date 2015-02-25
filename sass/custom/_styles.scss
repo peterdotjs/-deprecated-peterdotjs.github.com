@@ -113,6 +113,28 @@ body #wrap #main {
         position:relative;
         top: 10px;
       }
+      .project-press {
+        position: relative;
+        top: 30px;
+        text-align:right;
+        margin-left: 0px;
+
+        li {
+          display: inline-block;
+          list-style: none;
+          margin-right: 15px;
+
+          a {
+            @include filter(grayscale(100%));
+            @include opacity(0.4);
+
+            &:hover, &:focus {
+              @include filter(grayscale(0%));
+              @include opacity(1);
+            }
+          }
+        }
+      }
     }
   }
 }
