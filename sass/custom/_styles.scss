@@ -104,8 +104,10 @@ body #wrap #main {
       .project-title {
         margin-bottom: 7px;
         a {
-          padding-bottom: 3px;
-          border-bottom: 2px solid black;
+          color: black;
+          &:hover {
+            text-decoration: none;
+          }
         }
       }
       .project-description {
