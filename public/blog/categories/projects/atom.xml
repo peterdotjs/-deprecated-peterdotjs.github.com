@@ -4,7 +4,7 @@
   <title><![CDATA[Category: projects | Peter Shin]]></title>
   <link href="http://peterdotjs.github.com/blog/categories/projects/atom.xml" rel="self"/>
   <link href="http://peterdotjs.github.com/"/>
-  <updated>2015-03-01T23:08:51-08:00</updated>
+  <updated>2015-03-07T18:16:30-08:00</updated>
   <id>http://peterdotjs.github.com/</id>
   <author>
     <name><![CDATA[Peter J. Shin]]></name>
@@ -12,6 +12,39 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Synced Sidebar Atom Package]]></title>
+    <link href="http://peterdotjs.github.com/synced-sidebar-atom-package/"/>
+    <updated>2015-02-22T18:33:00-08:00</updated>
+    <id>http://peterdotjs.github.com/synced-sidebar-atom-package</id>
+    <content type="html"><![CDATA[<p>Based on Sublime Text <a href="https://github.com/sobstel/SyncedSideBar">SyncedSideBar</a> plugin. Active tab &amp; sidebar are synced - sidebar entry automatically scrolls into view.</p>
+
+<p>Atom Package: <a href="https://atom.io/packages/synced-sidebar">https://atom.io/packages/synced-sidebar</a></p>
+
+<h2>Demo</h2>
+
+<iframe width="853" height="480" src="http://www.youtube.com/embed/fwYiFJ-9A6Y?" frameborder="0" allowfullscreen></iframe>
+
+
+<h2>Installation</h2>
+
+<p><code>bash
+apm install synced-sidebar
+</code>
+Or Settings/Preferences ➔ Packages ➔ Search for <code>synced-sidebar</code></p>
+
+<h2>Use</h2>
+
+<p>By default the sidebar (tree view) is not in sync with the active tab. With synced-sidebar installed the tab is revealed in the sidebar anytime a tab is active. If the active file in the sidebar is not currently in view (below or above the current viewport), the sidebar will automatically scroll the active file into view.</p>
+
+<p>If the sidebar (tree view) is collapsed, synced-sidebar doesn't do anything. The sidebar remains collapsed as is.</p>
+
+<h2>Configuration</h2>
+
+<p>Currently there aren't configurations since there's only one thing the package does. You can either have the package enabled or disabled. Let me know you think there's a use case for configs.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Quick Find - next gen text search]]></title>
@@ -47,11 +80,13 @@
 
 <h3>Shortcut keys:</h3>
 
+<p>**shortcut key can be customized in chrome://extensions/configureCommands</p>
+
 <h4>Getting started:</h4>
 
-<p><kbd class="light">/</kbd>&nbsp; or  &nbsp;<kbd class="light">ctrl</kbd> + <kbd class="light">shift</kbd> + <kbd class="light">f</kbd>&nbsp;&nbsp;: forward slash or ctrl+shift+f will open Quick Find menu</p>
+<p><kbd class="light">/</kbd>&nbsp; or  &nbsp;<kbd class="light">ctrl</kbd> + <kbd class="light">shift</kbd> + <kbd class="light">f</kbd>&nbsp;&nbsp;: forward slash or ctrl+shift+f will open Quick Find menu**</p>
 
-<p><kbd class="light">'</kbd>&nbsp;&nbsp;: single quote key will open Quick Find menu in links mode (only links are searched)</p>
+<p><kbd class="light">'</kbd>&nbsp;&nbsp;: single quote key will open Quick Find menu in links mode (only links are searched)**</p>
 
 <p><kbd class="light">esc</kbd>&nbsp;&nbsp;: escape key will close Quick Find menu</p>
 

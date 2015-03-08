@@ -3,7 +3,7 @@ layout: post
 title: "React Native"
 date: 2015-02-08 10:14
 comments: true
-categories:
+categories: random
 ---
 
 Facebook showcased their ability to use React in native apps a week ago in their first React conference.

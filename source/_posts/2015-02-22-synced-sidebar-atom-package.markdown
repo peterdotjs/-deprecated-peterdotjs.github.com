@@ -3,7 +3,7 @@ layout: post
 title: "Synced Sidebar Atom Package"
 date: 2015-02-22 18:33
 comments: true
-categories:
+categories: projects
 ---
 
 Based on Sublime Text [SyncedSideBar](https://github.com/sobstel/SyncedSideBar) plugin. Active tab & sidebar are synced - sidebar entry automatically scrolls into view.

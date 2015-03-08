@@ -4,7 +4,7 @@
   <title><![CDATA[Peter Shin]]></title>
   <link href="http://peterdotjs.github.com/atom.xml" rel="self"/>
   <link href="http://peterdotjs.github.com/"/>
-  <updated>2015-03-01T23:08:50-08:00</updated>
+  <updated>2015-03-07T18:16:30-08:00</updated>
   <id>http://peterdotjs.github.com/</id>
   <author>
     <name><![CDATA[Peter J. Shin]]></name>
@@ -379,11 +379,13 @@ Google Chrome Web Store team</p></blockquote>
 
 <h3>Shortcut keys:</h3>
 
+<p>**shortcut key can be customized in chrome://extensions/configureCommands</p>
+
 <h4>Getting started:</h4>
 
-<p><kbd class="light">/</kbd>&nbsp; or  &nbsp;<kbd class="light">ctrl</kbd> + <kbd class="light">shift</kbd> + <kbd class="light">f</kbd>&nbsp;&nbsp;: forward slash or ctrl+shift+f will open Quick Find menu</p>
+<p><kbd class="light">/</kbd>&nbsp; or  &nbsp;<kbd class="light">ctrl</kbd> + <kbd class="light">shift</kbd> + <kbd class="light">f</kbd>&nbsp;&nbsp;: forward slash or ctrl+shift+f will open Quick Find menu**</p>
 
-<p><kbd class="light">'</kbd>&nbsp;&nbsp;: single quote key will open Quick Find menu in links mode (only links are searched)</p>
+<p><kbd class="light">'</kbd>&nbsp;&nbsp;: single quote key will open Quick Find menu in links mode (only links are searched)**</p>
 
 <p><kbd class="light">esc</kbd>&nbsp;&nbsp;: escape key will close Quick Find menu</p>
 

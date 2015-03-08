@@ -20,11 +20,13 @@ A next gen text search tool for your Chrome web page. Start a search and simply 
 <br>
 ###Shortcut keys:
 
+**shortcut key can be customized in chrome://extensions/configureCommands
+
 ####Getting started:
 
-<kbd class="light">/</kbd>&nbsp; or  &nbsp;<kbd class="light">ctrl</kbd> + <kbd class="light">shift</kbd> + <kbd class="light">f</kbd>&nbsp;&nbsp;: forward slash or ctrl+shift+f will open Quick Find menu
+<kbd class="light">/</kbd>&nbsp; or  &nbsp;<kbd class="light">ctrl</kbd> + <kbd class="light">shift</kbd> + <kbd class="light">f</kbd>&nbsp;&nbsp;: forward slash or ctrl+shift+f will open Quick Find menu**
 
-<kbd class="light">'</kbd>&nbsp;&nbsp;: single quote key will open Quick Find menu in links mode (only links are searched)
+<kbd class="light">'</kbd>&nbsp;&nbsp;: single quote key will open Quick Find menu in links mode (only links are searched)**
 
 <kbd class="light">esc</kbd>&nbsp;&nbsp;: escape key will close Quick Find menu
 
