@@ -129,11 +129,11 @@ body #wrap #main {
 
           a {
             @include filter(grayscale(100%));
-            @include opacity(0.4);
+            //@include opacity(0.4);
 
             &:hover, &:focus {
               @include filter(grayscale(0%));
-              @include opacity(1);
+              //@include opacity(1);
             }
           }
         }
