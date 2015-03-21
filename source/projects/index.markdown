@@ -25,7 +25,7 @@ title: "Projects"
 	<li>
 		<div class="project-wrapper">
 			<div class="project">
-				<a title="Quick Find - next gen text search" href="../quick-find-text-search/">
+				<a title="Quick Find - next gen text search" href="../Quick-Find/">
 					<img class="project-icon" src="../images/quickFind/icon128.png" width-"128" height="128"></img>
 				</a>
 				<div class="project-info">
