@@ -7,11 +7,11 @@ title: "Projects"
 	<li>
 		<div class="project-wrapper">
 			<div class="project">
-				<a title="Tab Resize - split screen layouts" href="../Tab-Resize/">
+				<a title="Tab Resize - split screen layouts" href="../tab-resize/">
 					<img class="project-icon" src="../images/icon128.png" width-"128" height="128"></img>
 				</a>
 				<div class="project-info">
-					<h3 class="project-title"><a href="../Tab-Resize/">Tab Resize - split screen layouts</a></h3>
+					<h3 class="project-title"><a href="../tab-resize/">Tab Resize - split screen layouts</a></h3>
 					<div class="project-description">Split Screen made easy. Resize the CURRENT tab and tabs to the RIGHT into layouts on separate windows. w/ Multi Monitor Support.</div>
 					<ul class="project-press">
 						<li><a title="lifehacker: tab resize automatically organizes tabs into preset layouts" href="http://lifehacker.com/tab-resize-automatically-organizes-tabs-into-preset-lay-1306865451"><img height="17" src="http://c.kinja-static.com/assets/images/logos/navbar/logo-lifehacker.png"></a></li>
@@ -25,11 +25,11 @@ title: "Projects"
 	<li>
 		<div class="project-wrapper">
 			<div class="project">
-				<a title="Quick Find - next gen text search" href="../Quick-Find/">
+				<a title="Quick Find - next gen text search" href="../quick-find/">
 					<img class="project-icon" src="../images/quickFind/icon128.png" width-"128" height="128"></img>
 				</a>
 				<div class="project-info">
-					<h3 class="project-title"><a href="../Quick-Find/">Quick Find - next gen text search</a></h3>
+					<h3 class="project-title"><a href="../quick-find/">Quick Find - next gen text search</a></h3>
 					<div class="project-description">Port of Firefox Quick Find features + awesome new ones. Search results in one location. Navigate to links in just a few keystrokes.</div>
 					<ul class="project-press">
 						<li><a title="maketecheasier: how to Enable the Firefox Quick Find Feature in Google Chrome" href="http://www.maketecheasier.com/port-firefox-quick-find-chrome/"><img height="17" src="../images/maketecheasier.png"></a></li>
