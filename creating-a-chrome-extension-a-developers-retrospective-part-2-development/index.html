@@ -1,0 +1,301 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Creating a Chrome Extension: Development - Peter Shin</title>
+  <meta name="author" content="Peter J. Shin">
+
+  
+  <meta name="description" content="Peter Shin's website and blog. Intro As there are plenty of existing tutorials on how to get started on developing a Chrome extension, I will only cover a few topics and specific &hellip;">
+  <!--
+  -->
+  <!-- http://t.co/dKP3o1e -->
+<!--   <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320"> -->
+  <meta name="viewport" id="viewportMeta" content="width=device-width">
+
+  <meta name="keywords" content="Peter Shin, javascript, css, html, chrome extension">
+  <meta name="robots" content="noarchive">
+  <meta name="googlebot" content="noarchive">
+
+  
+  <link rel="canonical" href="http://peterdotjs.github.com/creating-a-chrome-extension-a-developers-retrospective-part-2-development/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+  <link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Peter Shin" type="application/atom+xml">
+  
+  
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-34555191-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+
+    <script>
+    function handleViewport(){
+      var mvp = document.getElementById('viewportMeta');
+      if (screen.width < 500) {
+        mvp.setAttribute('content','width=500');
+      } else {
+         mvp.setAttribute('content','width=device-width');
+      }
+    }
+    handleViewport();
+  </script>
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/libs/jquery.js"></script>
+</head>
+
+<body    class="collapse-sidebar sidebar-footer" >
+  <div id="wrap"  class="red" >
+    <div id="header">
+      <header role="banner"><div class="header-wrap">
+<div class="hgroup-wrap">
+<hgroup>
+  <h1><a href="/">Peter Shin</a></h1>
+  
+</hgroup>
+</div>
+<div class="icon-link-wrapper">
+  <a href="https://github.com/peterdotjs" class="icon-link github" title="GitHub"></a>
+  <a href="http://www.linkedin.com/in/peterjshin" class="icon-link linkedin" title="LinkedIn"></a>
+  <a href="#" class="icon-link resume hidden" rel="nofollow" title="Resumé"></a>
+  <a href="mailto:peter.j.shin@gmail.com" rel="nofollow" class="icon-link contact" title="Contact"></a>
+</div>
+</div>
+
+</header>
+      <nav role="navigation">
+  
+<div class="navigation-wrap">
+<ul class="main-navigation">
+  <li><a  class="about unselected"  href="/">About</a></li>
+  <li><a  class="projects unselected"  href="/projects">Projects</a></li>
+  <li><a  class="blog selected"  href="/blog">Blog</a></li>
+</ul>
+</div>
+
+</nav>
+      <a role="button" aria-controls="mobile-menu-list" href="javascript:;" title="navigation-menu" id="mobile-menu">
+	<div></div>
+</a>
+<ul id="mobile-menu-list" role="menu" aria-expanded="false">
+	<li role="menuitem"><a  class=""  href="/">About</a></li>
+	<li role="menuitem"><a  class=""  href="/projects">Projects</a></li>
+	<li role="menuitem"><a  class="selected"  href="/blog">Blog</a></li>
+	<li role="menuitem"><a href="https://github.com/peterdotjs">Github</a></li>
+	<li role="menuitem"><a href="http://www.linkedin.com/in/peterjshin">Linkedin</a></li>
+	<li role="menuitem"><a class="contact" href="mailto:peter.j.shin@gmail.com">Contact</a></li>
+</ul>
+
+    </div>
+    <div id="main">
+      <div id="content">
+	<div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h2 class="entry-title">Creating a Chrome Extension: Development</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-12-24T00:25:00-08:00" pubdate data-updated="true">December 24<span>th</span>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><h2>Intro</h2>
+
+<p>As there are plenty of existing tutorials on how to get started on developing a Chrome extension, I will only cover a few topics and specific things to look out for.</p>
+
+<h2>APIs</h2>
+
+<p>Chrome provides really great documentation on their available  <a href="https://developer.chrome.com/extensions/api_index" title="JavaScript APIs">JavaScript APIs</a>. Depending on your use case some functionality may or may not be exposed to the user. There are stable, beta, dev, and experimental APIs to use. You&#8217;re choice of APIs will greatly depend on the type of extension you are trying to build as well as your audience. As an example the following Chrome APIs were used for Tab resize.</p>
+
+<ul>
+<li>chrome.browserAction - setting badge text/background</li>
+<li>chrome.windows - create, update, getting current window</li>
+<li>chrome.tabs - create, move, get, query tab information</li>
+<li>chrome.commands - keyboard shortcuts</li>
+<li>chrome.system - display monitor info</li>
+<li>chrome.extension - get background page</li>
+<li>chrome.runtime - send messages between background page and popup</li>
+</ul>
+
+
+<h2>Manifest</h2>
+
+<p>The <a href="https://developer.chrome.com/extensions/manifest" title="Manifest">manifest</a> is a JSON structure to describe your extension project. The version, description, icons, and shortcut commands are just a few of the many different fields that can be set in the manifest.</p>
+
+<p>One of the most important fields is the &#8220;permissions&#8221; property. You&#8217;ll want to think through your project and ensure that you know of all the APIs you will need now and in the near future so you can properly request for permission ahead of time. The caveat with permissions is that if you want to add a new permission after you&#8217;ve deployed - it&#8217;s a generally poor experience to users that have already installed your extension. When their extension is updated with a newly required permission, the extension automatically gets disabled and the user will be prompted. This isn&#8217;t an approach you would want to take when you have a large user base. Another approach is to use the &#8220;optional_permissions&#8221; field so that the extension does not automatically get disabled. All users will get prompted of the optional permissions that are required. In either case you may end up giving a subpar user experience to a good number of your users.</p>
+
+<p>Just try your best to get all the permissions you need ahead of time so it&#8217;ll be a much smoother process later down the line.</p>
+
+<h2>Tracking</h2>
+
+<p>If you care about improving your app and growing it, tracking is needed without question. User feedback can only go so far. Analytical tracking data will tell you what your users actually do and you can improve/change things accordingly.</p>
+
+<p>As an example I found that a user was actually creating a custom resize layout with of 99x99. When the user clicks on this custom created layout 9801 windows would have been created on their desktop, definitely crashing Chrome and probably their computer along the way. Benefiting from this info, I added some enforcement to limit the input size. Sometimes you need to protect the users from themselves, especially if they aren&#8217;t using the application as intended.</p>
+
+<p>When you setup the extension in the web store, make sure to put a Google Analytics id number - this will track the users that hit the Chrome web store page of your extension. It&#8217;ll be really usefully to see the trend of your views as well as where the referrals are coming from.</p>
+
+<p>I used Google Analytics for tracking but obviously you aren&#8217;t limited to it. Regarding Google Analytics - the <a href="https://developer.chrome.com/extensions/tut_analytics" title="tracking documentation">tracking documentation</a> as of this writing for Chrome extensions is out of date. If you choose to use Google Analytics you should start using the <a href="https://developers.google.com/analytics/devguides/collection/analyticsjs/" title="universal analytics">universal analytics</a> framework instead.</p>
+
+<p>Personally, I&#8217;ve found it really interesting to see how Tab Resize grew over time and how it was being used in countries I&#8217;ve never even heard of. If you do decide to use tracking <strong>be sure to add in an option for users to opt out of participating</strong>. This is a better user experience and also required by Google&#8217;s terms and agreement.</p>
+
+<h2>Usability</h2>
+
+<p>Using the results of your tracking you&#8217;ll be able to see if users are actually using the app as you intended. The data will tell you a story of how people are using it, either it be in a way you intended or in a way you never even thought of. Armed with this information you&#8217;ll be able to iterate on and improve your app. Features that aren&#8217;t being used as frequently can be shown more prominently and features that aren&#8217;t being used at all should be considered for the chopping block. None of this should be news to you but I hope you can push your users to use the product as you imagined rather than just the other way around.</p>
+
+<h2>Artwork</h2>
+
+<p>Artwork will influence both usability and impression rate. You&#8217;ll need artwork for icons, sprites, as well as logo designs. They have some <a href="https://developer.chrome.com/webstore/images" title="images">requirements</a> for these images. You&#8217;ll definitely want to look them over otherwise your extension may be rejected. You want to at least to have a 440x280 promotional image. Without this size, your extension will be pushed to the bottom of the list when extensions are surfaced in the store.</p>
+
+<p><img class="right" src="../images/440x280v3.png" title="My attempt at promo design" ></p>
+
+<p>While many developers may easily look over visual design, it&#8217;s a really important piece that you simply cannot ignore, especially in this day and age. Users have grown accustomed to smooth and sleek designs and expect nothing less. If you had two apps with similar functionality, the one with a better user interface will definitely win out. If you don&#8217;t have experience with a graphics editor and don&#8217;t have an interest in learning there are still other options. From <a href="http://99designs.com" title="99designs">99designs</a> to <a href="https://www.fiverr.com" title="fiverr">fieverr</a> there are many ways for you get great artwork without being an artist yourself. There really isn&#8217;t any excuse for having a bad design.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Peter J. Shin</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-12-24T00:25:00-08:00" pubdate data-updated="true">December 24<span>th</span>, 2014</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/guides/'>guides</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/creating-a-chrome-extension-a-developers-retrospective-part-1-inception/" title="Previous Post: Creating a Chrome Extension: Inception">&laquo; Creating a Chrome Extension: Inception</a>
+      
+      
+        <a class="basic-alignment right" href="/creating-a-chrome-extension-a-developers-retrospective-part-3-testing/" title="Next Post: Creating a Chrome Extension: Testing">Creating a Chrome Extension: Testing &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/synced-sidebar-atom-package/">Synced Sidebar Atom Package</a>
+      </li>
+    
+      <li class="post">
+        <a href="/react-native/">React Native</a>
+      </li>
+    
+      <li class="post">
+        <a href="/tab-resize-taken-down/">Tab Resize - Taken Down</a>
+      </li>
+    
+      <li class="post">
+        <a href="/creating-a-chrome-extension-a-developers-retrospective-part-5-maintenance-bug-fixes/">Creating a Chrome Extension: Maintenance and Beyond</a>
+      </li>
+    
+      <li class="post">
+        <a href="/creating-a-chrome-extension-a-developers-retrospective-part-4-production/">Creating a Chrome Extension: Production</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+
+  
+</aside>
+
+
+      </div>
+    </div>
+  </div>
+  <footer role="contentinfo">
+    <div class="footer-wrap">
+       <p>
+  Copyright &copy; 2015 - Peter J. Shin
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+
+    </div>
+  </footer>
+  
+
+
+
+
+
+
+
+
+
+  <script src="/javascripts/octopress.js"></script>
+
+</body>
+</html>

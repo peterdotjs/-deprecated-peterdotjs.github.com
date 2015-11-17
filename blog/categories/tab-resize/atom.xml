@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: tab-resize | Peter Shin]]></title>
+  <link href="http://peterdotjs.github.com/blog/categories/tab-resize/atom.xml" rel="self"/>
+  <link href="http://peterdotjs.github.com/"/>
+  <updated>2015-11-17T07:21:17-08:00</updated>
+  <id>http://peterdotjs.github.com/</id>
+  <author>
+    <name><![CDATA[Peter J. Shin]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Tab Resize 2.0 - split screen layouts]]></title>
+    <link href="http://peterdotjs.github.com/tab-resize-2-dot-0-split-screen-layouts/"/>
+    <updated>2014-08-19T08:05:00-07:00</updated>
+    <id>http://peterdotjs.github.com/tab-resize-2-dot-0-split-screen-layouts</id>
+    <content type="html"><![CDATA[<br>
+
+
+<p><strong>Split Screen made easy. Resize the CURRENT tab and tabs to the RIGHT into layouts on separate Windows. w/ Multi Monitor Support.</strong></p>
+
+<p><strong><em> Version 2.0 </em></strong>
+Added support for multiple monitors, left and right alignment, and empty tab mode</p>
+
+<h3>Demo</h3>
+
+<iframe width="853" height="480" src="http://www.youtube.com/embed/GFHl98nAV04?" frameborder="0" allowfullscreen></iframe>
+
+
+<h3>What</h3>
+
+<p>✓A simple chrome extension designed to provide ease in resizing your tabs. A set of default layouts are provided but you can add and remove from the list of layouts to fit your needs. With multiple monitor support you can move windows from one screen to the next with ease.</p>
+
+<h3>Why</h3>
+
+<p>✓Manually resizing windows is no fun.</p>
+
+<p>✓You have a very large monitors and have more pixels than you know what do with.</p>
+
+<p>✓Quick side by side comparisons.</p>
+
+<h3>How it works</h3>
+
+<p>✓The selected/highlighted tab along with all tabs to the right of it will be considered. Whether you have more or less tabs than are needed the extension will resize only the available tabs.</p>
+
+<p>✓Undo button will undo the previous layout resize. You can only perform undo once at any time.</p>
+
+<p>✓In 'single tab' mode, only the selected/highlighted tab will considered. Only the current window/tab will change in size, all other tabs to the right will be ignored.</p>
+
+<p>✓In 'empty tab' mode, new windows with empty tabs will be created if there are not enough tabs to fill your selected layout.</p>
+
+<p>✓You can select left or right alignment for your resize</p>
+
+<p>✓You can create your own custom layouts within reason and reset to default configurations if desired. Layouts are sorted most recent used on right.</p>
+
+<h3>Installation <small> - click icon to install</small></h3>
+
+<div class="install-wrapper">
+    <img src="../images/icon128.png" onclick="chrome.webstore.install('https://chrome.google.com/webstore/detail/bkpenclhmiealbebdopglffmfdiilejc')" id="install-button-tab-resize-2" class="install-button"></img>
+    <h4 id="install-message-tab-resize-2" class="installed-message" style="display: none;">Already Installed. =)</h4>
+</div>
+
+
+<script>
+$('head').append('<link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/bkpenclhmiealbebdopglffmfdiilejc">');
+if (chrome.app.isInstalled) {
+  $('#install-button-tab-resize-2').hide();
+  $('#install-message-tab-resize-2').show();
+}
+</script>
+
+
+<p><strong>Chrome Web Store:</strong> <a href="https://chrome.google.com/webstore/detail/tab-resize-split-screen-l/bkpenclhmiealbebdopglffmfdiilejc" target="_blank">Tab Resize - split screen layouts</a></p>
+
+<h3>Additional Notes</h3>
+
+<p>Only tab/window id info is being used; browsing activity is not. Tabs and browsing activity access are bundled together.</p>
+
+<p>Anonymous usage tracking is used to improve the extension and user experience. You can opt out in the options menu.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Tab Resize - split screen layouts]]></title>
+    <link href="http://peterdotjs.github.com/tab-resize-split-screen-layouts/"/>
+    <updated>2012-09-03T00:35:00-07:00</updated>
+    <id>http://peterdotjs.github.com/tab-resize-split-screen-layouts</id>
+    <content type="html"><![CDATA[<br>
+
+
+<h3>Demo</h3>
+
+<iframe width="853" height="480" src="http://www.youtube.com/embed/SD3hrdxn3QU" frameborder="0" allowfullscreen></iframe>
+
+
+<h3>What</h3>
+
+<p>✓A simple extension designed to provide ease in resizing your tabs. A set of default layouts are provided but you can add and remove from the list of layouts to fit your needs.</p>
+
+<h3>How it works</h3>
+
+<p>✓The selected/highlighted tab along with all tabs to the right of it will be considered. Whether you have more or less tabs than are needed the extension will resize only the available tabs.</p>
+
+<p>✓Undo button will undo the previous layout resize. You can only perform undo once at any time.</p>
+
+<p>✓In 'single tab' mode, only the selected/highlighted tab will considered. Only the current window/tab will change in size, all other tabs to the right will be ignored.</p>
+
+<p>✓You can create your own custom layouts within reason and reset to default configurations if desired. Layouts are sorted most recent used on left.</p>
+
+<h3>Why</h3>
+
+<p>✓Manually resizing windows is no fun.</p>
+
+<p>✓You have a very large monitor and have more pixels than you know what do with.</p>
+
+<p>✓Quick side by side comparisons.</p>
+
+<p>✓Quickly resize single windows to desired size with a single click.</p>
+
+<h3>Installation <small> - click icon to install</small></h3>
+
+<div class="install-wrapper">
+    <img src="../images/icon128.png" onclick="chrome.webstore.install('https://chrome.google.com/webstore/detail/bkpenclhmiealbebdopglffmfdiilejc')" id="install-button-tab-resize" class="install-button"></img>
+    <h4 id="installed-message-tab-resize" class="installed-message" style="display: none;">Already Installed. =)</h4>
+</div>
+
+
+<script>
+$('head').append('<link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/bkpenclhmiealbebdopglffmfdiilejc">');
+if (chrome.app.isInstalled) {
+  $('#install-button-tab-resize').hide();
+  $('installed-message-tab-resize').show();
+}
+</script>
+
+
+<h3>Additional Notes</h3>
+
+<p>Only tab/window id info is being used; browsing history is not. Tabs and browsing history access as bundled together.</p>
+]]></content>
+  </entry>
+  
+</feed>

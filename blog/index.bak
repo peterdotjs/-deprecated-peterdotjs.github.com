@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Peter Shin</title>
+  <title>Blog - Peter Shin</title>
   <meta name="author" content="Peter J. Shin">
 
   
-  <meta name="description" content="Peter Shin's website and blog. Trek towards Half Dome, Yosemite. Web developer with a passion for problem solving. Studied engineering at UCSD and UCLA. Front-end engineer at &hellip;">
+  <meta name="description" content="Peter Shin's website and blog.  Blog Archives ">
   <!--
   -->
   <!-- http://t.co/dKP3o1e -->
@@ -22,7 +22,7 @@
   <meta name="googlebot" content="noarchive">
 
   
-  <link rel="canonical" href="http://peterdotjs.github.com/">
+  <link rel="canonical" href="http://peterdotjs.github.com/blog/index.bak">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
@@ -58,7 +58,7 @@
 </head>
 
 <body    class="collapse-sidebar sidebar-footer" >
-  <div id="wrap"  class="blue" >
+  <div id="wrap"  class="red" >
     <div id="header">
       <header role="banner"><div class="header-wrap">
 <div class="hgroup-wrap">
@@ -80,9 +80,9 @@
   
 <div class="navigation-wrap">
 <ul class="main-navigation">
-  <li><a  class="about selected"  href="/">About</a></li>
+  <li><a  class="about unselected"  href="/">About</a></li>
   <li><a  class="projects unselected"  href="/projects">Projects</a></li>
-  <li><a  class="blog unselected"  href="/blog">Blog</a></li>
+  <li><a  class="blog selected"  href="/blog">Blog</a></li>
 </ul>
 </div>
 
@@ -91,9 +91,9 @@
 	<div></div>
 </a>
 <ul id="mobile-menu-list" role="menu" aria-expanded="false">
-	<li role="menuitem"><a  class="selected"  href="/">About</a></li>
+	<li role="menuitem"><a  class=""  href="/">About</a></li>
 	<li role="menuitem"><a  class=""  href="/projects">Projects</a></li>
-	<li role="menuitem"><a  class=""  href="/blog">Blog</a></li>
+	<li role="menuitem"><a  class="selected"  href="/blog">Blog</a></li>
 	<li role="menuitem"><a href="https://github.com/peterdotjs">Github</a></li>
 	<li role="menuitem"><a href="http://www.linkedin.com/in/peterjshin">Linkedin</a></li>
 	<li role="menuitem"><a class="contact" href="mailto:peter.j.shin@gmail.com">Contact</a></li>
@@ -102,25 +102,16 @@
     </div>
     <div id="main">
       <div id="content">
-	<div class="about-me-container">
-   <div class="profile-photo">
-      <a><span>Trek towards Half Dome, Yosemite.</span></a>
-   </div>
- <div class="about-me">
-   <p class="description">
-     Web developer with a passion for problem solving.
-   </p>
-   <p class="description">
-     Studied engineering at UCSD and UCLA.
-   </p>
-   <p class="description">
-     Front-end engineer at Facebook/Parse.
-   </p>
-   <p class="description">
-     Previously at eBay & Cisco.
-  </p>
+	<div class="blog-index">
+  
+  
+  <div class="pagination">
+    
+    <a href="/blog/archives">Blog Archives</a>
+    
+  </div>
 </div>
-</div>
+
 
       </div>
     </div>

@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: projects | Peter Shin]]></title>
+  <link href="http://peterdotjs.github.com/blog/categories/projects/atom.xml" rel="self"/>
+  <link href="http://peterdotjs.github.com/"/>
+  <updated>2015-11-17T07:21:17-08:00</updated>
+  <id>http://peterdotjs.github.com/</id>
+  <author>
+    <name><![CDATA[Peter J. Shin]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Synced Sidebar Atom Package]]></title>
+    <link href="http://peterdotjs.github.com/synced-sidebar-atom-package/"/>
+    <updated>2015-02-22T18:33:00-08:00</updated>
+    <id>http://peterdotjs.github.com/synced-sidebar-atom-package</id>
+    <content type="html"><![CDATA[<p>Based on Sublime Text <a href="https://github.com/sobstel/SyncedSideBar">SyncedSideBar</a> plugin. Active tab &amp; sidebar are synced - sidebar entry automatically scrolls into view.</p>
+
+<p>Atom Package: <a href="https://atom.io/packages/synced-sidebar">https://atom.io/packages/synced-sidebar</a></p>
+
+<h2>Demo</h2>
+
+<iframe width="853" height="480" src="http://www.youtube.com/embed/fwYiFJ-9A6Y?" frameborder="0" allowfullscreen></iframe>
+
+
+<h2>Installation</h2>
+
+<p><code>bash
+apm install synced-sidebar
+</code>
+Or Settings/Preferences ➔ Packages ➔ Search for <code>synced-sidebar</code></p>
+
+<h2>Use</h2>
+
+<p>By default the sidebar (tree view) is not in sync with the active tab. With synced-sidebar installed the tab is revealed in the sidebar anytime a tab is active. If the active file in the sidebar is not currently in view (below or above the current viewport), the sidebar will automatically scroll the active file into view.</p>
+
+<p>If the sidebar (tree view) is collapsed, synced-sidebar doesn't do anything. The sidebar remains collapsed as is.</p>
+
+<h2>Configuration</h2>
+
+<p>Currently there aren't configurations since there's only one thing the package does. You can either have the package enabled or disabled. Let me know you think there's a use case for configs.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Quick Find - next gen text search]]></title>
+    <link href="http://peterdotjs.github.com/quick-find-text-search/"/>
+    <updated>2014-08-23T15:06:00-07:00</updated>
+    <id>http://peterdotjs.github.com/quick-find-text-search</id>
+    <content type="html"><![CDATA[<br>
+
+
+<h3>Motivation:</h3>
+
+<p>I've always wanted the ability to see all the search results in a text search rather than just seeing them highlighted and scattered accross the page and out of view. This was the start of the idea and it soon became mashed up with all the great Firefox quick find features that Chrome is missing.</p>
+
+<br>
+
+
+<h3>Description:</h3>
+
+<p>A next gen text search tool for your Chrome web page. Start a search and simply press enter/return on a highlighted link and you'll instantly navigate to that page. A mashup of Firefox quick find features (case match, links only search, highlight all, search selected text) as well as awesome new ones (scroll/navigate through all search results with context) - brought to Chrome.</p>
+
+<br>
+
+
+<h3>Demo:</h3>
+
+<iframe width="853" height="480" src="http://www.youtube.com/embed/x2PEyTyJ6iM?" frameborder="0" allowfullscreen></iframe>
+
+
+
+
+<br>
+
+
+<h3>Shortcut keys:</h3>
+
+<p>**shortcut key can be customized in chrome://extensions/configureCommands</p>
+
+<h4>Getting started:</h4>
+
+<p><kbd class="light">/</kbd>&nbsp; or  &nbsp;<kbd class="light">ctrl</kbd> + <kbd class="light">shift</kbd> + <kbd class="light">f</kbd>&nbsp;&nbsp;: forward slash or ctrl+shift+f will open Quick Find menu**</p>
+
+<p><kbd class="light">'</kbd>&nbsp;&nbsp;: single quote key will open Quick Find menu in links mode (only links are searched)**</p>
+
+<p><kbd class="light">esc</kbd>&nbsp;&nbsp;: escape key will close Quick Find menu</p>
+
+<br>
+
+
+<h4>Menu navigation:</h4>
+
+<p><kbd class="light">&#8593;</kbd>&nbsp; or &nbsp;<kbd class="light">&#8595;</kbd>
+&nbsp;&nbsp;: navigate results by using up or down arrow keys</p>
+
+<p><kbd class="light">enter</kbd>&nbsp; or &nbsp;<kbd class="light">return</kbd> : pressing enter on highlighted menu with link will navigate to the link</p>
+
+<br>
+
+
+<h4>Search Options:</h4>
+
+<p><kbd class="light">alt</kbd> + <kbd class="light">a</kbd>&nbsp;&nbsp;: toggle highlight all results mode</p>
+
+<p><kbd class="light">alt</kbd> + <kbd class="light">c</kbd>&nbsp;&nbsp;: toggle match case mode</p>
+
+<p><kbd class="light">alt</kbd> + <kbd class="light">l</kbd>&nbsp;&nbsp;: toggle links mode</p>
+
+<br>
+
+
+<h4>Tips:</h4>
+
+<p>Quick Find search box is prepopulated with any selected/highlighted text prior to opening the search menu.</p>
+
+<p>Toggle occurs only when cursor focus is on the Quick Find menu.</p>
+
+<br>
+
+
+<h3>Installation <small> - click icon to install</small> :</h3>
+
+<div class="install-wrapper">
+    <img src="../images/quickFind/icon128.png" onclick="chrome.webstore.install('https://chrome.google.com/webstore/detail/dejblhmebonldngnmeidliaifgiagcjj')" id="install-button-quick-find" class="install-button"></img>
+    <h4 id="installed-message-quick-find" class="installed-message" style="display: none;">Already Installed. =)</h4>
+</div>
+
+
+<script>
+$('head').append('<link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/dejblhmebonldngnmeidliaifgiagcjj">');
+if (chrome.app.isInstalled) {
+  $('#install-button-quick-find').hide();
+  $('#installed-message-quick-find').show();
+}
+</script>
+
+
+<p><strong>Chrome Web Store:</strong> <a href="https://chrome.google.com/webstore/detail/quick-find-next-gen-text/dejblhmebonldngnmeidliaifgiagcjj" target="_blank">Quick Find - next gen text search</a></p>
+
+<br>
+
+
+<h3>Limitations:</h3>
+
+<p>Extension only works on sites that allow content scripts. The chrome webstore page itself for example doesn't even allow content scripts to be run.</p>
+
+<p>Quick find does not search through iframes, script, or code html elements.</p>
+
+<p>When results show up in same html element, will be shown only as one result.</p>
+
+<p>Other website shortcuts or extensions may conflict with these shortcuts. A future enhancement can be to select your own shortcuts to open the menu.</p>
+
+<h3>Additional Notes</h3>
+
+<p>Anonymous page view tracking is used to improve the extension and user experience. You can opt out in the options menu.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Tab Resize 2.0 - split screen layouts]]></title>
+    <link href="http://peterdotjs.github.com/tab-resize-2-dot-0-split-screen-layouts/"/>
+    <updated>2014-08-19T08:05:00-07:00</updated>
+    <id>http://peterdotjs.github.com/tab-resize-2-dot-0-split-screen-layouts</id>
+    <content type="html"><![CDATA[<br>
+
+
+<p><strong>Split Screen made easy. Resize the CURRENT tab and tabs to the RIGHT into layouts on separate Windows. w/ Multi Monitor Support.</strong></p>
+
+<p><strong><em> Version 2.0 </em></strong>
+Added support for multiple monitors, left and right alignment, and empty tab mode</p>
+
+<h3>Demo</h3>
+
+<iframe width="853" height="480" src="http://www.youtube.com/embed/GFHl98nAV04?" frameborder="0" allowfullscreen></iframe>
+
+
+<h3>What</h3>
+
+<p>✓A simple chrome extension designed to provide ease in resizing your tabs. A set of default layouts are provided but you can add and remove from the list of layouts to fit your needs. With multiple monitor support you can move windows from one screen to the next with ease.</p>
+
+<h3>Why</h3>
+
+<p>✓Manually resizing windows is no fun.</p>
+
+<p>✓You have a very large monitors and have more pixels than you know what do with.</p>
+
+<p>✓Quick side by side comparisons.</p>
+
+<h3>How it works</h3>
+
+<p>✓The selected/highlighted tab along with all tabs to the right of it will be considered. Whether you have more or less tabs than are needed the extension will resize only the available tabs.</p>
+
+<p>✓Undo button will undo the previous layout resize. You can only perform undo once at any time.</p>
+
+<p>✓In 'single tab' mode, only the selected/highlighted tab will considered. Only the current window/tab will change in size, all other tabs to the right will be ignored.</p>
+
+<p>✓In 'empty tab' mode, new windows with empty tabs will be created if there are not enough tabs to fill your selected layout.</p>
+
+<p>✓You can select left or right alignment for your resize</p>
+
+<p>✓You can create your own custom layouts within reason and reset to default configurations if desired. Layouts are sorted most recent used on right.</p>
+
+<h3>Installation <small> - click icon to install</small></h3>
+
+<div class="install-wrapper">
+    <img src="../images/icon128.png" onclick="chrome.webstore.install('https://chrome.google.com/webstore/detail/bkpenclhmiealbebdopglffmfdiilejc')" id="install-button-tab-resize-2" class="install-button"></img>
+    <h4 id="install-message-tab-resize-2" class="installed-message" style="display: none;">Already Installed. =)</h4>
+</div>
+
+
+<script>
+$('head').append('<link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/bkpenclhmiealbebdopglffmfdiilejc">');
+if (chrome.app.isInstalled) {
+  $('#install-button-tab-resize-2').hide();
+  $('#install-message-tab-resize-2').show();
+}
+</script>
+
+
+<p><strong>Chrome Web Store:</strong> <a href="https://chrome.google.com/webstore/detail/tab-resize-split-screen-l/bkpenclhmiealbebdopglffmfdiilejc" target="_blank">Tab Resize - split screen layouts</a></p>
+
+<h3>Additional Notes</h3>
+
+<p>Only tab/window id info is being used; browsing activity is not. Tabs and browsing activity access are bundled together.</p>
+
+<p>Anonymous usage tracking is used to improve the extension and user experience. You can opt out in the options menu.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Tab Resize - split screen layouts]]></title>
+    <link href="http://peterdotjs.github.com/tab-resize-split-screen-layouts/"/>
+    <updated>2012-09-03T00:35:00-07:00</updated>
+    <id>http://peterdotjs.github.com/tab-resize-split-screen-layouts</id>
+    <content type="html"><![CDATA[<br>
+
+
+<h3>Demo</h3>
+
+<iframe width="853" height="480" src="http://www.youtube.com/embed/SD3hrdxn3QU" frameborder="0" allowfullscreen></iframe>
+
+
+<h3>What</h3>
+
+<p>✓A simple extension designed to provide ease in resizing your tabs. A set of default layouts are provided but you can add and remove from the list of layouts to fit your needs.</p>
+
+<h3>How it works</h3>
+
+<p>✓The selected/highlighted tab along with all tabs to the right of it will be considered. Whether you have more or less tabs than are needed the extension will resize only the available tabs.</p>
+
+<p>✓Undo button will undo the previous layout resize. You can only perform undo once at any time.</p>
+
+<p>✓In 'single tab' mode, only the selected/highlighted tab will considered. Only the current window/tab will change in size, all other tabs to the right will be ignored.</p>
+
+<p>✓You can create your own custom layouts within reason and reset to default configurations if desired. Layouts are sorted most recent used on left.</p>
+
+<h3>Why</h3>
+
+<p>✓Manually resizing windows is no fun.</p>
+
+<p>✓You have a very large monitor and have more pixels than you know what do with.</p>
+
+<p>✓Quick side by side comparisons.</p>
+
+<p>✓Quickly resize single windows to desired size with a single click.</p>
+
+<h3>Installation <small> - click icon to install</small></h3>
+
+<div class="install-wrapper">
+    <img src="../images/icon128.png" onclick="chrome.webstore.install('https://chrome.google.com/webstore/detail/bkpenclhmiealbebdopglffmfdiilejc')" id="install-button-tab-resize" class="install-button"></img>
+    <h4 id="installed-message-tab-resize" class="installed-message" style="display: none;">Already Installed. =)</h4>
+</div>
+
+
+<script>
+$('head').append('<link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/bkpenclhmiealbebdopglffmfdiilejc">');
+if (chrome.app.isInstalled) {
+  $('#install-button-tab-resize').hide();
+  $('installed-message-tab-resize').show();
+}
+</script>
+
+
+<h3>Additional Notes</h3>
+
+<p>Only tab/window id info is being used; browsing history is not. Tabs and browsing history access as bundled together.</p>
+]]></content>
+  </entry>
+  
+</feed>
